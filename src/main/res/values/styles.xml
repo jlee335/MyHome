@@ -5,7 +5,7 @@
         <item name="android:windowBackground">@android:color/black</item>
     </style>
 
-    <style name="BaseUnityTheme" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen"></style>
+    <style name="BaseUnityTheme" parent="@style/Theme.AppCompat.Light"></style>
 
     <style name="UnityThemeSelector.Translucent" parent="@style/UnityThemeSelector">
         <item name="android:windowIsTranslucent">true</item>

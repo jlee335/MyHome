@@ -1,10 +1,6 @@
 package com.DefaultCompany.MyHome;
 
-import com.unity3d.player.*;
-
 import android.Manifest;
-import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -13,6 +9,8 @@ import android.graphics.Bitmap;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+
+
 import android.util.Base64;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -24,11 +22,17 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+
+import com.unity3d.player.UnityPlayer;
+
+import org.opencv.android.OpenCVLoader;
 
 import java.io.ByteArrayOutputStream;
 
-public class UnityPlayerActivity extends Activity
+public class UnityPlayerActivity extends AppCompatActivity
 {
     protected UnityPlayer mUnityPlayer; // don't change the name of this variable; referenced from native code
     private Button l_move;
@@ -52,6 +56,7 @@ public class UnityPlayerActivity extends Activity
     // Setup activity layout
     @Override protected void onCreate(Bundle savedInstanceState)
     {
+        OpenCVLoader.initDebug();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED && checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
                 Log.d("@@@@", "권한 설정 완료");

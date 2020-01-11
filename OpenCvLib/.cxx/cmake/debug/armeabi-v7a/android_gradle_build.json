@@ -1,0 +1,41 @@
+
+{
+	"buildFiles" : 
+	[
+		"C:/Users/q/Desktop/MyHomeAndroid/MyHome/OpenCvLib/libcxx_helper/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"\"C:\\Program Files\\Unity\\Hub\\Editor\\2019.2.17f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\cmake\\3.6.4111459\\bin\\cmake.exe\" --build C:\\Users\\q\\Desktop\\MyHomeAndroid\\MyHome\\OpenCvLib\\.cxx\\cmake\\debug\\armeabi-v7a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"opencv_jni_shared-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "opencv_jni_shared",
+			"buildCommand" : "\"C:\\Program Files\\Unity\\Hub\\Editor\\2019.2.17f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\cmake\\3.6.4111459\\bin\\cmake.exe\" --build C:\\Users\\q\\Desktop\\MyHomeAndroid\\MyHome\\OpenCvLib\\.cxx\\cmake\\debug\\armeabi-v7a --target opencv_jni_shared",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=\"C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64\" --sysroot=\"C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot\"    -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "C:/Users/q/Desktop/MyHomeAndroid/MyHome/OpenCvLib/libcxx_helper/dummy.cpp",
+					"workingDirectory" : "C:/Users/q/Desktop/MyHomeAndroid/MyHome/OpenCvLib/.cxx/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "C:/Users/q/Desktop/MyHomeAndroid/MyHome/OpenCvLib/.cxx/cmake/debug/armeabi-v7a/libopencv_jni_shared.a",
+			"toolchain" : "917797967"
+		}
+	},
+	"toolchains" : 
+	{
+		"917797967" : 
+		{
+			"cCompilerExecutable" : "C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}
