@@ -24,7 +24,7 @@ import org.opencv.utils.Converters;
 public class BOWImgDescriptorExtractor {
 
     protected final long nativeObj;
-    protected BOWImgDescriptorExtractor(long addr) { nativeObj = addr; }
+    public BOWImgDescriptorExtractor(long addr) { nativeObj = addr; }
 
     public long getNativeObjAddr() { return nativeObj; }
 

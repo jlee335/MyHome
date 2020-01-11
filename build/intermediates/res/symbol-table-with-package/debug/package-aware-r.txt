@@ -1171,6 +1171,7 @@ id beginning
 id blocking
 id bottom
 id bottom_move
+id button
 id buttonPanel
 id center
 id center_horizontal
@@ -1231,6 +1232,7 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id java_cam_view
 id labeled
 id largeLabel
 id left
@@ -1410,6 +1412,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_cam
 layout activity_main
 layout content_main
 layout custom_dialog

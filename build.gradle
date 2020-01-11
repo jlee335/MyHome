@@ -58,7 +58,7 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 21
+        minSdkVersion 24
         targetSdkVersion 28
         applicationId 'com.DefaultCompany.MyHome'
         ndk {

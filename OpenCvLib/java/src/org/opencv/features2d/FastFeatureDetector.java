@@ -12,7 +12,7 @@ import org.opencv.features2d.Feature2D;
  */
 public class FastFeatureDetector extends Feature2D {
 
-    protected FastFeatureDetector(long addr) { super(addr); }
+    public FastFeatureDetector(long addr) { super(addr); }
 
     // internal usage only
     public static FastFeatureDetector __fromPtr__(long addr) { return new FastFeatureDetector(addr); }

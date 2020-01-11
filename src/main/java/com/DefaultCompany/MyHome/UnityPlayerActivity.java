@@ -56,7 +56,7 @@ public class UnityPlayerActivity extends AppCompatActivity
     // Setup activity layout
     @Override protected void onCreate(Bundle savedInstanceState)
     {
-        OpenCVLoader.initDebug();
+        //OpenCVLoader.initDebug();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED && checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
                 Log.d("@@@@", "권한 설정 완료");
@@ -86,6 +86,13 @@ public class UnityPlayerActivity extends AppCompatActivity
         t_move = findViewById(R.id.top_move);
         b_move = findViewById(R.id.bottom_move);
         fab = findViewById(R.id.fab);
+        Button goCV = findViewById(R.id.button);
+        goCV.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                buttonDo2();
+            }
+        });
 
 
         fab.setOnClickListener(new View.OnClickListener() {
@@ -102,7 +109,12 @@ public class UnityPlayerActivity extends AppCompatActivity
         final Intent camIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(camIntent,1);
         Log.e("TAB_PRESS", "1");
+    }
 
+    public void buttonDo2(){
+        final Intent camIntent = new Intent(this,CamActivity.class);
+        startActivity(camIntent);
+        Log.e("TAB_PRESS", "2");
     }
 
 
@@ -176,6 +188,7 @@ public class UnityPlayerActivity extends AppCompatActivity
         // replace the intent with the one caught here.
         setIntent(intent);
         mUnityPlayer.newIntent(intent);
+        super.onNewIntent(intent);
     }
 
     // Quit Unity
