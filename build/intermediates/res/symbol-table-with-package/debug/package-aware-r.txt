@@ -1227,6 +1227,8 @@ id icon
 id icon_group
 id icon_only
 id ifRoom
+id im1Button
+id im2Button
 id image
 id info
 id invisible
@@ -1240,6 +1242,7 @@ id left_move
 id light
 id line1
 id line3
+id linearLayout
 id listMode
 id list_item
 id masked
@@ -1269,6 +1272,8 @@ id pin
 id progress_circular
 id progress_horizontal
 id radio
+id resultButton
+id resultView
 id right
 id right_icon
 id right_move

@@ -5,6 +5,7 @@ import org.opencv.android.CameraActivity;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewFrame;
 import org.opencv.android.LoaderCallbackInterface;
 import org.opencv.android.OpenCVLoader;
+import org.opencv.android.Utils;
 import org.opencv.core.*;
 import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2;
@@ -14,12 +15,16 @@ import org.opencv.imgproc.Imgproc.*;
 import org.opencv.features2d.FastFeatureDetector;
 import org.opencv.features2d.BOWImgDescriptorExtractor;
 
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.SurfaceView;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.ImageView;
 
 import org.opencv.calib3d.Calib3d;
 import org.opencv.core.*;
@@ -41,6 +46,13 @@ public class CamActivity extends CameraActivity implements CvCameraViewListener2
     private boolean              mIsJavaCamera = true;
     private MenuItem             mItemSwitchCamera = null;
     List<MatOfPoint> cacheKlist;
+    Mat img1;
+    Mat img2;
+    boolean scoopIm1 = false;
+    boolean scoopIm2 = false;
+    Button im1Button;
+    Button im2Button;
+    Button getTexture;
 
 
     private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
@@ -72,6 +84,34 @@ public class CamActivity extends CameraActivity implements CvCameraViewListener2
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         setContentView(R.layout.activity_cam);
+        im1Button = (Button) findViewById(R.id.im1Button);
+        im2Button = (Button) findViewById(R.id.im2Button);
+        getTexture = (Button) findViewById(R.id.resultButton);
+        getTexture.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                if(img1 != null && img2 != null){
+                    Mat fin = flatTransform(img1,img2);
+                    Bitmap res = convertMatToBitMap(fin);
+                    ImageView result = findViewById(R.id.resultView);
+                    result.setImageBitmap(res);
+                }
+            }
+        });
+
+        im1Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                scoopIm1 = true;
+            }
+        });
+        im2Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                scoopIm2 = true;
+            }
+        });
+
 
         mOpenCvCameraView = (CameraBridgeViewBase) findViewById(R.id.java_cam_view);
 
@@ -118,36 +158,106 @@ public class CamActivity extends CameraActivity implements CvCameraViewListener2
     public void onCameraViewStopped() {
     }
 
+
+
     public Mat onCameraFrame(CvCameraViewFrame inputFrame) {
         Mat img = inputFrame.rgba();
+        if(scoopIm1){
+            img1 = img;
+            scoopIm1 = false;
+        }
+        if(scoopIm2){
+            img2 = img;
+            scoopIm2 = false;
+        }
 
-        return contourdetector(img);
+        return HoughDetector(img);
     }
+    private static Bitmap convertMatToBitMap(Mat input){
+        Bitmap bmp = null;
+        Mat rgb = new Mat();
+        Imgproc.cvtColor(input, rgb, Imgproc.COLOR_BGR2RGB);
 
+        try {
+            bmp = Bitmap.createBitmap(rgb.cols(), rgb.rows(), Bitmap.Config.ARGB_8888);
+            Utils.matToBitmap(rgb, bmp);
+        }
+        catch (CvException e){
+            Log.d("Exception",e.getMessage());
+        }
+        return bmp;
+    }
     public Mat flatTransform(Mat img1,Mat img2){
+        Log.d("FLAT","LV 0");
         //1. Get Feature descriptors of two consecutive images!
-        FastFeatureDetector detector = new FastFeatureDetector(15);
+        FastFeatureDetector detector = FastFeatureDetector.create();
         MatOfKeyPoint keypoints1 = new MatOfKeyPoint();
         detector.detect(img1,keypoints1);
 
         MatOfKeyPoint keypoints2 = new MatOfKeyPoint();
         detector.detect(img2,keypoints2);
 
-        //2. For each feature, get an EXTRACTOR
-//        org.opencv.features2d.SURF extractor = org.opencv.features2d.DescriptorMatcher.create(DescriptorMatcher.BRUTEFORCE);
-
+        Log.d("FLAT","LV 1");
+        //2. For each feature, Extract feature descriptor
+        BRISK extractor = BRISK.create();
         Mat descriptors1 = new Mat();
-       return null;
+        extractor.compute(img1,keypoints1,descriptors1);
 
+        Mat descriptors2 = new Mat();
+        extractor.compute(img2,keypoints2,descriptors2);
+        Log.d("FLAT","LV 2");
+
+        org.opencv.features2d.BFMatcher matcher = BFMatcher.create();
+        MatOfDMatch matches = new MatOfDMatch();
+        matcher.match(descriptors1,descriptors2,matches);
+
+        List<DMatch> Lmatch = matches.toList();
+
+        Log.d("FLAT","LV 3");
+        List<Point> pts1 = new ArrayList<>();
+        List<Point> pts2 = new ArrayList<>();
+
+        List<KeyPoint> listOfKeypoints1 = keypoints1.toList();
+        List<KeyPoint> listOfKeypoints2 = keypoints2.toList();
+
+        for (int i = 0; i < Lmatch.size(); i++) {
+            //-- Get the keypoints from the good matches
+            pts1.add(listOfKeypoints1.get(Lmatch.get(i).queryIdx).pt);
+            pts2.add(listOfKeypoints2.get(Lmatch.get(i).trainIdx).pt);
+        }
+
+        MatOfPoint2f pts1Mat = new MatOfPoint2f(), pts2Mat = new MatOfPoint2f();
+        pts1Mat.fromList(pts1);
+        pts2Mat.fromList(pts2);
+
+        Mat H = Calib3d.findHomography(pts1Mat,pts2Mat,Calib3d.RANSAC);
+        Mat nimg = new Mat();
+        Imgproc.warpPerspective(img1,nimg,H,img1.size());
+        Log.d("FLAT","LV FIN");
+
+       return nimg;
     }
 
+    public Mat HoughDetector(Mat img){
+        Mat gray = img.clone();
+        Imgproc.cvtColor(img,gray,Imgproc.COLOR_BGR2GRAY);
+        Mat edged = gray;
+        Imgproc.Canny(gray,edged,50,200);
+        Mat result = img.clone();
+        double minLineLength = 30;
+        double maxLineGap = 10;
+        Mat lines = new Mat();
+        Imgproc.HoughLines(edged,lines,1,Math.PI/180,15,minLineLength);
+
+        return result;
+    }
 
     public Mat contourdetector(Mat img){
         Mat gray = img.clone();
         Imgproc.cvtColor(img,gray,Imgproc.COLOR_BGR2GRAY);
         Imgproc.GaussianBlur(gray,gray,new Size(5,5),0);
         Mat edged = gray;
-        Imgproc.Canny(gray,edged,75,200);
+        Imgproc.Canny(gray,edged,50,200);
 
         List<MatOfPoint> contours = new ArrayList<>();
         Mat ecopy = edged.clone();
@@ -164,7 +274,7 @@ public class CamActivity extends CameraActivity implements CvCameraViewListener2
             double peri = Imgproc.arcLength(c,true);
             MatOfPoint2f approx = new MatOfPoint2f();
             Imgproc.approxPolyDP(c,approx,0.02*peri,true);
-            if(approx.toArray().length==2){
+            if(approx.toArray().length==4){
                 rectangles.add(approx);
             }
         }
@@ -183,7 +293,7 @@ public class CamActivity extends CameraActivity implements CvCameraViewListener2
         List<MatOfPoint> k = new ArrayList<>();
         if(rectangles.size()!= 0){
             for(int i = 0; i < rectangles.size(); i++){
-                if(i<4){
+                if(i<20){
                     k.add(new MatOfPoint());
                     rectangles.get(i).convertTo(k.get(i),CvType.CV_32S);
                 }

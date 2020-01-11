@@ -16,7 +16,7 @@ import org.opencv.utils.Converters;
  */
 public class Feature2D extends Algorithm {
 
-    protected Feature2D(long addr) { super(addr); }
+    public Feature2D(long addr) { super(addr); }
 
     // internal usage only
     public static Feature2D __fromPtr__(long addr) { return new Feature2D(addr); }
