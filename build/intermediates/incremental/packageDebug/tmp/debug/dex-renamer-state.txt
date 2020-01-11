@@ -1,4 +1,4 @@
-#Fri Jan 10 00:53:34 KST 2020
-base.0=C\:\\Users\\q\\Desktop\\unitygame\\MyHome\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+#Sat Jan 11 13:34:50 KST 2020
+base.0=C\:\\Users\\q\\AndroidStudioProjects\\MyHome\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

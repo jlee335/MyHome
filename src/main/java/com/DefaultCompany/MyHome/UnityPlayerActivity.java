@@ -1,19 +1,41 @@
 package com.DefaultCompany.MyHome;
 
 import com.unity3d.player.*;
+
+import android.Manifest;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.MediaStore;
+import android.util.Base64;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
+import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+import android.widget.Toast;
+
+import androidx.core.app.ActivityCompat;
+
+import java.io.ByteArrayOutputStream;
 
 public class UnityPlayerActivity extends Activity
 {
     protected UnityPlayer mUnityPlayer; // don't change the name of this variable; referenced from native code
+    private Button l_move;
+    private Button r_move;
+    private Button t_move;
+    private Button b_move;
+    private Button fab;
 
     // Override this in your custom UnityPlayerActivity to tweak the command line arguments passed to the Unity Android Player
     // The command line arguments are passed as a string, separated by spaces
@@ -30,6 +52,14 @@ public class UnityPlayerActivity extends Activity
     // Setup activity layout
     @Override protected void onCreate(Bundle savedInstanceState)
     {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED && checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+                Log.d("@@@@", "권한 설정 완료");
+            } else {
+                Log.d("@@@@", "권한 설정 요청");
+                ActivityCompat.requestPermissions(UnityPlayerActivity.this, new String[]{Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
+            }
+        }
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
 
@@ -45,6 +75,92 @@ public class UnityPlayerActivity extends Activity
         FrameLayout layout = (FrameLayout) findViewById(R.id.framelayout);
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.FILL_PARENT, LinearLayout.LayoutParams.FILL_PARENT);
         layout.addView(mUnityPlayer.getView(), 0, lp);
+
+        l_move = findViewById(R.id.left_move);
+        r_move = findViewById(R.id.right_move);
+        t_move = findViewById(R.id.top_move);
+        b_move = findViewById(R.id.bottom_move);
+        fab = findViewById(R.id.fab);
+
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                buttonDo();
+            }
+        });
+    }
+
+
+
+    public void buttonDo(){
+        final Intent camIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(camIntent,1);
+        Log.e("TAB_PRESS", "1");
+
+    }
+
+
+    @Override
+    protected void onActivityResult ( int requestCode, int resultCode, Intent data){
+        super.onActivityResult(requestCode, resultCode, data);
+
+        Log.e("TAB","Camera return");
+        //if (resultCode == RESULT_OK) {
+        Bundle extras = data.getExtras();
+        Bitmap imageBitmap = (Bitmap) extras.get("data");
+
+
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+        builder.setTitle("바닥인지 벽인지 선택하세요").setMessage("(바닥/벽)");
+
+        builder.setPositiveButton("바닥", new DialogInterface.OnClickListener(){
+            @Override
+            public void onClick(DialogInterface dialog, int id)
+            {
+                Bitmap result = Bitmap.createScaledBitmap(imageBitmap, 36, 36, false);
+
+                ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+                result.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
+                byte[] byteArray = byteArrayOutputStream .toByteArray();
+
+                String encoded = Base64.encodeToString(byteArray, Base64.DEFAULT);
+                mUnityPlayer.UnitySendMessage("Player", "makeFloor", encoded);
+            }
+        });
+
+        builder.setNegativeButton("벽", new DialogInterface.OnClickListener(){
+            @Override
+            public void onClick(DialogInterface dialog, int id)
+            {
+                Bitmap result = Bitmap.createScaledBitmap(imageBitmap, 36, 50, false);
+
+                ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+                result.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
+                byte[] byteArray = byteArrayOutputStream .toByteArray();
+
+                String encoded = Base64.encodeToString(byteArray, Base64.DEFAULT);
+                mUnityPlayer.UnitySendMessage("Player", "makeWall", encoded);
+            }
+        });
+
+        builder.setNeutralButton("cancel", new DialogInterface.OnClickListener(){
+            @Override
+            public void onClick(DialogInterface dialog, int id)
+            {
+                Toast.makeText(getApplicationContext(), "cancel Click", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+
+
+//            iocustom.sendImage(imageBitmap,getAppContext());
+        Log.d("IMAGE","SENT IMAGE");
+
     }
 
     @Override protected void onNewIntent(Intent intent)
@@ -76,6 +192,37 @@ public class UnityPlayerActivity extends Activity
     {
         super.onResume();
         mUnityPlayer.resume();
+
+        l_move.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Toast.makeText(getApplicationContext(), "왼쪽으로 이동", Toast.LENGTH_SHORT).show();
+               mUnityPlayer.UnitySendMessage("Player", "left", "");
+           }
+        });
+
+        r_move.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "오른쪽으로 이동", Toast.LENGTH_SHORT).show();
+                mUnityPlayer.UnitySendMessage("Player", "right", "");
+            }
+        });
+        t_move.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "위쪽으로 이동", Toast.LENGTH_SHORT).show();
+                mUnityPlayer.UnitySendMessage("Player", "front", "");
+            }
+        });
+
+        b_move.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "아래쪽으로 이동", Toast.LENGTH_SHORT).show();
+                mUnityPlayer.UnitySendMessage("Player", "back", "");
+            }
+        });
     }
 
     @Override protected void onStart()
