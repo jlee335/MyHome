@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MyHome.iml" filepath="$PROJECT_DIR$/MyHome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyHome22222.iml" filepath="$PROJECT_DIR$/MyHome22222.iml" />
       <module fileurl="file://$PROJECT_DIR$/OpenCvLib/OpenCvLib.iml" filepath="$PROJECT_DIR$/OpenCvLib/OpenCvLib.iml" />
     </modules>
   </component>
