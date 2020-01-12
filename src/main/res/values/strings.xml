@@ -3,4 +3,8 @@
     <string name="app_name">MyHome</string>
     <string name="game_view_content_description">Game view</string>
     <string name="title_activity_main">MainActivity</string>
+
+    <string name="title_activity_select_points">selectPoints</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
