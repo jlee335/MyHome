@@ -281,7 +281,7 @@ public class HOGDescriptor {
     //
 
     /**
-     * Returns coefficients of the classifier trained for people detection (for 48x96 windows).
+     * Returns coefficients of the classifier trained for people com.DefaultCompany.MyHome.detection (for 48x96 windows).
      * @return automatically generated
      */
     public static MatOfFloat getDaimlerPeopleDetector() {
@@ -294,7 +294,7 @@ public class HOGDescriptor {
     //
 
     /**
-     * Returns coefficients of the classifier trained for people detection (for 64x128 windows).
+     * Returns coefficients of the classifier trained for people com.DefaultCompany.MyHome.detection (for 64x128 windows).
      * @return automatically generated
      */
     public static MatOfFloat getDefaultPeopleDetector() {
@@ -397,7 +397,7 @@ public class HOGDescriptor {
     //
 
     /**
-     * Performs object detection without a multi-scale window.
+     * Performs object com.DefaultCompany.MyHome.detection without a multi-scale window.
      *     @param img Matrix of the type CV_8U or CV_8UC3 containing an image where objects are detected.
      *     @param foundLocations Vector of point where each point contains left-top corner point of detected object boundaries.
      *     @param weights Vector that will contain confidence values for each detected object.
@@ -416,7 +416,7 @@ public class HOGDescriptor {
     }
 
     /**
-     * Performs object detection without a multi-scale window.
+     * Performs object com.DefaultCompany.MyHome.detection without a multi-scale window.
      *     @param img Matrix of the type CV_8U or CV_8UC3 containing an image where objects are detected.
      *     @param foundLocations Vector of point where each point contains left-top corner point of detected object boundaries.
      *     @param weights Vector that will contain confidence values for each detected object.
@@ -433,7 +433,7 @@ public class HOGDescriptor {
     }
 
     /**
-     * Performs object detection without a multi-scale window.
+     * Performs object com.DefaultCompany.MyHome.detection without a multi-scale window.
      *     @param img Matrix of the type CV_8U or CV_8UC3 containing an image where objects are detected.
      *     @param foundLocations Vector of point where each point contains left-top corner point of detected object boundaries.
      *     @param weights Vector that will contain confidence values for each detected object.
@@ -449,7 +449,7 @@ public class HOGDescriptor {
     }
 
     /**
-     * Performs object detection without a multi-scale window.
+     * Performs object com.DefaultCompany.MyHome.detection without a multi-scale window.
      *     @param img Matrix of the type CV_8U or CV_8UC3 containing an image where objects are detected.
      *     @param foundLocations Vector of point where each point contains left-top corner point of detected object boundaries.
      *     @param weights Vector that will contain confidence values for each detected object.
@@ -464,7 +464,7 @@ public class HOGDescriptor {
     }
 
     /**
-     * Performs object detection without a multi-scale window.
+     * Performs object com.DefaultCompany.MyHome.detection without a multi-scale window.
      *     @param img Matrix of the type CV_8U or CV_8UC3 containing an image where objects are detected.
      *     @param foundLocations Vector of point where each point contains left-top corner point of detected object boundaries.
      *     @param weights Vector that will contain confidence values for each detected object.
@@ -493,7 +493,7 @@ public class HOGDescriptor {
      *     But if the free coefficient is omitted (which is allowed), you can specify it manually here.
      *     @param winStride Window stride. It must be a multiple of block stride.
      *     @param padding Padding
-     *     @param scale Coefficient of the detection window increase.
+     *     @param scale Coefficient of the com.DefaultCompany.MyHome.detection window increase.
      *     @param finalThreshold Final threshold
      *     @param useMeanshiftGrouping indicates grouping algorithm
      */
@@ -514,7 +514,7 @@ public class HOGDescriptor {
      *     But if the free coefficient is omitted (which is allowed), you can specify it manually here.
      *     @param winStride Window stride. It must be a multiple of block stride.
      *     @param padding Padding
-     *     @param scale Coefficient of the detection window increase.
+     *     @param scale Coefficient of the com.DefaultCompany.MyHome.detection window increase.
      *     @param finalThreshold Final threshold
      */
     public void detectMultiScale(Mat img, MatOfRect foundLocations, MatOfDouble foundWeights, double hitThreshold, Size winStride, Size padding, double scale, double finalThreshold) {
@@ -534,7 +534,7 @@ public class HOGDescriptor {
      *     But if the free coefficient is omitted (which is allowed), you can specify it manually here.
      *     @param winStride Window stride. It must be a multiple of block stride.
      *     @param padding Padding
-     *     @param scale Coefficient of the detection window increase.
+     *     @param scale Coefficient of the com.DefaultCompany.MyHome.detection window increase.
      */
     public void detectMultiScale(Mat img, MatOfRect foundLocations, MatOfDouble foundWeights, double hitThreshold, Size winStride, Size padding, double scale) {
         Mat foundLocations_mat = foundLocations;

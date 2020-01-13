@@ -15,7 +15,7 @@ import org.opencv.utils.Converters;
 
 // C++: class DetectionModel
 /**
- * This class represents high-level API for object detection networks.
+ * This class represents high-level API for object com.DefaultCompany.MyHome.detection networks.
  *
  * DetectionModel allows to set params for preprocessing input image.
  * DetectionModel creates net from file with trained weights and config,
@@ -47,7 +47,7 @@ public class DetectionModel extends Model {
     //
 
     /**
-     * Create detection model from network represented in one of the supported formats.
+     * Create com.DefaultCompany.MyHome.detection model from network represented in one of the supported formats.
      * An order of {@code model} and {@code config} arguments does not matter.
      * @param model Binary file contains trained weights.
      * @param config Text file contains network configuration.
@@ -57,7 +57,7 @@ public class DetectionModel extends Model {
     }
 
     /**
-     * Create detection model from network represented in one of the supported formats.
+     * Create com.DefaultCompany.MyHome.detection model from network represented in one of the supported formats.
      * An order of {@code model} and {@code config} arguments does not matter.
      * @param model Binary file contains trained weights.
      */
@@ -72,7 +72,7 @@ public class DetectionModel extends Model {
 
     /**
      * Given the {@code input} frame, create input blob, run net and return result detections.
-     * @param classIds Class indexes in result detection.
+     * @param classIds Class indexes in result com.DefaultCompany.MyHome.detection.
      * @param confidences A set of corresponding confidences.
      * @param boxes A set of bounding boxes.
      * @param confThreshold A threshold used to filter boxes by confidences.
@@ -88,7 +88,7 @@ public class DetectionModel extends Model {
 
     /**
      * Given the {@code input} frame, create input blob, run net and return result detections.
-     * @param classIds Class indexes in result detection.
+     * @param classIds Class indexes in result com.DefaultCompany.MyHome.detection.
      * @param confidences A set of corresponding confidences.
      * @param boxes A set of bounding boxes.
      * @param confThreshold A threshold used to filter boxes by confidences.
@@ -103,7 +103,7 @@ public class DetectionModel extends Model {
 
     /**
      * Given the {@code input} frame, create input blob, run net and return result detections.
-     * @param classIds Class indexes in result detection.
+     * @param classIds Class indexes in result com.DefaultCompany.MyHome.detection.
      * @param confidences A set of corresponding confidences.
      * @param boxes A set of bounding boxes.
      * @param frame automatically generated

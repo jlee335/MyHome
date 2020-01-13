@@ -14,7 +14,7 @@ import org.opencv.utils.Converters;
 
 // C++: class CascadeClassifier
 /**
- * Cascade classifier class for object detection.
+ * Cascade classifier class for object com.DefaultCompany.MyHome.detection.
  */
 public class CascadeClassifier {
 
@@ -146,7 +146,7 @@ public class CascadeClassifier {
      *     <b>Note:</b>
      * <ul>
      *   <li>
-     *           (Python) A face detection example using cascade classifiers can be found at
+     *           (Python) A face com.DefaultCompany.MyHome.detection example using cascade classifiers can be found at
      *             opencv_source_code/samples/python/facedetect.py
      *   </li>
      * </ul>
@@ -175,7 +175,7 @@ public class CascadeClassifier {
      *     <b>Note:</b>
      * <ul>
      *   <li>
-     *           (Python) A face detection example using cascade classifiers can be found at
+     *           (Python) A face com.DefaultCompany.MyHome.detection example using cascade classifiers can be found at
      *             opencv_source_code/samples/python/facedetect.py
      *   </li>
      * </ul>
@@ -203,7 +203,7 @@ public class CascadeClassifier {
      *     <b>Note:</b>
      * <ul>
      *   <li>
-     *           (Python) A face detection example using cascade classifiers can be found at
+     *           (Python) A face com.DefaultCompany.MyHome.detection example using cascade classifiers can be found at
      *             opencv_source_code/samples/python/facedetect.py
      *   </li>
      * </ul>
@@ -230,7 +230,7 @@ public class CascadeClassifier {
      *     <b>Note:</b>
      * <ul>
      *   <li>
-     *           (Python) A face detection example using cascade classifiers can be found at
+     *           (Python) A face com.DefaultCompany.MyHome.detection example using cascade classifiers can be found at
      *             opencv_source_code/samples/python/facedetect.py
      *   </li>
      * </ul>
@@ -256,7 +256,7 @@ public class CascadeClassifier {
      *     <b>Note:</b>
      * <ul>
      *   <li>
-     *           (Python) A face detection example using cascade classifiers can be found at
+     *           (Python) A face com.DefaultCompany.MyHome.detection example using cascade classifiers can be found at
      *             opencv_source_code/samples/python/facedetect.py
      *   </li>
      * </ul>
@@ -281,7 +281,7 @@ public class CascadeClassifier {
      *     <b>Note:</b>
      * <ul>
      *   <li>
-     *           (Python) A face detection example using cascade classifiers can be found at
+     *           (Python) A face com.DefaultCompany.MyHome.detection example using cascade classifiers can be found at
      *             opencv_source_code/samples/python/facedetect.py
      *   </li>
      * </ul>
@@ -301,7 +301,7 @@ public class CascadeClassifier {
      *     @param image Matrix of the type CV_8U containing an image where objects are detected.
      *     @param objects Vector of rectangles where each rectangle contains the detected object, the
      *     rectangles may be partially outside the original image.
-     *     @param numDetections Vector of detection numbers for the corresponding objects. An object's number
+     *     @param numDetections Vector of com.DefaultCompany.MyHome.detection numbers for the corresponding objects. An object's number
      *     of detections is the number of neighboring positively classified rectangles that were joined
      *     together to form the object.
      *     @param scaleFactor Parameter specifying how much the image size is reduced at each image scale.
@@ -323,7 +323,7 @@ public class CascadeClassifier {
      *     @param image Matrix of the type CV_8U containing an image where objects are detected.
      *     @param objects Vector of rectangles where each rectangle contains the detected object, the
      *     rectangles may be partially outside the original image.
-     *     @param numDetections Vector of detection numbers for the corresponding objects. An object's number
+     *     @param numDetections Vector of com.DefaultCompany.MyHome.detection numbers for the corresponding objects. An object's number
      *     of detections is the number of neighboring positively classified rectangles that were joined
      *     together to form the object.
      *     @param scaleFactor Parameter specifying how much the image size is reduced at each image scale.
@@ -344,7 +344,7 @@ public class CascadeClassifier {
      *     @param image Matrix of the type CV_8U containing an image where objects are detected.
      *     @param objects Vector of rectangles where each rectangle contains the detected object, the
      *     rectangles may be partially outside the original image.
-     *     @param numDetections Vector of detection numbers for the corresponding objects. An object's number
+     *     @param numDetections Vector of com.DefaultCompany.MyHome.detection numbers for the corresponding objects. An object's number
      *     of detections is the number of neighboring positively classified rectangles that were joined
      *     together to form the object.
      *     @param scaleFactor Parameter specifying how much the image size is reduced at each image scale.
@@ -364,7 +364,7 @@ public class CascadeClassifier {
      *     @param image Matrix of the type CV_8U containing an image where objects are detected.
      *     @param objects Vector of rectangles where each rectangle contains the detected object, the
      *     rectangles may be partially outside the original image.
-     *     @param numDetections Vector of detection numbers for the corresponding objects. An object's number
+     *     @param numDetections Vector of com.DefaultCompany.MyHome.detection numbers for the corresponding objects. An object's number
      *     of detections is the number of neighboring positively classified rectangles that were joined
      *     together to form the object.
      *     @param scaleFactor Parameter specifying how much the image size is reduced at each image scale.
@@ -383,7 +383,7 @@ public class CascadeClassifier {
      *     @param image Matrix of the type CV_8U containing an image where objects are detected.
      *     @param objects Vector of rectangles where each rectangle contains the detected object, the
      *     rectangles may be partially outside the original image.
-     *     @param numDetections Vector of detection numbers for the corresponding objects. An object's number
+     *     @param numDetections Vector of com.DefaultCompany.MyHome.detection numbers for the corresponding objects. An object's number
      *     of detections is the number of neighboring positively classified rectangles that were joined
      *     together to form the object.
      *     @param scaleFactor Parameter specifying how much the image size is reduced at each image scale.
@@ -401,7 +401,7 @@ public class CascadeClassifier {
      *     @param image Matrix of the type CV_8U containing an image where objects are detected.
      *     @param objects Vector of rectangles where each rectangle contains the detected object, the
      *     rectangles may be partially outside the original image.
-     *     @param numDetections Vector of detection numbers for the corresponding objects. An object's number
+     *     @param numDetections Vector of com.DefaultCompany.MyHome.detection numbers for the corresponding objects. An object's number
      *     of detections is the number of neighboring positively classified rectangles that were joined
      *     together to form the object.
      *     to retain it.
@@ -422,7 +422,7 @@ public class CascadeClassifier {
      *
      *     This function allows you to retrieve the final stage decision certainty of classification.
      *     For this, one needs to set {@code outputRejectLevels} on true and provide the {@code rejectLevels} and {@code levelWeights} parameter.
-     *     For each resulting detection, {@code levelWeights} will then contain the certainty of classification at the final stage.
+     *     For each resulting com.DefaultCompany.MyHome.detection, {@code levelWeights} will then contain the certainty of classification at the final stage.
      *     This value can then be used to separate strong from weaker classifications.
      *
      *     A code sample on how to use it efficiently can be found below:
@@ -457,7 +457,7 @@ public class CascadeClassifier {
      *
      *     This function allows you to retrieve the final stage decision certainty of classification.
      *     For this, one needs to set {@code outputRejectLevels} on true and provide the {@code rejectLevels} and {@code levelWeights} parameter.
-     *     For each resulting detection, {@code levelWeights} will then contain the certainty of classification at the final stage.
+     *     For each resulting com.DefaultCompany.MyHome.detection, {@code levelWeights} will then contain the certainty of classification at the final stage.
      *     This value can then be used to separate strong from weaker classifications.
      *
      *     A code sample on how to use it efficiently can be found below:
@@ -491,7 +491,7 @@ public class CascadeClassifier {
      *
      *     This function allows you to retrieve the final stage decision certainty of classification.
      *     For this, one needs to set {@code outputRejectLevels} on true and provide the {@code rejectLevels} and {@code levelWeights} parameter.
-     *     For each resulting detection, {@code levelWeights} will then contain the certainty of classification at the final stage.
+     *     For each resulting com.DefaultCompany.MyHome.detection, {@code levelWeights} will then contain the certainty of classification at the final stage.
      *     This value can then be used to separate strong from weaker classifications.
      *
      *     A code sample on how to use it efficiently can be found below:
@@ -524,7 +524,7 @@ public class CascadeClassifier {
      *
      *     This function allows you to retrieve the final stage decision certainty of classification.
      *     For this, one needs to set {@code outputRejectLevels} on true and provide the {@code rejectLevels} and {@code levelWeights} parameter.
-     *     For each resulting detection, {@code levelWeights} will then contain the certainty of classification at the final stage.
+     *     For each resulting com.DefaultCompany.MyHome.detection, {@code levelWeights} will then contain the certainty of classification at the final stage.
      *     This value can then be used to separate strong from weaker classifications.
      *
      *     A code sample on how to use it efficiently can be found below:
@@ -556,7 +556,7 @@ public class CascadeClassifier {
      *
      *     This function allows you to retrieve the final stage decision certainty of classification.
      *     For this, one needs to set {@code outputRejectLevels} on true and provide the {@code rejectLevels} and {@code levelWeights} parameter.
-     *     For each resulting detection, {@code levelWeights} will then contain the certainty of classification at the final stage.
+     *     For each resulting com.DefaultCompany.MyHome.detection, {@code levelWeights} will then contain the certainty of classification at the final stage.
      *     This value can then be used to separate strong from weaker classifications.
      *
      *     A code sample on how to use it efficiently can be found below:
@@ -587,7 +587,7 @@ public class CascadeClassifier {
      *
      *     This function allows you to retrieve the final stage decision certainty of classification.
      *     For this, one needs to set {@code outputRejectLevels} on true and provide the {@code rejectLevels} and {@code levelWeights} parameter.
-     *     For each resulting detection, {@code levelWeights} will then contain the certainty of classification at the final stage.
+     *     For each resulting com.DefaultCompany.MyHome.detection, {@code levelWeights} will then contain the certainty of classification at the final stage.
      *     This value can then be used to separate strong from weaker classifications.
      *
      *     A code sample on how to use it efficiently can be found below:
@@ -617,7 +617,7 @@ public class CascadeClassifier {
      *
      *     This function allows you to retrieve the final stage decision certainty of classification.
      *     For this, one needs to set {@code outputRejectLevels} on true and provide the {@code rejectLevels} and {@code levelWeights} parameter.
-     *     For each resulting detection, {@code levelWeights} will then contain the certainty of classification at the final stage.
+     *     For each resulting com.DefaultCompany.MyHome.detection, {@code levelWeights} will then contain the certainty of classification at the final stage.
      *     This value can then be used to separate strong from weaker classifications.
      *
      *     A code sample on how to use it efficiently can be found below:

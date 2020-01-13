@@ -2689,7 +2689,7 @@ public class Calib3d {
      *     drawChessboardCorners(img, patternsize, Mat(corners), patternfound);
      * </code>
      * <b>Note:</b> The function requires white space (like a square-thick border, the wider the better) around
-     * the board to make the detection more robust in various environments. Otherwise, if there is no
+     * the board to make the com.DefaultCompany.MyHome.detection more robust in various environments. Otherwise, if there is no
      * border and the background is dark, the outer black squares cannot be segmented properly and so the
      * square grouping and ordering algorithm fails.
      * @return automatically generated
@@ -2754,7 +2754,7 @@ public class Calib3d {
      *     drawChessboardCorners(img, patternsize, Mat(corners), patternfound);
      * </code>
      * <b>Note:</b> The function requires white space (like a square-thick border, the wider the better) around
-     * the board to make the detection more robust in various environments. Otherwise, if there is no
+     * the board to make the com.DefaultCompany.MyHome.detection more robust in various environments. Otherwise, if there is no
      * border and the background is dark, the outer black squares cannot be segmented properly and so the
      * square grouping and ordering algorithm fails.
      * @return automatically generated
@@ -2779,10 +2779,10 @@ public class Calib3d {
      * @param flags Various operation flags that can be zero or a combination of the following values:
      * <ul>
      *   <li>
-     *    <b>CALIB_CB_NORMALIZE_IMAGE</b> Normalize the image gamma with equalizeHist before detection.
+     *    <b>CALIB_CB_NORMALIZE_IMAGE</b> Normalize the image gamma with equalizeHist before com.DefaultCompany.MyHome.detection.
      *   </li>
      *   <li>
-     *    <b>CALIB_CB_EXHAUSTIVE</b> Run an exhaustive search to improve detection rate.
+     *    <b>CALIB_CB_EXHAUSTIVE</b> Run an exhaustive search to improve com.DefaultCompany.MyHome.detection rate.
      *   </li>
      *   <li>
      *    <b>CALIB_CB_ACCURACY</b> Up sample input image to improve sub-pixel accuracy due to aliasing effects.
@@ -2800,11 +2800,11 @@ public class Calib3d {
      * calibration for demanding applications.
      *
      * <b>Note:</b> The function requires a white boarder with roughly the same width as one
-     * of the checkerboard fields around the whole board to improve the detection in
+     * of the checkerboard fields around the whole board to improve the com.DefaultCompany.MyHome.detection in
      * various environments. In addition, because of the localized radon
      * transformation it is beneficial to use round corners for the field corners
      * which are located on the outside of the board. The following figure illustrates
-     * a sample checkerboard optimized for the detection. However, any other checkerboard
+     * a sample checkerboard optimized for the com.DefaultCompany.MyHome.detection. However, any other checkerboard
      * can be used as well.
      * ![Checkerboard](pics/checkerboard_radon.png)
      * @return automatically generated
@@ -2822,10 +2822,10 @@ public class Calib3d {
      * @param corners Output array of detected corners.
      * <ul>
      *   <li>
-     *    <b>CALIB_CB_NORMALIZE_IMAGE</b> Normalize the image gamma with equalizeHist before detection.
+     *    <b>CALIB_CB_NORMALIZE_IMAGE</b> Normalize the image gamma with equalizeHist before com.DefaultCompany.MyHome.detection.
      *   </li>
      *   <li>
-     *    <b>CALIB_CB_EXHAUSTIVE</b> Run an exhaustive search to improve detection rate.
+     *    <b>CALIB_CB_EXHAUSTIVE</b> Run an exhaustive search to improve com.DefaultCompany.MyHome.detection rate.
      *   </li>
      *   <li>
      *    <b>CALIB_CB_ACCURACY</b> Up sample input image to improve sub-pixel accuracy due to aliasing effects.
@@ -2843,11 +2843,11 @@ public class Calib3d {
      * calibration for demanding applications.
      *
      * <b>Note:</b> The function requires a white boarder with roughly the same width as one
-     * of the checkerboard fields around the whole board to improve the detection in
+     * of the checkerboard fields around the whole board to improve the com.DefaultCompany.MyHome.detection in
      * various environments. In addition, because of the localized radon
      * transformation it is beneficial to use round corners for the field corners
      * which are located on the outside of the board. The following figure illustrates
-     * a sample checkerboard optimized for the detection. However, any other checkerboard
+     * a sample checkerboard optimized for the com.DefaultCompany.MyHome.detection. However, any other checkerboard
      * can be used as well.
      * ![Checkerboard](pics/checkerboard_radon.png)
      * @return automatically generated
@@ -3728,7 +3728,7 @@ public class Calib3d {
      * <b>Note:</b>
      * <ul>
      *   <li>
-     *       An example of how to use solvePNPRansac for object detection can be found at
+     *       An example of how to use solvePNPRansac for object com.DefaultCompany.MyHome.detection can be found at
      *         opencv_source_code/samples/cpp/tutorial_code/calib3d/real_time_pose_estimation/
      *   </li>
      *   <li>
@@ -3791,7 +3791,7 @@ public class Calib3d {
      * <b>Note:</b>
      * <ul>
      *   <li>
-     *       An example of how to use solvePNPRansac for object detection can be found at
+     *       An example of how to use solvePNPRansac for object com.DefaultCompany.MyHome.detection can be found at
      *         opencv_source_code/samples/cpp/tutorial_code/calib3d/real_time_pose_estimation/
      *   </li>
      *   <li>
@@ -3853,7 +3853,7 @@ public class Calib3d {
      * <b>Note:</b>
      * <ul>
      *   <li>
-     *       An example of how to use solvePNPRansac for object detection can be found at
+     *       An example of how to use solvePNPRansac for object com.DefaultCompany.MyHome.detection can be found at
      *         opencv_source_code/samples/cpp/tutorial_code/calib3d/real_time_pose_estimation/
      *   </li>
      *   <li>
@@ -3914,7 +3914,7 @@ public class Calib3d {
      * <b>Note:</b>
      * <ul>
      *   <li>
-     *       An example of how to use solvePNPRansac for object detection can be found at
+     *       An example of how to use solvePNPRansac for object com.DefaultCompany.MyHome.detection can be found at
      *         opencv_source_code/samples/cpp/tutorial_code/calib3d/real_time_pose_estimation/
      *   </li>
      *   <li>
@@ -3974,7 +3974,7 @@ public class Calib3d {
      * <b>Note:</b>
      * <ul>
      *   <li>
-     *       An example of how to use solvePNPRansac for object detection can be found at
+     *       An example of how to use solvePNPRansac for object com.DefaultCompany.MyHome.detection can be found at
      *         opencv_source_code/samples/cpp/tutorial_code/calib3d/real_time_pose_estimation/
      *   </li>
      *   <li>
@@ -4033,7 +4033,7 @@ public class Calib3d {
      * <b>Note:</b>
      * <ul>
      *   <li>
-     *       An example of how to use solvePNPRansac for object detection can be found at
+     *       An example of how to use solvePNPRansac for object com.DefaultCompany.MyHome.detection can be found at
      *         opencv_source_code/samples/cpp/tutorial_code/calib3d/real_time_pose_estimation/
      *   </li>
      *   <li>
@@ -4091,7 +4091,7 @@ public class Calib3d {
      * <b>Note:</b>
      * <ul>
      *   <li>
-     *       An example of how to use solvePNPRansac for object detection can be found at
+     *       An example of how to use solvePNPRansac for object com.DefaultCompany.MyHome.detection can be found at
      *         opencv_source_code/samples/cpp/tutorial_code/calib3d/real_time_pose_estimation/
      *   </li>
      *   <li>

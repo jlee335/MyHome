@@ -49,7 +49,7 @@ This archive provides the following three detectors:
 - lower body detector
 - full body detector
 
-These detectors have been successfully applied to pedestrian detection
+These detectors have been successfully applied to pedestrian com.DefaultCompany.MyHome.detection
 in still images. They can be directly passed as parameters to the
 program HaarFaceDetect.
 NOTE: These detectors deal with frontal and backside views but not
@@ -100,7 +100,7 @@ feeling for the training data check out the CBCL data set:
 http://www.ai.mit.edu/projects/cbcl/software-datasets/PedestrianData.html
 
 There is also a small number of false alarms in this sequence.  
-NOTE: This is per frame detection, not tracking (which is also one of
+NOTE: This is per frame com.DefaultCompany.MyHome.detection, not tracking (which is also one of
 the reasons why it is not mislead by the person's shadow on the back
 wall). 
 
@@ -120,7 +120,7 @@ KNOWN LIMITATIONS
 ==================
 1) The detectors only support frontal and back views but not sideviews.
    Sideviews are trickier and it makes a lot of sense to include additional
-   modalities for their detection, e.g. motion information. I recommend
+   modalities for their com.DefaultCompany.MyHome.detection, e.g. motion information. I recommend
    Viola and Jones' ICCV 2003 paper if this further interests you.
 
 2) Don't expect these detectors to be as accurate as a frontal face detector.

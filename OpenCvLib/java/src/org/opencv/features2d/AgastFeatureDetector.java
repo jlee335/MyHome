@@ -8,7 +8,7 @@ import org.opencv.features2d.Feature2D;
 
 // C++: class AgastFeatureDetector
 /**
- * Wrapping class for feature detection using the AGAST method. :
+ * Wrapping class for feature com.DefaultCompany.MyHome.detection using the AGAST method. :
  */
 public class AgastFeatureDetector extends Feature2D {
 

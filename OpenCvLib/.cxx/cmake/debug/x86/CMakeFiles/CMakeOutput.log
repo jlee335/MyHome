@@ -1,52 +1,53 @@
 The target system is: Android - 1 - i686
 The host system is: Windows - 10.0.18363 - AMD64
 Determining if the C compiler works passed with the following output:
-Change Dir: C:/Users/q/AndroidStudioProjects/MyHome/OpenCvLib/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/q/Desktop/MyHomeAndroid/MyHome/OpenCvLib/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\q\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_d05e1"
-[1/2] Building C object CMakeFiles/cmTC_d05e1.dir/testCCompiler.c.o
-[2/2] Linking C executable cmTC_d05e1
+Run Build Command:"C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/cmake/3.6.4111459/bin/ninja.exe" "cmTC_83fc9"
+[1/2] Building C object CMakeFiles/cmTC_83fc9.dir/testCCompiler.c.o
+[2/2] Linking C executable cmTC_83fc9
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/q/AndroidStudioProjects/MyHome/OpenCvLib/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/q/Desktop/MyHomeAndroid/MyHome/OpenCvLib/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\q\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_e9133"
-[1/2] Building C object CMakeFiles/cmTC_e9133.dir/CMakeCCompilerABI.c.o
-[2/2] Linking C executable cmTC_e9133
+Run Build Command:"C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/cmake/3.6.4111459/bin/ninja.exe" "cmTC_336a3"
+[1/2] Building C object CMakeFiles/cmTC_336a3.dir/CMakeCCompilerABI.c.o
+[2/2] Linking C executable cmTC_336a3
 Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)
 Target: i686-none-linux-android21
 Thread model: posix
-InstalledDir: C:\Users\q\AppData\Local\Android\Sdk\ndk\20.1.5948944\toolchains\llvm\prebuilt\windows-x86_64\bin
-Found candidate GCC installation: C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android\4.9.x
-Found candidate GCC installation: C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android\4.9.x
-Selected GCC installation: C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x
+InstalledDir: C:\PROGRA~1\Unity\Hub\Editor\20192~1.17F\Editor\Data\PLAYBA~1\ANDROI~1\SDK\ndk\201~1.594\TOOLCH~1\llvm\prebuilt\WINDOW~1\bin
+Found candidate GCC installation: C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android\4.9.x
+Found candidate GCC installation: C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android\4.9.x
+Selected GCC installation: C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x
 Candidate multilib: .;@m32
 Selected multilib: .;@m32
- "C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z now -z relro --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_e9133 "C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21\\crtbegin_dynamic.o" "-LC:\\Users\\q\\AppData\\Local\\Android\\Sdk\\ndk\\20.1.5948944\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\lib\\linux\\i386" -LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21 -LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android -LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_e9133.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl "C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21\\crtend_android.o"
+ "C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z now -z relro --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_336a3 "C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21\\crtbegin_dynamic.o" "-LC:\\PROGRA~1\\Unity\\Hub\\Editor\\20192~1.17F\\Editor\\Data\\PLAYBA~1\\ANDROI~1\\SDK\\ndk\\201~1.594\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\lib64\\clang\\8.0.7\\lib\\linux\\i386" -LC:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21 -LC:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android -LC:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_336a3.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl "C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21\\crtend_android.o"
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(i686-linux-android-ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: C:/Users/q/AndroidStudioProjects/MyHome/OpenCvLib/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: C:/Users/q/Desktop/MyHomeAndroid/MyHome/OpenCvLib/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:\Users\q\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_e9133"]
-  ignore line: [[1/2] Building C object CMakeFiles/cmTC_e9133.dir/CMakeCCompilerABI.c.o]
-  ignore line: [[2/2] Linking C executable cmTC_e9133]
+  ignore line: [Run Build Command:"C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/cmake/3.6.4111459/bin/ninja.exe" "cmTC_336a3"]
+  ignore line: [[1/2] Building C object CMakeFiles/cmTC_336a3.dir/CMakeCCompilerABI.c.o]
+  ignore line: [[2/2] Linking C executable cmTC_336a3]
   ignore line: [Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)]
   ignore line: [Target: i686-none-linux-android21]
   ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: C:\Users\q\AppData\Local\Android\Sdk\ndk\20.1.5948944\toolchains\llvm\prebuilt\windows-x86_64\bin]
-  ignore line: [Found candidate GCC installation: C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android\4.9.x]
-  ignore line: [Found candidate GCC installation: C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android\4.9.x]
-  ignore line: [Selected GCC installation: C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x]
+  ignore line: [InstalledDir: C:\PROGRA~1\Unity\Hub\Editor\20192~1.17F\Editor\Data\PLAYBA~1\ANDROI~1\SDK\ndk\201~1.594\TOOLCH~1\llvm\prebuilt\WINDOW~1\bin]
+  ignore line: [Found candidate GCC installation: C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android\4.9.x]
+  ignore line: [Found candidate GCC installation: C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android\4.9.x]
+  ignore line: [Selected GCC installation: C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x]
   ignore line: [Candidate multilib: .]
   ignore line: [@m32]
   ignore line: [Selected multilib: .]
   ignore line: [@m32]
-  link line: [ "C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z now -z relro --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_e9133 "C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21\\crtbegin_dynamic.o" "-LC:\\Users\\q\\AppData\\Local\\Android\\Sdk\\ndk\\20.1.5948944\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\lib\\linux\\i386" -LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21 -LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android -LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_e9133.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl "C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21\\crtend_android.o"]
-    arg [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\ld] ==> ignore
-    arg [--sysroot=C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot] ==> ignore
+  link line: [ "C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z now -z relro --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_336a3 "C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21\\crtbegin_dynamic.o" "-LC:\\PROGRA~1\\Unity\\Hub\\Editor\\20192~1.17F\\Editor\\Data\\PLAYBA~1\\ANDROI~1\\SDK\\ndk\\201~1.594\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\lib64\\clang\\8.0.7\\lib\\linux\\i386" -LC:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21 -LC:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android -LC:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_336a3.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl "C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21\\crtend_android.o"]
+    arg [C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\ld] ==> ignore
+    arg [--sysroot=C:/Program] ==> ignore
+    arg [Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot] ==> ignore
     arg [-pie] ==> ignore
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
@@ -58,14 +59,19 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_e9133] ==> ignore
-    arg [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21\crtbegin_dynamic.o] ==> ignore
-    arg [-LC:\Users\q\AppData\Local\Android\Sdk\ndk\20.1.5948944\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\8.0.7\lib\linux\i386] ==> dir [C:\Users\q\AppData\Local\Android\Sdk\ndk\20.1.5948944\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\8.0.7\lib\linux\i386]
-    arg [-LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x] ==> dir [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x]
-    arg [-LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21] ==> dir [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21]
-    arg [-LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android] ==> dir [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android]
-    arg [-LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib] ==> dir [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib]
-    arg [-LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib] ==> dir [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib]
+    arg [cmTC_336a3] ==> ignore
+    arg [C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21\crtbegin_dynamic.o] ==> ignore
+    arg [-LC:\PROGRA~1\Unity\Hub\Editor\20192~1.17F\Editor\Data\PLAYBA~1\ANDROI~1\SDK\ndk\201~1.594\TOOLCH~1\llvm\prebuilt\WINDOW~1\lib64\clang\8.0.7\lib\linux\i386] ==> dir [C:\PROGRA~1\Unity\Hub\Editor\20192~1.17F\Editor\Data\PLAYBA~1\ANDROI~1\SDK\ndk\201~1.594\TOOLCH~1\llvm\prebuilt\WINDOW~1\lib64\clang\8.0.7\lib\linux\i386]
+    arg [-LC:/Program] ==> dir [C:/Program]
+    arg [Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x] ==> ignore
+    arg [-LC:/Program] ==> dir [C:/Program]
+    arg [Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21] ==> ignore
+    arg [-LC:/Program] ==> dir [C:/Program]
+    arg [Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android] ==> ignore
+    arg [-LC:/Program] ==> dir [C:/Program]
+    arg [Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib] ==> ignore
+    arg [-LC:/Program] ==> dir [C:/Program]
+    arg [Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib] ==> ignore
     arg [--exclude-libs] ==> ignore
     arg [libgcc.a] ==> ignore
     arg [--exclude-libs] ==> ignore
@@ -76,34 +82,34 @@ Parsed C implicit link information from above output:
     arg [--no-undefined] ==> ignore
     arg [-znoexecstack] ==> ignore
     arg [--gc-sections] ==> ignore
-    arg [CMakeFiles/cmTC_e9133.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_336a3.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
     arg [-lc] ==> lib [c]
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
-    arg [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21\crtend_android.o] ==> ignore
+    arg [C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21\crtend_android.o] ==> ignore
   remove lib [gcc]
   remove lib [gcc]
-  collapse library dir [C:\Users\q\AppData\Local\Android\Sdk\ndk\20.1.5948944\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\8.0.7\lib\linux\i386] ==> [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/8.0.7/lib/linux/i386]
-  collapse library dir [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x] ==> [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x]
-  collapse library dir [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21] ==> [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21]
-  collapse library dir [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android] ==> [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android]
-  collapse library dir [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib] ==> [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/i686-linux-android/lib]
-  collapse library dir [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib] ==> [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib]
+  collapse library dir [C:\PROGRA~1\Unity\Hub\Editor\20192~1.17F\Editor\Data\PLAYBA~1\ANDROI~1\SDK\ndk\201~1.594\TOOLCH~1\llvm\prebuilt\WINDOW~1\lib64\clang\8.0.7\lib\linux\i386] ==> [C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/8.0.7/lib/linux/i386]
+  collapse library dir [C:/Program] ==> [C:/Program]
+  collapse library dir [C:/Program] ==> [C:/Program]
+  collapse library dir [C:/Program] ==> [C:/Program]
+  collapse library dir [C:/Program] ==> [C:/Program]
+  collapse library dir [C:/Program] ==> [C:/Program]
   implicit libs: [dl;c;dl]
-  implicit dirs: [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/8.0.7/lib/linux/i386;C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x;C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21;C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android;C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/i686-linux-android/lib;C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib]
+  implicit dirs: [C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/8.0.7/lib/linux/i386;C:/Program]
   implicit fwks: []
 
 
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: C:/Users/q/AndroidStudioProjects/MyHome/OpenCvLib/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/q/Desktop/MyHomeAndroid/MyHome/OpenCvLib/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\q\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_b780c"
-[1/2] Building C object CMakeFiles/cmTC_b780c.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_b780c
+Run Build Command:"C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/cmake/3.6.4111459/bin/ninja.exe" "cmTC_71a0b"
+[1/2] Building C object CMakeFiles/cmTC_71a0b.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_71a0b
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -113,11 +119,11 @@ Run Build Command:"C:\Users\q\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ni
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: C:/Users/q/AndroidStudioProjects/MyHome/OpenCvLib/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/q/Desktop/MyHomeAndroid/MyHome/OpenCvLib/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\q\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_d2282"
-[1/2] Building C object CMakeFiles/cmTC_d2282.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_d2282
+Run Build Command:"C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/cmake/3.6.4111459/bin/ninja.exe" "cmTC_fccd0"
+[1/2] Building C object CMakeFiles/cmTC_fccd0.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_fccd0
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -127,11 +133,11 @@ Run Build Command:"C:\Users\q\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ni
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: C:/Users/q/AndroidStudioProjects/MyHome/OpenCvLib/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/q/Desktop/MyHomeAndroid/MyHome/OpenCvLib/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\q\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_c2765"
-[1/2] Building C object CMakeFiles/cmTC_c2765.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_c2765
+Run Build Command:"C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/cmake/3.6.4111459/bin/ninja.exe" "cmTC_525d3"
+[1/2] Building C object CMakeFiles/cmTC_525d3.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_525d3
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -139,52 +145,53 @@ Run Build Command:"C:\Users\q\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ni
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: C:/Users/q/AndroidStudioProjects/MyHome/OpenCvLib/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/q/Desktop/MyHomeAndroid/MyHome/OpenCvLib/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\q\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_aea32"
-[1/2] Building CXX object CMakeFiles/cmTC_aea32.dir/testCXXCompiler.cxx.o
-[2/2] Linking CXX executable cmTC_aea32
+Run Build Command:"C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/cmake/3.6.4111459/bin/ninja.exe" "cmTC_6bec4"
+[1/2] Building CXX object CMakeFiles/cmTC_6bec4.dir/testCXXCompiler.cxx.o
+[2/2] Linking CXX executable cmTC_6bec4
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/q/AndroidStudioProjects/MyHome/OpenCvLib/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/q/Desktop/MyHomeAndroid/MyHome/OpenCvLib/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\q\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_57a4d"
-[1/2] Building CXX object CMakeFiles/cmTC_57a4d.dir/CMakeCXXCompilerABI.cpp.o
-[2/2] Linking CXX executable cmTC_57a4d
+Run Build Command:"C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/cmake/3.6.4111459/bin/ninja.exe" "cmTC_635d1"
+[1/2] Building CXX object CMakeFiles/cmTC_635d1.dir/CMakeCXXCompilerABI.cpp.o
+[2/2] Linking CXX executable cmTC_635d1
 Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)
 Target: i686-none-linux-android21
 Thread model: posix
-InstalledDir: C:\Users\q\AppData\Local\Android\Sdk\ndk\20.1.5948944\toolchains\llvm\prebuilt\windows-x86_64\bin
-Found candidate GCC installation: C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android\4.9.x
-Found candidate GCC installation: C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android\4.9.x
-Selected GCC installation: C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x
+InstalledDir: C:\PROGRA~1\Unity\Hub\Editor\20192~1.17F\Editor\Data\PLAYBA~1\ANDROI~1\SDK\ndk\201~1.594\TOOLCH~1\llvm\prebuilt\WINDOW~1\bin
+Found candidate GCC installation: C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android\4.9.x
+Found candidate GCC installation: C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android\4.9.x
+Selected GCC installation: C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x
 Candidate multilib: .;@m32
 Selected multilib: .;@m32
- "C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z now -z relro --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_57a4d "C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21\\crtbegin_dynamic.o" "-LC:\\Users\\q\\AppData\\Local\\Android\\Sdk\\ndk\\20.1.5948944\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\lib\\linux\\i386" -LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21 -LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android -LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_57a4d.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lm -lgcc -ldl -lc -lgcc -ldl "C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21\\crtend_android.o"
+ "C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z now -z relro --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_635d1 "C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21\\crtbegin_dynamic.o" "-LC:\\PROGRA~1\\Unity\\Hub\\Editor\\20192~1.17F\\Editor\\Data\\PLAYBA~1\\ANDROI~1\\SDK\\ndk\\201~1.594\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\lib64\\clang\\8.0.7\\lib\\linux\\i386" -LC:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21 -LC:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android -LC:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_635d1.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lm -lgcc -ldl -lc -lgcc -ldl "C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21\\crtend_android.o"
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(i686-linux-android-ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: C:/Users/q/AndroidStudioProjects/MyHome/OpenCvLib/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: C:/Users/q/Desktop/MyHomeAndroid/MyHome/OpenCvLib/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:\Users\q\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_57a4d"]
-  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_57a4d.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [[2/2] Linking CXX executable cmTC_57a4d]
+  ignore line: [Run Build Command:"C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/cmake/3.6.4111459/bin/ninja.exe" "cmTC_635d1"]
+  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_635d1.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [[2/2] Linking CXX executable cmTC_635d1]
   ignore line: [Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)]
   ignore line: [Target: i686-none-linux-android21]
   ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: C:\Users\q\AppData\Local\Android\Sdk\ndk\20.1.5948944\toolchains\llvm\prebuilt\windows-x86_64\bin]
-  ignore line: [Found candidate GCC installation: C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android\4.9.x]
-  ignore line: [Found candidate GCC installation: C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android\4.9.x]
-  ignore line: [Selected GCC installation: C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x]
+  ignore line: [InstalledDir: C:\PROGRA~1\Unity\Hub\Editor\20192~1.17F\Editor\Data\PLAYBA~1\ANDROI~1\SDK\ndk\201~1.594\TOOLCH~1\llvm\prebuilt\WINDOW~1\bin]
+  ignore line: [Found candidate GCC installation: C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android\4.9.x]
+  ignore line: [Found candidate GCC installation: C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android\4.9.x]
+  ignore line: [Selected GCC installation: C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x]
   ignore line: [Candidate multilib: .]
   ignore line: [@m32]
   ignore line: [Selected multilib: .]
   ignore line: [@m32]
-  link line: [ "C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z now -z relro --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_57a4d "C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21\\crtbegin_dynamic.o" "-LC:\\Users\\q\\AppData\\Local\\Android\\Sdk\\ndk\\20.1.5948944\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\lib\\linux\\i386" -LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21 -LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android -LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_57a4d.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lm -lgcc -ldl -lc -lgcc -ldl "C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21\\crtend_android.o"]
-    arg [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\ld] ==> ignore
-    arg [--sysroot=C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot] ==> ignore
+  link line: [ "C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z now -z relro --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_635d1 "C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21\\crtbegin_dynamic.o" "-LC:\\PROGRA~1\\Unity\\Hub\\Editor\\20192~1.17F\\Editor\\Data\\PLAYBA~1\\ANDROI~1\\SDK\\ndk\\201~1.594\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\lib64\\clang\\8.0.7\\lib\\linux\\i386" -LC:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21 -LC:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android -LC:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_635d1.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lm -lgcc -ldl -lc -lgcc -ldl "C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21\\crtend_android.o"]
+    arg [C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\ld] ==> ignore
+    arg [--sysroot=C:/Program] ==> ignore
+    arg [Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot] ==> ignore
     arg [-pie] ==> ignore
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
@@ -196,14 +203,19 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_57a4d] ==> ignore
-    arg [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21\crtbegin_dynamic.o] ==> ignore
-    arg [-LC:\Users\q\AppData\Local\Android\Sdk\ndk\20.1.5948944\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\8.0.7\lib\linux\i386] ==> dir [C:\Users\q\AppData\Local\Android\Sdk\ndk\20.1.5948944\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\8.0.7\lib\linux\i386]
-    arg [-LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x] ==> dir [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x]
-    arg [-LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21] ==> dir [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21]
-    arg [-LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android] ==> dir [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android]
-    arg [-LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib] ==> dir [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib]
-    arg [-LC:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib] ==> dir [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib]
+    arg [cmTC_635d1] ==> ignore
+    arg [C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21\crtbegin_dynamic.o] ==> ignore
+    arg [-LC:\PROGRA~1\Unity\Hub\Editor\20192~1.17F\Editor\Data\PLAYBA~1\ANDROI~1\SDK\ndk\201~1.594\TOOLCH~1\llvm\prebuilt\WINDOW~1\lib64\clang\8.0.7\lib\linux\i386] ==> dir [C:\PROGRA~1\Unity\Hub\Editor\20192~1.17F\Editor\Data\PLAYBA~1\ANDROI~1\SDK\ndk\201~1.594\TOOLCH~1\llvm\prebuilt\WINDOW~1\lib64\clang\8.0.7\lib\linux\i386]
+    arg [-LC:/Program] ==> dir [C:/Program]
+    arg [Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x] ==> ignore
+    arg [-LC:/Program] ==> dir [C:/Program]
+    arg [Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21] ==> ignore
+    arg [-LC:/Program] ==> dir [C:/Program]
+    arg [Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android] ==> ignore
+    arg [-LC:/Program] ==> dir [C:/Program]
+    arg [Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib] ==> ignore
+    arg [-LC:/Program] ==> dir [C:/Program]
+    arg [Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib] ==> ignore
     arg [--exclude-libs] ==> ignore
     arg [libgcc.a] ==> ignore
     arg [--exclude-libs] ==> ignore
@@ -214,7 +226,7 @@ Parsed CXX implicit link information from above output:
     arg [--no-undefined] ==> ignore
     arg [-znoexecstack] ==> ignore
     arg [--gc-sections] ==> ignore
-    arg [CMakeFiles/cmTC_57a4d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_635d1.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lc++] ==> lib [c++]
     arg [-lm] ==> lib [m]
     arg [-lgcc] ==> lib [gcc]
@@ -222,28 +234,28 @@ Parsed CXX implicit link information from above output:
     arg [-lc] ==> lib [c]
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
-    arg [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21\crtend_android.o] ==> ignore
+    arg [C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21\crtend_android.o] ==> ignore
   remove lib [gcc]
   remove lib [gcc]
-  collapse library dir [C:\Users\q\AppData\Local\Android\Sdk\ndk\20.1.5948944\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\8.0.7\lib\linux\i386] ==> [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/8.0.7/lib/linux/i386]
-  collapse library dir [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x] ==> [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x]
-  collapse library dir [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21] ==> [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21]
-  collapse library dir [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android] ==> [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android]
-  collapse library dir [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib] ==> [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/i686-linux-android/lib]
-  collapse library dir [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib] ==> [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib]
+  collapse library dir [C:\PROGRA~1\Unity\Hub\Editor\20192~1.17F\Editor\Data\PLAYBA~1\ANDROI~1\SDK\ndk\201~1.594\TOOLCH~1\llvm\prebuilt\WINDOW~1\lib64\clang\8.0.7\lib\linux\i386] ==> [C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/8.0.7/lib/linux/i386]
+  collapse library dir [C:/Program] ==> [C:/Program]
+  collapse library dir [C:/Program] ==> [C:/Program]
+  collapse library dir [C:/Program] ==> [C:/Program]
+  collapse library dir [C:/Program] ==> [C:/Program]
+  collapse library dir [C:/Program] ==> [C:/Program]
   implicit libs: [c++;m;dl;c;dl]
-  implicit dirs: [C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/8.0.7/lib/linux/i386;C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x;C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/21;C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android;C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/i686-linux-android/lib;C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib]
+  implicit dirs: [C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/8.0.7/lib/linux/i386;C:/Program]
   implicit fwks: []
 
 
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: C:/Users/q/AndroidStudioProjects/MyHome/OpenCvLib/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/q/Desktop/MyHomeAndroid/MyHome/OpenCvLib/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\q\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_70ff1"
-[1/2] Building CXX object CMakeFiles/cmTC_70ff1.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_70ff1
+Run Build Command:"C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/cmake/3.6.4111459/bin/ninja.exe" "cmTC_139ad"
+[1/2] Building CXX object CMakeFiles/cmTC_139ad.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_139ad
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -306,11 +318,11 @@ Run Build Command:"C:\Users\q\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ni
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: C:/Users/q/AndroidStudioProjects/MyHome/OpenCvLib/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/q/Desktop/MyHomeAndroid/MyHome/OpenCvLib/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\q\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_6e81d"
-[1/2] Building CXX object CMakeFiles/cmTC_6e81d.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_6e81d
+Run Build Command:"C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/cmake/3.6.4111459/bin/ninja.exe" "cmTC_06901"
+[1/2] Building CXX object CMakeFiles/cmTC_06901.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_06901
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -373,11 +385,11 @@ Run Build Command:"C:\Users\q\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ni
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: C:/Users/q/AndroidStudioProjects/MyHome/OpenCvLib/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/q/Desktop/MyHomeAndroid/MyHome/OpenCvLib/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\q\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_aedfc"
-[1/2] Building CXX object CMakeFiles/cmTC_aedfc.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_aedfc
+Run Build Command:"C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/cmake/3.6.4111459/bin/ninja.exe" "cmTC_b0cab"
+[1/2] Building CXX object CMakeFiles/cmTC_b0cab.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_b0cab
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

@@ -497,7 +497,7 @@ public class Video {
      * @param levels number of pyramid layers including the initial image; levels=1 means that no extra
      * layers are created and only the original images are used.
      * @param winsize averaging window size; larger values increase the algorithm robustness to image
-     * noise and give more chances for fast motion detection, but yield more blurred motion field.
+     * noise and give more chances for fast motion com.DefaultCompany.MyHome.detection, but yield more blurred motion field.
      * @param iterations number of iterations the algorithm does at each pyramid level.
      * @param poly_n size of the pixel neighborhood used to find polynomial expansion in each pixel;
      * larger values mean that the image will be approximated with smoother surfaces, yielding more
