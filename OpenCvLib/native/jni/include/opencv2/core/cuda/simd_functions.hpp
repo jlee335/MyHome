@@ -196,7 +196,7 @@ namespace cv { namespace cuda { namespace device
     #if __CUDA_ARCH__ >= 300
         asm("vset2.u32.u32.eq %0, %1, %2, %3;" : "=r"(r) : "r"(a), "r"(b), "r"(r));
     #else
-        // inspired by Alan Mycroft's null-byte detection algorithm:
+        // inspired by Alan Mycroft's null-byte com.DefaultCompany.MyHome.detection algorithm:
         // null_byte(x) = ((x - 0x01010101) & (~x & 0x80808080))
         unsigned int c;
         r = a ^ b;          // 0x0000 if a == b
@@ -219,7 +219,7 @@ namespace cv { namespace cuda { namespace device
         c = r << 16;        // convert bool
         r = c - r;          //  into mask
     #else
-        // inspired by Alan Mycroft's null-byte detection algorithm:
+        // inspired by Alan Mycroft's null-byte com.DefaultCompany.MyHome.detection algorithm:
         // null_byte(x) = ((x - 0x01010101) & (~x & 0x80808080))
         r = a ^ b;          // 0x0000 if a == b
         c = r | 0x80008000; // set msbs, to catch carry out
@@ -389,7 +389,7 @@ namespace cv { namespace cuda { namespace device
     #if __CUDA_ARCH__ >= 300
         asm ("vset2.u32.u32.ne %0, %1, %2, %3;" : "=r"(r) : "r"(a), "r"(b), "r"(r));
     #else
-        // inspired by Alan Mycroft's null-byte detection algorithm:
+        // inspired by Alan Mycroft's null-byte com.DefaultCompany.MyHome.detection algorithm:
         // null_byte(x) = ((x - 0x01010101) & (~x & 0x80808080))
         unsigned int c;
         r = a ^ b;          // 0x0000 if a == b
@@ -412,7 +412,7 @@ namespace cv { namespace cuda { namespace device
         c = r << 16;        // convert bool
         r = c - r;          //  into mask
     #else
-        // inspired by Alan Mycroft's null-byte detection algorithm:
+        // inspired by Alan Mycroft's null-byte com.DefaultCompany.MyHome.detection algorithm:
         // null_byte(x) = ((x - 0x01010101) & (~x & 0x80808080))
         r = a ^ b;          // 0x0000 if a == b
         c = r | 0x80008000; // set msbs, to catch carry out
@@ -565,7 +565,7 @@ namespace cv { namespace cuda { namespace device
     #if __CUDA_ARCH__ >= 300
         asm("vset4.u32.u32.eq %0, %1, %2, %3;" : "=r"(r) : "r"(a), "r"(b), "r"(r));
     #else
-        // inspired by Alan Mycroft's null-byte detection algorithm:
+        // inspired by Alan Mycroft's null-byte com.DefaultCompany.MyHome.detection algorithm:
         // null_byte(x) = ((x - 0x01010101) & (~x & 0x80808080))
         unsigned int c;
         r = a ^ b;          // 0x00 if a == b
@@ -588,7 +588,7 @@ namespace cv { namespace cuda { namespace device
         t = r << 8;         // convert bool
         r = t - r;          //  to mask
     #else
-        // inspired by Alan Mycroft's null-byte detection algorithm:
+        // inspired by Alan Mycroft's null-byte com.DefaultCompany.MyHome.detection algorithm:
         // null_byte(x) = ((x - 0x01010101) & (~x & 0x80808080))
         t = a ^ b;          // 0x00 if a == b
         r = t | 0x80808080; // set msbs, to catch carry out
@@ -758,7 +758,7 @@ namespace cv { namespace cuda { namespace device
     #if __CUDA_ARCH__ >= 300
         asm("vset4.u32.u32.ne %0, %1, %2, %3;" : "=r"(r) : "r"(a), "r"(b), "r"(r));
     #else
-        // inspired by Alan Mycroft's null-byte detection algorithm:
+        // inspired by Alan Mycroft's null-byte com.DefaultCompany.MyHome.detection algorithm:
         // null_byte(x) = ((x - 0x01010101) & (~x & 0x80808080))
         unsigned int c;
         r = a ^ b;          // 0x00 if a == b
@@ -781,7 +781,7 @@ namespace cv { namespace cuda { namespace device
         c = r << 8;         // convert bool
         r = c - r;          //  to mask
     #else
-        // inspired by Alan Mycroft's null-byte detection algorithm:
+        // inspired by Alan Mycroft's null-byte com.DefaultCompany.MyHome.detection algorithm:
         // null_byte(x) = ((x - 0x01010101) & (~x & 0x80808080))
         r = a ^ b;          // 0x00 if a == b
         c = r | 0x80808080; // set msbs, to catch carry out

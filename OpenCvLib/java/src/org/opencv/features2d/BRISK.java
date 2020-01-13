@@ -28,10 +28,10 @@ public class BRISK extends Feature2D {
     //
 
     /**
-     * The BRISK constructor for a custom pattern, detection threshold and octaves
+     * The BRISK constructor for a custom pattern, com.DefaultCompany.MyHome.detection threshold and octaves
      *
-     *     @param thresh AGAST detection threshold score.
-     *     @param octaves detection octaves. Use 0 to do single scale.
+     *     @param thresh AGAST com.DefaultCompany.MyHome.detection threshold score.
+     *     @param octaves com.DefaultCompany.MyHome.detection octaves. Use 0 to do single scale.
      *     @param radiusList defines the radii (in pixels) where the samples around a keypoint are taken (for
      *     keypoint scale 1).
      *     @param numberList defines the number of sampling points on the sampling circle. Must be the same
@@ -51,10 +51,10 @@ public class BRISK extends Feature2D {
     }
 
     /**
-     * The BRISK constructor for a custom pattern, detection threshold and octaves
+     * The BRISK constructor for a custom pattern, com.DefaultCompany.MyHome.detection threshold and octaves
      *
-     *     @param thresh AGAST detection threshold score.
-     *     @param octaves detection octaves. Use 0 to do single scale.
+     *     @param thresh AGAST com.DefaultCompany.MyHome.detection threshold score.
+     *     @param octaves com.DefaultCompany.MyHome.detection octaves. Use 0 to do single scale.
      *     @param radiusList defines the radii (in pixels) where the samples around a keypoint are taken (for
      *     keypoint scale 1).
      *     @param numberList defines the number of sampling points on the sampling circle. Must be the same
@@ -72,10 +72,10 @@ public class BRISK extends Feature2D {
     }
 
     /**
-     * The BRISK constructor for a custom pattern, detection threshold and octaves
+     * The BRISK constructor for a custom pattern, com.DefaultCompany.MyHome.detection threshold and octaves
      *
-     *     @param thresh AGAST detection threshold score.
-     *     @param octaves detection octaves. Use 0 to do single scale.
+     *     @param thresh AGAST com.DefaultCompany.MyHome.detection threshold score.
+     *     @param octaves com.DefaultCompany.MyHome.detection octaves. Use 0 to do single scale.
      *     @param radiusList defines the radii (in pixels) where the samples around a keypoint are taken (for
      *     keypoint scale 1).
      *     @param numberList defines the number of sampling points on the sampling circle. Must be the same
@@ -92,10 +92,10 @@ public class BRISK extends Feature2D {
     }
 
     /**
-     * The BRISK constructor for a custom pattern, detection threshold and octaves
+     * The BRISK constructor for a custom pattern, com.DefaultCompany.MyHome.detection threshold and octaves
      *
-     *     @param thresh AGAST detection threshold score.
-     *     @param octaves detection octaves. Use 0 to do single scale.
+     *     @param thresh AGAST com.DefaultCompany.MyHome.detection threshold score.
+     *     @param octaves com.DefaultCompany.MyHome.detection octaves. Use 0 to do single scale.
      *     @param radiusList defines the radii (in pixels) where the samples around a keypoint are taken (for
      *     keypoint scale 1).
      *     @param numberList defines the number of sampling points on the sampling circle. Must be the same
@@ -118,8 +118,8 @@ public class BRISK extends Feature2D {
     /**
      * The BRISK constructor
      *
-     *     @param thresh AGAST detection threshold score.
-     *     @param octaves detection octaves. Use 0 to do single scale.
+     *     @param thresh AGAST com.DefaultCompany.MyHome.detection threshold score.
+     *     @param octaves com.DefaultCompany.MyHome.detection octaves. Use 0 to do single scale.
      *     @param patternScale apply this scale to the pattern used for sampling the neighbourhood of a
      *     keypoint.
      * @return automatically generated
@@ -131,8 +131,8 @@ public class BRISK extends Feature2D {
     /**
      * The BRISK constructor
      *
-     *     @param thresh AGAST detection threshold score.
-     *     @param octaves detection octaves. Use 0 to do single scale.
+     *     @param thresh AGAST com.DefaultCompany.MyHome.detection threshold score.
+     *     @param octaves com.DefaultCompany.MyHome.detection octaves. Use 0 to do single scale.
      *     keypoint.
      * @return automatically generated
      */
@@ -143,7 +143,7 @@ public class BRISK extends Feature2D {
     /**
      * The BRISK constructor
      *
-     *     @param thresh AGAST detection threshold score.
+     *     @param thresh AGAST com.DefaultCompany.MyHome.detection threshold score.
      *     keypoint.
      * @return automatically generated
      */
@@ -274,8 +274,8 @@ public class BRISK extends Feature2D {
     //
 
     /**
-     * Set detection octaves.
-     *     @param octaves detection octaves. Use 0 to do single scale.
+     * Set com.DefaultCompany.MyHome.detection octaves.
+     *     @param octaves com.DefaultCompany.MyHome.detection octaves. Use 0 to do single scale.
      */
     public void setOctaves(int octaves) {
         setOctaves_0(nativeObj, octaves);
@@ -287,8 +287,8 @@ public class BRISK extends Feature2D {
     //
 
     /**
-     * Set detection threshold.
-     *     @param threshold AGAST detection threshold score.
+     * Set com.DefaultCompany.MyHome.detection threshold.
+     *     @param threshold AGAST com.DefaultCompany.MyHome.detection threshold score.
      */
     public void setThreshold(int threshold) {
         setThreshold_0(nativeObj, threshold);

@@ -1,1 +1,2 @@
 include 'OpenCvLib'
+include ':app' ,':tensorflow-lite'

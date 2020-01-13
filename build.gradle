@@ -4,11 +4,13 @@ buildscript {
     repositories {
         google()
         jcenter()
+        mavenLocal()
     }
 
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.3'
         classpath 'com.google.gms:google-services:4.3.3'  // Google Services plugin
+        classpath 'de.undercouch:gradle-download-task:3.4.3'
 
     }
 }
@@ -17,6 +19,7 @@ allprojects {
     repositories {
         google()
         jcenter()
+        mavenLocal()
         flatDir {
             dirs 'libs'
         }
@@ -27,7 +30,10 @@ allprojects {
 
 
 apply plugin: 'com.android.application'
+apply plugin: 'de.undercouch.download'
 
+project.ext.ASSET_DIR = projectDir.toString() + '/src/main/assets'
+project.ext.TMP_DIR   = project.buildDir.toString() + '/downloads'
 
 dependencies {
     //implementation 'com.android.support:appcompat-v7:28.0.0'
@@ -51,6 +57,7 @@ dependencies {
     implementation 'org.tensorflow:tensorflow-lite:0.0.0-nightly'
     implementation 'org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly'
     implementation 'org.tensorflow:tensorflow-lite-support:0.0.0-nightly'
+
 }
 
 apply plugin: 'com.google.gms.google-services'
@@ -118,5 +125,30 @@ android {
         abi {
             enableSplit = true
         }
+    }
+}
+task downloadZipFile(type: Download) {
+    src 'http://storage.googleapis.com/download.tensorflow.org/models/tflite/coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip'
+    dest new File(buildDir, 'zips/')
+    overwrite false
+}
+
+
+task downloadAndUnzipFile(dependsOn: downloadZipFile, type: Copy) {
+    from zipTree(downloadZipFile.dest)
+    into project.ext.ASSET_DIR
+}
+
+
+task extractModels(type: Copy) {
+    dependsOn downloadAndUnzipFile
+}
+
+tasks.whenTaskAdded { task ->
+    if (task.name == 'assembleDebug') {
+        task.dependsOn 'extractModels'
+    }
+    if (task.name == 'assembleRelease') {
+        task.dependsOn 'extractModels'
     }
 }

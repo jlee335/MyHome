@@ -8,7 +8,7 @@ import org.opencv.features2d.GFTTDetector;
 
 // C++: class GFTTDetector
 /**
- * Wrapping class for feature detection using the goodFeaturesToTrack function. :
+ * Wrapping class for feature com.DefaultCompany.MyHome.detection using the goodFeaturesToTrack function. :
  */
 public class GFTTDetector extends Feature2D {
 

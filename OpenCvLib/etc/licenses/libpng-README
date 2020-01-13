@@ -57,7 +57,7 @@ The additions since 0.89 include the ability to read from a PNG stream
 which has had some (or all) of the signature bytes read by the calling
 application.  This also allows the reading of embedded PNG streams that
 do not have the PNG file signature.  As well, it is now possible to set
-the library action on the detection of chunk CRC errors.  It is possible
+the library action on the com.DefaultCompany.MyHome.detection of chunk CRC errors.  It is possible
 to set different actions based on whether the CRC error occurred in a
 critical or an ancillary chunk.
 

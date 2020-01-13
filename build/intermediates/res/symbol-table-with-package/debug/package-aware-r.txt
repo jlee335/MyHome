@@ -1186,6 +1186,8 @@ id alertTitle
 id all
 id always
 id any
+id api
+id api_info_switch
 id async
 id auto
 id back
@@ -1221,6 +1223,7 @@ id crop_info
 id custom
 id customPanel
 id dark
+id debug_overlay
 id decor_content_parent
 id default_activity_button
 id design_bottom_sheet
@@ -1331,6 +1334,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id resultIV
+id results
 id right
 id right_icon
 id right_move
@@ -1417,6 +1421,7 @@ id top
 id topPanel
 id top_move
 id touch_outside
+id tracking_overlay
 id transition_current_scene
 id transition_layout_save
 id transition_position
@@ -1492,10 +1497,13 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_cam
 layout activity_camera
+layout activity_camera2
 layout activity_main
 layout activity_room_scan
 layout activity_select_points
 layout camera_connection_fragment
+layout camera_connection_fragment2
+layout camera_connection_fragment_tracking2
 layout content_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -1513,6 +1521,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout layout_bottom_sheet
+layout layout_bottom_sheet2
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action

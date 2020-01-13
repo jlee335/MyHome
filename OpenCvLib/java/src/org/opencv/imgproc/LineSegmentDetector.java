@@ -73,7 +73,7 @@ public class LineSegmentDetector extends Algorithm {
      *     @param width Vector of widths of the regions, where the lines are found. E.g. Width of line.
      *     @param prec Vector of precisions with which the lines are found.
      *     @param nfa Vector containing number of false alarms in the line region, with precision of 10%. The
-     *     bigger the value, logarithmically better the detection.
+     *     bigger the value, logarithmically better the com.DefaultCompany.MyHome.detection.
      * <ul>
      *   <li>
      *      -1 corresponds to 10 mean false alarms
@@ -105,7 +105,7 @@ public class LineSegmentDetector extends Algorithm {
      *     oriented depending on the gradient.
      *     @param width Vector of widths of the regions, where the lines are found. E.g. Width of line.
      *     @param prec Vector of precisions with which the lines are found.
-     *     bigger the value, logarithmically better the detection.
+     *     bigger the value, logarithmically better the com.DefaultCompany.MyHome.detection.
      * <ul>
      *   <li>
      *      -1 corresponds to 10 mean false alarms
@@ -136,7 +136,7 @@ public class LineSegmentDetector extends Algorithm {
      *     Vec4i/Vec4f is (x1, y1, x2, y2), point 1 is the start, point 2 - end. Returned lines are strictly
      *     oriented depending on the gradient.
      *     @param width Vector of widths of the regions, where the lines are found. E.g. Width of line.
-     *     bigger the value, logarithmically better the detection.
+     *     bigger the value, logarithmically better the com.DefaultCompany.MyHome.detection.
      * <ul>
      *   <li>
      *      -1 corresponds to 10 mean false alarms
@@ -166,7 +166,7 @@ public class LineSegmentDetector extends Algorithm {
      *     @param _lines A vector of Vec4i or Vec4f elements specifying the beginning and ending point of a line. Where
      *     Vec4i/Vec4f is (x1, y1, x2, y2), point 1 is the start, point 2 - end. Returned lines are strictly
      *     oriented depending on the gradient.
-     *     bigger the value, logarithmically better the detection.
+     *     bigger the value, logarithmically better the com.DefaultCompany.MyHome.detection.
      * <ul>
      *   <li>
      *      -1 corresponds to 10 mean false alarms
