@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RoomScanActivity">
+
+    <Button
+        android:id="@+id/stereo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Stereo 1"
+        app:layout_constraintStart_toEndOf="@+id/snapTexutre"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/stereo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Stereo 2"
+        app:layout_constraintStart_toEndOf="@+id/stereo1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/stereoCamView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        opencv:camera_id="any"
+        opencv:show_fps="true" />
+
+    <ImageView
+        android:id="@+id/stIV2"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="@+id/stIV1"
+        app:layout_constraintStart_toEndOf="@+id/stIV1"
+        opencv:srcCompat="@mipmap/app_icon" />
+
+    <ImageView
+        android:id="@+id/stIV1"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stereo1"
+        opencv:srcCompat="@mipmap/app_icon" />
+
+    <ImageView
+        android:id="@+id/resultIV"
+        android:layout_width="320dp"
+        android:layout_height="195dp"
+        app:layout_constraintStart_toStartOf="@+id/stIV1"
+        app:layout_constraintTop_toBottomOf="@+id/stIV1"
+        opencv:srcCompat="@mipmap/app_icon" />
+
+    <Button
+        android:id="@+id/comfirmStereo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        app:layout_constraintStart_toEndOf="@+id/stereo2"
+        app:layout_constraintTop_toTopOf="@+id/stereo2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

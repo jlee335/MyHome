@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-81:12
-INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-81:12
-INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-81:12
-INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-81:12
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-93:12
+INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-93:12
+INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-93:12
+INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-93:12
 MERGED from [com.google.firebase:firebase-core:17.2.1] C:\Users\q\.gradle\caches\transforms-2\files-2.1\106a2277c79c98972e4361ddc8966238\firebase-core-17.2.1\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-ml-vision:24.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\8ee4d141a33ed07596b72a9e002cdacf\firebase-ml-vision-24.0.0\AndroidManifest.xml:2:1-18:12
 MERGED from [com.google.firebase:firebase-ml-vision-image-label-model:19.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\956c8533d09173a4f34cab0136f346a3\firebase-ml-vision-image-label-model-19.0.0\AndroidManifest.xml:2:1-9:12
@@ -11,6 +11,7 @@ MERGED from [com.google.android.material:material:1.0.0] C:\Users\q\.gradle\cach
 MERGED from [:OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-26:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\fb8f7031ef66b8147647717c2aecca12\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\q\.gradle\caches\transforms-2\files-2.1\81a362b35962fa2496d450cbee5c4ecc\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\874c23737bb823accb64b8c68ad31d78\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-analytics:17.2.1] C:\Users\q\.gradle\caches\transforms-2\files-2.1\87d832e2c047f43b9e228930679ceb96\firebase-analytics-17.2.1\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\373a185323e7fdfe979ee2534467a30f\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\926cd74775bd68ac1172d6663b0b2b64\play-services-auth-base-17.0.0\AndroidManifest.xml:2:1-7:12
@@ -43,6 +44,7 @@ MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\q\.gradle\ca
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\32d6d4909a16d2ee7ad0c6d18077c046\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\b18a22a7d488d5a4c630bd657737271b\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.transition:transition:1.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\a20d5a06e84dd0039c6abcd9b5c93652\transition-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\2423a3e8c7d595310e6661cc5002b018\media-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\8d38c20afe116acc8f623a554a3e696f\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\55c8e6e745aacceb492535bf431d5720\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity:1.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\d45e841e71572de25c8d80ebec98d932\activity-1.0.0\AndroidManifest.xml:17:1-24:12
@@ -67,22 +69,22 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\q\.gradle\caches\tra
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\ba1ca6d966f0903bfbc154284174b676\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\cf1beec41d3606c2f878b1c5dd26a539\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\5e0444443ffb82f923834973bbf621d3\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-81:12
-INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-81:12
-INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-81:12
+INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-93:12
+INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-93:12
+INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-93:12
 	package
 		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:4:5-40
 		INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-81:12
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-93:12
 		INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-81:12
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-93:12
 		INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:11-69
@@ -102,88 +104,80 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] C:
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] C:\Users\q\.gradle\caches\transforms-2\files-2.1\0c7df6999f45701aa1d050bae43dd882\play-services-measurement-sdk-api-17.2.1\AndroidManifest.xml:23:5-67
 	android:name
 		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:7:22-64
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:8:5-81
-	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:8:22-78
-uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:9:5-80
-	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:9:22-77
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:10:5-65
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:8:5-65
 MERGED from [:OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-65
 MERGED from [:OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-65
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:10:22-62
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:8:22-62
 uses-feature#android.hardware.camera
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:12:5-84
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:10:5-12:36
 MERGED from [:OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-15:36
 MERGED from [:OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-15:36
 	android:required
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:12:58-82
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:12:9-33
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:12:19-57
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:11:9-47
 uses-feature#android.hardware.camera.autofocus
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:13:5-94
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:13:5-15:36
 MERGED from [:OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-18:36
 MERGED from [:OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-18:36
 	android:required
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:13:68-92
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:15:9-33
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:13:19-67
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:14:9-57
 uses-feature#android.hardware.camera.front
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:14:5-90
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:16:5-18:36
 MERGED from [:OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:5-21:36
 MERGED from [:OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:5-21:36
 	android:required
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:14:64-88
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:18:9-33
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:14:19-63
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:17:9-53
 uses-feature#android.hardware.camera.front.autofocus
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:15:5-101
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:19:5-21:36
 MERGED from [:OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:5-24:36
 MERGED from [:OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:5-24:36
 	android:required
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:15:75-99
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:21:9-33
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:15:19-73
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:20:9-63
 supports-screens
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:18:5-23:40
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:23:5-28:40
 	android:largeScreens
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:20:9-36
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:25:9-36
 	android:smallScreens
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:22:9-36
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:27:9-36
 	android:normalScreens
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:21:9-37
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:26:9-37
 	android:xlargeScreens
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:23:9-37
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:28:9-37
 	android:anyDensity
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:19:9-34
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:24:9-34
 uses-feature#0x00020000
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:25:5-54
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:30:5-54
 	android:glEsVersion
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:25:19-51
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:30:19-51
 uses-feature#android.hardware.touchscreen
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:26:5-28:36
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:31:5-33:36
 	android:required
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:28:9-33
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:33:9-33
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:27:9-52
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:32:9-52
 uses-feature#android.hardware.touchscreen.multitouch
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:29:5-31:36
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:34:5-36:36
 	android:required
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:31:9-33
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:36:9-33
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:30:9-63
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:35:9-63
 uses-feature#android.hardware.touchscreen.multitouch.distinct
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:32:5-34:36
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:37:5-39:36
 	android:required
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:34:9-33
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:39:9-33
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:33:9-72
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:38:9-72
 application
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:36:5-79:19
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:41:5-91:19
 MERGED from [com.google.firebase:firebase-core:17.2.1] C:\Users\q\.gradle\caches\transforms-2\files-2.1\106a2277c79c98972e4361ddc8966238\firebase-core-17.2.1\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-core:17.2.1] C:\Users\q\.gradle\caches\transforms-2\files-2.1\106a2277c79c98972e4361ddc8966238\firebase-core-17.2.1\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-ml-vision:24.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\8ee4d141a33ed07596b72a9e002cdacf\firebase-ml-vision-24.0.0\AndroidManifest.xml:8:5-16:19
@@ -243,85 +237,99 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\q\
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\331630a23dfa1f0594bcf54d5352aa36\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:38:9-41
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:43:9-41
 	android:icon
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:37:9-40
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:42:9-40
 	android:theme
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:39:9-50
-activity#com.DefaultCompany.MyHome.CamActivity
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:40:9-42:75
-	android:screenOrientation
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:41:13-50
-	android:configChanges
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:42:13-63
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:44:9-50
+activity#com.DefaultCompany.MyHome.RoomScanActivity
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:45:9-63
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:40:19-46
-activity#com.DefaultCompany.MyHome.UnityPlayerActivity
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:43:9-62:20
-	android:screenOrientation
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:49:13-51
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:45:19-51
+activity#com.DefaultCompany.MyHome.selectPoints
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:46:9-50:54
 	android:label
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:47:13-45
-	android:launchMode
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:48:13-44
-	android:hardwareAccelerated
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:46:13-48
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:49:13-65
 	android:configChanges
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:45:13-194
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:48:13-74
+	android:theme
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:50:13-51
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:44:13-48
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:47:13-41
+activity#com.DefaultCompany.MyHome.CamActivity
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:51:9-54:53
+	android:screenOrientation
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:54:13-50
+	android:configChanges
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:53:13-63
+	android:name
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:52:13-40
+activity#com.DefaultCompany.MyHome.UnityPlayerActivity
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:55:9-74:20
+	android:screenOrientation
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:61:13-51
+	android:label
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:59:13-45
+	android:launchMode
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:60:13-44
+	android:hardwareAccelerated
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:58:13-48
+	android:configChanges
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:57:13-194
+	android:name
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:56:13-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:50:13-54:29
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:62:13-66:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:51:17-69
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:63:17-69
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:51:25-66
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:63:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:53:17-77
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:65:17-77
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:53:27-74
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:65:27-74
 meta-data#unityplayer.UnityActivity
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:56:13-58:40
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:68:13-70:40
 	android:value
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:58:17-37
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:70:17-37
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:57:17-57
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:69:17-57
 meta-data#android.notch_support
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:59:13-61:40
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:71:13-73:40
 	android:value
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:61:17-37
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:73:17-37
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:60:17-53
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:72:17-53
 meta-data#unity.build-id
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:64:9-66:68
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:76:9-78:68
 	android:value
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:66:13-65
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:78:13-65
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:65:13-42
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:77:13-42
 meta-data#unity.splash-mode
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:67:9-69:33
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:79:9-81:33
 	android:value
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:69:13-30
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:81:13-30
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:68:13-45
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:80:13-45
 meta-data#unity.splash-enable
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:70:9-72:36
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:82:9-84:36
 	android:value
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:72:13-33
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:84:13-33
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:71:13-47
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:83:13-47
 meta-data#notch.config
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:73:9-75:50
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:85:9-87:50
 	android:value
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:75:13-47
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:87:13-47
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:74:13-40
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:86:13-40
 meta-data#com.google.firebase.ml.vision.DEPENDENCIES
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:76:9-78:37
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:88:9-90:37
 	android:value
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:78:13-34
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:90:13-34
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:77:13-70
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:89:13-70
 uses-sdk
 INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml
@@ -340,6 +348,8 @@ MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\q\.gradle\caches\trans
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\fb8f7031ef66b8147647717c2aecca12\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\q\.gradle\caches\transforms-2\files-2.1\81a362b35962fa2496d450cbee5c4ecc\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\q\.gradle\caches\transforms-2\files-2.1\81a362b35962fa2496d450cbee5c4ecc\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\874c23737bb823accb64b8c68ad31d78\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\874c23737bb823accb64b8c68ad31d78\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-analytics:17.2.1] C:\Users\q\.gradle\caches\transforms-2\files-2.1\87d832e2c047f43b9e228930679ceb96\firebase-analytics-17.2.1\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics:17.2.1] C:\Users\q\.gradle\caches\transforms-2\files-2.1\87d832e2c047f43b9e228930679ceb96\firebase-analytics-17.2.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\373a185323e7fdfe979ee2534467a30f\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
@@ -404,6 +414,8 @@ MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\q\.gradle
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\b18a22a7d488d5a4c630bd657737271b\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\a20d5a06e84dd0039c6abcd9b5c93652\transition-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\a20d5a06e84dd0039c6abcd9b5c93652\transition-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\2423a3e8c7d595310e6661cc5002b018\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\2423a3e8c7d595310e6661cc5002b018\media-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\8d38c20afe116acc8f623a554a3e696f\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\8d38c20afe116acc8f623a554a3e696f\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\55c8e6e745aacceb492535bf431d5720\loader-1.0.0\AndroidManifest.xml:20:5-44
