@@ -415,6 +415,8 @@ attr maxButtonHeight
 attr maxImageSize
 attr measureWithLargestChild
 attr menu
+attr metaButtonBarButtonStyle
+attr metaButtonBarStyle
 attr multiChoiceItemLayout
 attr navigationContentDescription
 attr navigationIcon
@@ -629,6 +631,7 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color black_overlay
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -715,6 +718,7 @@ color mtrl_textinput_filled_box_default_background_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
+color notification_material_background_media_default_color
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -950,6 +954,10 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen subtitle_corner_radius
+dimen subtitle_outline_width
+dimen subtitle_shadow_offset
+dimen subtitle_shadow_radius
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -1151,6 +1159,7 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
+id action0
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -1189,16 +1198,20 @@ id bottom_sheet_arrow
 id bottom_sheet_layout
 id button
 id buttonPanel
+id cancel_action
 id center
 id center_horizontal
 id center_vertical
 id chains
 id checkbox
 id checked
+id choose
 id chronometer
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id comfirmStereo
+id confirmButton
 id container
 id content
 id contentPanel
@@ -1228,6 +1241,7 @@ id direct
 id disableHome
 id edit_query
 id end
+id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
@@ -1241,6 +1255,7 @@ id filled
 id fixed
 id forever
 id frame
+id frameLayout
 id frame_info
 id framelayout
 id front
@@ -1255,8 +1270,6 @@ id icon
 id icon_group
 id icon_only
 id ifRoom
-id im1Button
-id im2Button
 id image
 id inference
 id inference_info
@@ -1278,6 +1291,7 @@ id listMode
 id list_item
 id listview_background_shape
 id masked
+id media_actions
 id message
 id middle
 id mini
@@ -1286,6 +1300,7 @@ id model_spinner
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id myrelout
 id navigation_header_container
 id never
 id none
@@ -1304,15 +1319,23 @@ id parent_matrix
 id percent
 id pin
 id plus
+id point1
+id point2
+id point3
+id point4
+id pointer1
+id pointer2
+id pointer3
+id pointer4
 id progress_circular
 id progress_horizontal
 id radio
-id resultButton
-id resultView
+id resultIV
 id right
 id right_icon
 id right_move
 id right_side
+id roomScanButton
 id rotation
 id rotation_info
 id save_image_matrix
@@ -1334,6 +1357,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id selectIV
 id select_dialog_listview
 id selected
 id shortcut
@@ -1345,6 +1369,7 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id snapTexutre
 id spacer
 id split_action_bar
 id spread
@@ -1352,8 +1377,14 @@ id spread_inside
 id src_atop
 id src_in
 id src_over
+id stIV1
+id stIV2
 id standard
 id start
+id status_bar_latest_event_content
+id stereo1
+id stereo2
+id stereoCamView
 id stretch
 id submenuarrow
 id submit_area
@@ -1462,6 +1493,8 @@ layout abc_tooltip
 layout activity_cam
 layout activity_camera
 layout activity_main
+layout activity_room_scan
+layout activity_select_points
 layout camera_connection_fragment
 layout content_main
 layout custom_dialog
@@ -1484,8 +1517,17 @@ layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
 layout notification_action_tombstone
+layout notification_media_action
+layout notification_media_cancel_action
+layout notification_template_big_media
+layout notification_template_big_media_custom
+layout notification_template_big_media_narrow
+layout notification_template_big_media_narrow_custom
 layout notification_template_custom_big
 layout notification_template_icon_group
+layout notification_template_lines_media
+layout notification_template_media
+layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout select_dialog_item_material
@@ -1550,6 +1592,8 @@ string common_signin_button_text_long
 string default_web_client_id
 string description_info
 string device
+string dummy_button
+string dummy_content
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string firebase_database_url
@@ -1575,6 +1619,7 @@ string status_bar_notification_info_overflow
 string tflite
 string threads
 string title_activity_main
+string title_activity_select_points
 string toggle
 string toggle_turn_off
 string toggle_turn_on
@@ -1777,6 +1822,8 @@ style BaseUnityTheme
 style CardView
 style CardView_Dark
 style CardView_Light
+style FullscreenActionBarStyle
+style FullscreenTheme
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents
@@ -1858,9 +1905,14 @@ style TextAppearance_AppCompat_Widget_Switch
 style TextAppearance_AppCompat_Widget_TextView_SpinnerItem
 style TextAppearance_Compat_Notification
 style TextAppearance_Compat_Notification_Info
+style TextAppearance_Compat_Notification_Info_Media
 style TextAppearance_Compat_Notification_Line2
+style TextAppearance_Compat_Notification_Line2_Media
+style TextAppearance_Compat_Notification_Media
 style TextAppearance_Compat_Notification_Time
+style TextAppearance_Compat_Notification_Time_Media
 style TextAppearance_Compat_Notification_Title
+style TextAppearance_Compat_Notification_Title_Media
 style TextAppearance_Design_CollapsingToolbar_Expanded
 style TextAppearance_Design_Counter
 style TextAppearance_Design_Counter_Overflow
@@ -2104,6 +2156,7 @@ styleable AppCompatTheme android_windowIsFloating android_windowAnimationStyle a
 styleable BottomAppBar backgroundTint fabAlignmentMode fabCradleMargin fabCradleRoundedCornerRadius fabCradleVerticalOffset hideOnScroll
 styleable BottomNavigationView elevation itemBackground itemHorizontalTranslationEnabled itemIconSize itemIconTint itemTextAppearanceActive itemTextAppearanceInactive itemTextColor labelVisibilityMode menu
 styleable BottomSheetBehavior_Layout behavior_fitToContents behavior_hideable behavior_peekHeight behavior_skipCollapsed
+styleable ButtonBarContainerTheme metaButtonBarButtonStyle metaButtonBarStyle
 styleable ButtonBarLayout allowStacking
 styleable CameraBridgeViewBase camera_id show_fps
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop

@@ -252,7 +252,7 @@ public class RoomScanActivity extends CameraActivity implements CvCameraViewList
         Imgproc.cvtColor(left,Lgray,Imgproc.COLOR_BGR2GRAY);
         Imgproc.GaussianBlur(Lgray,Lgray,new Size(3,3),1);
 
-        Mat Rgray = left.clone();
+        Mat Rgray = right.clone();
         Imgproc.cvtColor(right,Rgray,Imgproc.COLOR_BGR2GRAY);
         Imgproc.GaussianBlur(Rgray,Rgray,new Size(3,3),1);
 

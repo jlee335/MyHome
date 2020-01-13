@@ -1,3 +1,3 @@
-C:/Users/q/AndroidStudioProjects/MyHome22222/OpenCvLib/.cxx/cmake/release/arm64-v8a/CMakeFiles/opencv_jni_shared.dir
-C:/Users/q/AndroidStudioProjects/MyHome22222/OpenCvLib/.cxx/cmake/release/arm64-v8a/CMakeFiles/edit_cache.dir
-C:/Users/q/AndroidStudioProjects/MyHome22222/OpenCvLib/.cxx/cmake/release/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Users/q/Desktop/MyHomeAndroid/MyHome/OpenCvLib/.cxx/cmake/release/arm64-v8a/CMakeFiles/opencv_jni_shared.dir
+C:/Users/q/Desktop/MyHomeAndroid/MyHome/OpenCvLib/.cxx/cmake/release/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/q/Desktop/MyHomeAndroid/MyHome/OpenCvLib/.cxx/cmake/release/arm64-v8a/CMakeFiles/rebuild_cache.dir

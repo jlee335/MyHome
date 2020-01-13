@@ -54,6 +54,7 @@ public class UnityPlayerActivity extends AppCompatActivity
     private Button b_move;
     private Button fab;
     private  boolean a = true;
+    public static  final int sub = 1001;
 
     // Override this in your custom UnityPlayerActivity to tweak the command line arguments passed to the Unity Android Player
     // The command line arguments are passed as a string, separated by spaces
@@ -133,7 +134,8 @@ public class UnityPlayerActivity extends AppCompatActivity
         labeling.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                buttonDo3();
+                Intent intent = new Intent(getApplicationContext(),ClassifierActivity.class);
+                startActivityForResult(intent,sub);
             }
         });
 
