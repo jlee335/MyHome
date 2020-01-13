@@ -65,6 +65,9 @@ public class UnityPlayerActivity extends AppCompatActivity
                 ActivityCompat.requestPermissions(UnityPlayerActivity.this, new String[]{Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
             }
         }
+
+
+
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
 
@@ -76,6 +79,15 @@ public class UnityPlayerActivity extends AppCompatActivity
         mUnityPlayer.requestFocus();
 
         setContentView(R.layout.activity_main);
+
+        Button rsv = findViewById(R.id.roomScanButton);
+        rsv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),RoomScanActivity.class);
+                startActivity(intent);
+            }
+        });
 
         FrameLayout layout = (FrameLayout) findViewById(R.id.framelayout);
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.FILL_PARENT, LinearLayout.LayoutParams.FILL_PARENT);

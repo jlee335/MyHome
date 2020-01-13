@@ -5,12 +5,19 @@ import android.annotation.SuppressLint;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ClipData;
+import android.content.ClipDescription;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.media.Image;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
+import android.view.DragEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -18,7 +25,16 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import org.opencv.android.Utils;
+import org.opencv.core.CvException;
+import org.opencv.core.Mat;
+import org.opencv.core.MatOfPoint2f;
+import org.opencv.core.Point;
+import org.opencv.imgproc.Imgproc;
+
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
 
 import static java.lang.Math.round;
 
@@ -31,11 +47,19 @@ public class selectPoints extends AppCompatActivity {
     Button point2;
     Button point3;
     Button point4;
+    Button confirm;
 
     ImageView pointer1;
     ImageView pointer2;
     ImageView pointer3;
     ImageView pointer4;
+
+    float[] point1pos;
+    float[] point2pos;
+    float[] point3pos;
+    float[] point4pos;
+
+
 
     ImageView imageView;
     float[] coords;
@@ -76,7 +100,36 @@ public class selectPoints extends AppCompatActivity {
         pointer3 = findViewById(R.id.pointer3);
         pointer4 = findViewById(R.id.pointer4);
 
+        point1pos = new float[2];
+        point2pos = new float[2];
+        point3pos = new float[2];
+        point4pos = new float[2];
+
+
+        confirm = findViewById(R.id.confirmButton);
+
         rl = (RelativeLayout) findViewById(R.id.myrelout);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         point1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,6 +137,8 @@ public class selectPoints extends AppCompatActivity {
                 RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(pointer1.getLayoutParams());
                 params.setMargins(round(coords[0]),round(coords[1]),0,0);
                 pointer1.setLayoutParams(params);
+                point1pos = relcoords;
+                Log.d("POINT 1",point1pos[0] + " -- " + point1pos[1]);
             }
         });
         point2.setOnClickListener(new View.OnClickListener() {
@@ -92,6 +147,8 @@ public class selectPoints extends AppCompatActivity {
                 RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(pointer2.getLayoutParams());
                 params.setMargins(round(coords[0]),round(coords[1]),0,0);
                 pointer2.setLayoutParams(params);
+                point2pos = relcoords;
+                Log.d("POINT 2",point2pos[0] + " -- " + point2pos[1]);
             }
         });
         point3.setOnClickListener(new View.OnClickListener() {
@@ -100,6 +157,8 @@ public class selectPoints extends AppCompatActivity {
                 RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(pointer3.getLayoutParams());
                 params.setMargins(round(coords[0]),round(coords[1]),0,0);
                 pointer3.setLayoutParams(params);
+                point3pos = relcoords;
+                Log.d("POINT 3",point3pos[0] + " -- " + point3pos[1]);
             }
         });
         point4.setOnClickListener(new View.OnClickListener() {
@@ -109,21 +168,106 @@ public class selectPoints extends AppCompatActivity {
                 params.setMargins(round(coords[0]),round(coords[1]),0,0);
                 //pointer4.getLayoutParams().
                 pointer4.setLayoutParams(params);
+                point4pos = relcoords;
+                Log.d("POINT 4",point4pos[0] + " -- " + point4pos[1]);
             }
         });
 
         imageView = (ImageView) findViewById(R.id.selectIV);
 
-        Bitmap bitmap = null;
         try {
-            bitmap = BitmapFactory.decodeStream(getApplicationContext().openFileInput("myImage"));
+            final Bitmap bitmap = BitmapFactory.decodeStream(getApplicationContext().openFileInput("myImage"));
+            if(imageView == null) Log.e("IMG","ImageView is NULL!!!!!!");
+            if (bitmap != null && imageView != null)imageView.setImageBitmap(bitmap);
+
+            confirm.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //4개의 point 를 이용해 이미지를 조작하자.
+                    List<float[]> square = new ArrayList<>();
+                    square.add(point1pos);
+                    square.add(point2pos);
+                    square.add(point3pos);
+                    square.add(point4pos);
+
+                    //0: x0 y0
+                    //1: xM y0
+                    //2: xM yM
+                    //3: x0 yM
+
+                    // Center of Mass 기준으로 정렬하자!
+                    float mx = 0;
+                    float my = 0;
+                    List<float[]> sortSquare = new ArrayList<>();
+                    sortSquare.add(point1pos);
+                    sortSquare.add(point2pos);
+                    sortSquare.add(point3pos);
+                    sortSquare.add(point4pos);
+                    for(float[] pts:square){
+                        mx += pts[0];
+                        my += pts[1];
+                    }
+                    mx = mx/4;
+                    my = my/4;
+                    for(float[] pts : square){
+                        Log.d("SQUARE",pts[0] + " - " + pts[1]);
+                        if(pts[0] <= mx && pts[1] <= my){ // 00
+                            sortSquare.set(0,pts);
+                        }else if(pts[0] > mx && pts[1] > my){ //MM
+                            sortSquare.set(2,pts);
+                        }else if(pts[0] <= mx && pts[1] > my){ //0M
+                            sortSquare.set(3,pts);
+                        }else if(pts[0] > mx && pts[1] <= my){ //M0
+                            sortSquare.set(1,pts);
+                        }else{
+                            Log.e("SORT ERROR","What happened?");
+                        }
+                    }
+                    for(float[] pt : sortSquare){
+                        Log.d("SRT SQUARE",pt[0] + " - " + pt[1]);
+                    }
 
 
+                    //이미지를 Mat 로 다시 변환
+                    Mat img = new Mat();
+                    Utils.bitmapToMat(bitmap,img);
+                    Mat dest = new Mat(400, 400, img.type());
+
+                    Mat src = new MatOfPoint2f(new Point(sortSquare.get(0)[0],sortSquare.get(0)[1]),new Point(sortSquare.get(1)[0],sortSquare.get(1)[1]),new Point(sortSquare.get(2)[0],sortSquare.get(2)[1]),new Point(sortSquare.get(3)[0],sortSquare.get(3)[1]));
+                    Mat dst = new MatOfPoint2f(new Point(0,0),new Point(dest.width()-1,0),new Point(dest.width()-1,dest.height()-1),new Point(0,dest.height()-1));
+                    Mat transform = Imgproc.getPerspectiveTransform(src,dst);
+                    Imgproc.warpPerspective(img,dest,transform,dest.size());
+
+                    //dest 가 우리가 원하는 것!
+                    Bitmap res = convertMatToBitMap(dest);
+                    imageView.setImageBitmap(res);
+
+
+
+                }
+            });
         } catch (FileNotFoundException e) {
 
         }
-        if(imageView == null) Log.e("IMG","ImageView is NULL!!!!!!");
-        if (bitmap != null && imageView != null)imageView.setImageBitmap(bitmap);
+
+
+
+
+
+    }
+    private static Bitmap convertMatToBitMap(Mat input){
+        Bitmap bmp = null;
+        Mat rgb = new Mat();
+        Imgproc.cvtColor(input, rgb, Imgproc.COLOR_BGR2RGB);
+
+        try {
+            bmp = Bitmap.createBitmap(rgb.cols(), rgb.rows(), Bitmap.Config.ARGB_8888);
+            Utils.matToBitmap(rgb, bmp);
+        }
+        catch (CvException e){
+            Log.d("Exception",e.getMessage());
+        }
+        return bmp;
     }
     @Override
     public boolean onTouchEvent(MotionEvent event) {
@@ -133,12 +277,12 @@ public class selectPoints extends AppCompatActivity {
         imageView.getLocationOnScreen(pos);
         rl.getLocationOnScreen(rloffset);
         if(event.getAction() == MotionEvent.ACTION_DOWN) {
-            String text = "You click at x = " + (event.getX()-pos[0]) + " and y = " + (event.getY()-pos[1]);
             relcoords = new float[]{event.getX()-pos[0], event.getY()-pos[1]};
-            coords = new float[]{event.getX()-rloffset[0], event.getY()-rloffset[1]};
+            coords = new float[]{event.getX()-rloffset[0]-15, event.getY()-rloffset[1]-15};
+            String text = "You click at x = " + (relcoords[0]) + " and y = " + (relcoords[1]);
+
             Toast.makeText(this, text, Toast.LENGTH_LONG).show();
         }
-
         return super.onTouchEvent(event);
     }
 }

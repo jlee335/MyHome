@@ -55,6 +55,7 @@
         android:label="@string/app_name"
         android:testOnly="true"
         android:theme="@style/UnityThemeSelector" >
+        <activity android:name="com.DefaultCompany.MyHome.RoomScanActivity" />
         <activity
             android:name="com.DefaultCompany.MyHome.selectPoints"
             android:configChanges="orientation|keyboardHidden|screenSize"

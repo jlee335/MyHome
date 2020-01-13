@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-92:12
-INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-92:12
-INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-92:12
-INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-92:12
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-93:12
+INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-93:12
+INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-93:12
+INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-93:12
 MERGED from [com.google.firebase:firebase-core:17.2.1] C:\Users\q\.gradle\caches\transforms-2\files-2.1\106a2277c79c98972e4361ddc8966238\firebase-core-17.2.1\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-ml-vision:24.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\8ee4d141a33ed07596b72a9e002cdacf\firebase-ml-vision-24.0.0\AndroidManifest.xml:2:1-18:12
 MERGED from [com.google.firebase:firebase-ml-vision-image-label-model:19.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\956c8533d09173a4f34cab0136f346a3\firebase-ml-vision-image-label-model-19.0.0\AndroidManifest.xml:2:1-9:12
@@ -69,22 +69,22 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\q\.gradle\caches\tra
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\ba1ca6d966f0903bfbc154284174b676\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\cf1beec41d3606c2f878b1c5dd26a539\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\5e0444443ffb82f923834973bbf621d3\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-92:12
-INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-92:12
-INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-92:12
+INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-93:12
+INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-93:12
+INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-93:12
 	package
 		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:4:5-40
 		INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-92:12
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-93:12
 		INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-92:12
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:1-93:12
 		INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:2:11-69
@@ -177,7 +177,7 @@ ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:
 	android:name
 		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:38:9-72
 application
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:41:5-90:19
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:41:5-91:19
 MERGED from [com.google.firebase:firebase-core:17.2.1] C:\Users\q\.gradle\caches\transforms-2\files-2.1\106a2277c79c98972e4361ddc8966238\firebase-core-17.2.1\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-core:17.2.1] C:\Users\q\.gradle\caches\transforms-2\files-2.1\106a2277c79c98972e4361ddc8966238\firebase-core-17.2.1\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-ml-vision:24.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\8ee4d141a33ed07596b72a9e002cdacf\firebase-ml-vision-24.0.0\AndroidManifest.xml:8:5-16:19
@@ -242,90 +242,94 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\q\
 		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:42:9-40
 	android:theme
 		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:44:9-50
+activity#com.DefaultCompany.MyHome.RoomScanActivity
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:45:9-63
+	android:name
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:45:19-51
 activity#com.DefaultCompany.MyHome.selectPoints
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:45:9-49:63
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:46:9-50:54
 	android:label
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:48:13-65
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:49:13-65
 	android:configChanges
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:47:13-74
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:48:13-74
 	android:theme
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:49:13-51
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:50:13-51
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:46:13-41
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:47:13-41
 activity#com.DefaultCompany.MyHome.CamActivity
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:50:9-53:53
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:51:9-54:53
 	android:screenOrientation
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:53:13-50
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:54:13-50
 	android:configChanges
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:52:13-63
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:53:13-63
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:51:13-40
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:52:13-40
 activity#com.DefaultCompany.MyHome.UnityPlayerActivity
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:54:9-73:20
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:55:9-74:20
 	android:screenOrientation
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:60:13-51
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:61:13-51
 	android:label
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:58:13-45
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:59:13-45
 	android:launchMode
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:59:13-44
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:60:13-44
 	android:hardwareAccelerated
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:57:13-48
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:58:13-48
 	android:configChanges
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:56:13-194
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:57:13-194
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:55:13-48
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:56:13-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:61:13-65:29
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:62:13-66:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:62:17-69
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:63:17-69
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:62:25-66
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:63:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:64:17-77
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:65:17-77
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:64:27-74
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:65:27-74
 meta-data#unityplayer.UnityActivity
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:67:13-69:40
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:68:13-70:40
 	android:value
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:69:17-37
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:70:17-37
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:68:17-57
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:69:17-57
 meta-data#android.notch_support
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:70:13-72:40
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:71:13-73:40
 	android:value
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:72:17-37
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:73:17-37
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:71:17-53
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:72:17-53
 meta-data#unity.build-id
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:75:9-77:68
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:76:9-78:68
 	android:value
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:77:13-65
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:78:13-65
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:76:13-42
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:77:13-42
 meta-data#unity.splash-mode
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:78:9-80:33
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:79:9-81:33
 	android:value
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:80:13-30
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:81:13-30
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:79:13-45
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:80:13-45
 meta-data#unity.splash-enable
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:81:9-83:36
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:82:9-84:36
 	android:value
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:83:13-33
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:84:13-33
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:82:13-47
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:83:13-47
 meta-data#notch.config
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:84:9-86:50
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:85:9-87:50
 	android:value
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:86:13-47
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:87:13-47
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:85:13-40
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:86:13-40
 meta-data#com.google.firebase.ml.vision.DEPENDENCIES
-ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:87:9-89:37
+ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:88:9-90:37
 	android:value
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:89:13-34
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:90:13-34
 	android:name
-		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:88:13-70
+		ADDED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:89:13-70
 uses-sdk
 INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml

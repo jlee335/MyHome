@@ -1193,6 +1193,8 @@ id chronometer
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id comfirmStereo
+id confirmButton
 id container
 id content
 id contentPanel
@@ -1292,10 +1294,12 @@ id pointer4
 id progress_circular
 id progress_horizontal
 id radio
+id resultIV
 id right
 id right_icon
 id right_move
 id right_side
+id roomScanButton
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1335,9 +1339,14 @@ id spread_inside
 id src_atop
 id src_in
 id src_over
+id stIV1
+id stIV2
 id standard
 id start
 id status_bar_latest_event_content
+id stereo1
+id stereo2
+id stereoCamView
 id stretch
 id submenuarrow
 id submit_area
@@ -1440,6 +1449,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_cam
 layout activity_main
+layout activity_room_scan
 layout activity_select_points
 layout content_main
 layout custom_dialog
