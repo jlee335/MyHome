@@ -306,7 +306,6 @@ public class UnityPlayerActivity extends AppCompatActivity
         l_move.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
-               Toast.makeText(getApplicationContext(), "왼쪽으로 이동", Toast.LENGTH_SHORT).show();
                mUnityPlayer.UnitySendMessage("Player", "left", "");
            }
         });
@@ -314,14 +313,12 @@ public class UnityPlayerActivity extends AppCompatActivity
         r_move.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "오른쪽으로 이동", Toast.LENGTH_SHORT).show();
                 mUnityPlayer.UnitySendMessage("Player", "right", "");
             }
         });
         t_move.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "위쪽으로 이동", Toast.LENGTH_SHORT).show();
                 mUnityPlayer.UnitySendMessage("Player", "front", "");
             }
         });
@@ -329,7 +326,6 @@ public class UnityPlayerActivity extends AppCompatActivity
         b_move.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "아래쪽으로 이동", Toast.LENGTH_SHORT).show();
                 mUnityPlayer.UnitySendMessage("Player", "back", "");
             }
         });

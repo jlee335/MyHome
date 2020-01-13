@@ -10,8 +10,8 @@
 
     <Button
         android:id="@+id/labeling"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="136dp"
         android:layout_marginBottom="59dp"
         android:text="가구수집"
@@ -22,10 +22,8 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
         android:text="OpenCV"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -34,20 +32,43 @@
         android:id="@+id/framelayout"
         android:layout_width="403dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="87dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/labeling"
         app:layout_constraintVertical_bias="0.551">
 
+        <Button
+            android:id="@+id/top_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="0dp"
+            android:text="위로이동" />
+
+        <Button
+            android:id="@+id/bottom_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:text="아래로이동"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </FrameLayout>
 
     <Button
         android:id="@+id/left_move"
-        android:layout_width="115dp"
-        android:layout_height="58dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="300dp"
         android:text="좌측이동"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,10 +77,11 @@
 
     <Button
         android:id="@+id/right_move"
-        android:layout_width="115dp"
-        android:layout_height="58dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="300dp"
         android:text="우측이동"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,33 +89,11 @@
         app:layout_constraintVertical_bias="0.868" />
 
     <Button
-        android:id="@+id/top_move"
-        android:layout_width="115dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="위로이동"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/bottom_move"
-        android:layout_width="115dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="200dp"
-        android:text="아래로이동"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/fab"
-        android:layout_width="0dp"
-        android:layout_height="81dp"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="9dp"
-        android:text="Button"
+        android:text="벽/바닥 만들기"
         app:layout_constraintEnd_toStartOf="@+id/labeling"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
