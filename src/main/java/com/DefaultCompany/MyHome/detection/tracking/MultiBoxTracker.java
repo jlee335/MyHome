@@ -15,6 +15,7 @@ limitations under the License.
 
 package com.DefaultCompany.MyHome.detection.tracking;
 
+
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -25,13 +26,16 @@ import android.graphics.Paint.Join;
 import android.graphics.Paint.Style;
 import android.graphics.RectF;
 import android.text.TextUtils;
+import android.util.Log;
 import android.util.Pair;
 import android.util.TypedValue;
 
+import com.DefaultCompany.MyHome.MyApplication;
 import com.DefaultCompany.MyHome.detection.env.BorderedText;
 import com.DefaultCompany.MyHome.detection.env.ImageUtils;
 import com.DefaultCompany.MyHome.detection.env.Logger;
 import com.DefaultCompany.MyHome.detection.tflite.Classifier;
+
 
 import java.util.LinkedList;
 import java.util.List;
@@ -73,6 +77,9 @@ public class MultiBoxTracker {
   private int frameWidth;
   private int frameHeight;
   private int sensorOrientation;
+  boolean person = false;
+  float height = 0;
+  MyApplication app;
 
   public MultiBoxTracker(final Context context) {
     for (final int color : COLORS) {
@@ -117,16 +124,17 @@ public class MultiBoxTracker {
     }
   }
 
-  public synchronized void trackResults(final List<Classifier.Recognition> results, final long timestamp) {
+  public synchronized void trackResults(final List<Classifier.Recognition> results, final long timestamp,Context context) {
     logger.i("Processing %d results from %d", results.size(), timestamp);
-    processResults(results);
+    processResults(results,context);
   }
 
   private Matrix getFrameToCanvasMatrix() {
     return frameToCanvasMatrix;
   }
 
-  public synchronized void draw(final Canvas canvas) {
+  public synchronized void draw(final Canvas canvas,Context context) {
+
     final boolean rotated = sensorOrientation % 180 == 90;
     final float multiplier =
         Math.min(
@@ -153,6 +161,12 @@ public class MultiBoxTracker {
           !TextUtils.isEmpty(recognition.title)
               ? String.format("%s %.2f", recognition.title, (100 * recognition.detectionConfidence))
               : String.format("%.2f", (100 * recognition.detectionConfidence));
+
+      if(recognition.title.compareTo("person")==0){
+        //사람이 맞으면, Frame 의 크기를 구하자!!!!!!
+        //Log.e("아","사람이다");
+        person = true;
+      }
       //            borderedText.drawText(canvas, trackedPos.left + cornerSize, trackedPos.top,
       // labelString);
       borderedText.drawText(
@@ -160,7 +174,8 @@ public class MultiBoxTracker {
     }
   }
 
-  private void processResults(final List<Classifier.Recognition> results) {
+  private void processResults(final List<Classifier.Recognition> results,Context context) {
+    height = 0;
     final List<Pair<Float, Classifier.Recognition>> rectsToTrack = new LinkedList<Pair<Float, Classifier.Recognition>>();
 
     screenRects.clear();
@@ -180,6 +195,20 @@ public class MultiBoxTracker {
 
       screenRects.add(new Pair<Float, RectF>(result.getConfidence(), detectionScreenRect));
 
+      if(person){
+        if(height < detectionFrameRect.width()){
+          height=detectionFrameRect.width();
+          if((MyApplication)context.getApplicationContext() != null){
+            Log.e("H","Set Height");
+            ((MyApplication)context.getApplicationContext()).setHeight(height);
+          }
+
+        }
+        Log.d("저 사람의 키는::",""+detectionFrameRect.width());
+
+        person = false;
+      }
+
       if (detectionFrameRect.width() < MIN_SIZE || detectionFrameRect.height() < MIN_SIZE) {
         logger.w("Degenerate rectangle! " + detectionFrameRect);
         continue;
@@ -187,6 +216,9 @@ public class MultiBoxTracker {
 
       rectsToTrack.add(new Pair<Float, Classifier.Recognition>(result.getConfidence(), result));
     }
+
+    //여기 뒤에 가장 큰 사람의 키가 heights 변수에 추가됨!!!!
+
 
     trackedObjects.clear();
     if (rectsToTrack.isEmpty()) {
@@ -213,5 +245,6 @@ public class MultiBoxTracker {
     float detectionConfidence;
     int color;
     String title;
+    float height;
   }
 }

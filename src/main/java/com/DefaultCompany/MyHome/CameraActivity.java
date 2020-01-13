@@ -40,6 +40,7 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.WindowManager;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
@@ -107,6 +108,9 @@ public abstract class CameraActivity extends AppCompatActivity
   private Model model = Model.QUANTIZED;
   private Device device = Device.CPU;
   private int numThreads = -1;
+  Button getHeight;
+  MyApplication app;
+  TextView heightshow;
 
   @Override
   protected void onCreate(final Bundle savedInstanceState) {
@@ -114,7 +118,9 @@ public abstract class CameraActivity extends AppCompatActivity
     super.onCreate(null);
     getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
-    setContentView(R.layout.activity_camera);
+    setContentView(R.layout.activity_camera2);
+    app = (MyApplication) getApplicationContext();
+
     Toolbar toolbar = findViewById(R.id.toolbar);
 //    setSupportActionBar(toolbar);
     getSupportActionBar().setDisplayShowTitleEnabled(false);

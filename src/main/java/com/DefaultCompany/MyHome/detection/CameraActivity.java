@@ -17,8 +17,10 @@
 package com.DefaultCompany.MyHome.detection;
 
 import android.Manifest;
+import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
 import android.hardware.camera2.CameraAccessException;
@@ -38,7 +40,9 @@ import androidx.annotation.NonNull;
 
 import com.DefaultCompany.MyHome.CameraConnectionFragment;
 import com.DefaultCompany.MyHome.LegacyCameraConnectionFragment;
+import com.DefaultCompany.MyHome.MyApplication;
 import com.DefaultCompany.MyHome.R;
+import com.DefaultCompany.MyHome.UnityPlayerActivity;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SwitchCompat;
@@ -48,6 +52,7 @@ import android.view.Surface;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -56,6 +61,7 @@ import android.widget.Toast;
 import java.nio.ByteBuffer;
 import com.DefaultCompany.MyHome.detection.env.ImageUtils;
 import com.DefaultCompany.MyHome.detection.env.Logger;
+
 
 public abstract class CameraActivity extends AppCompatActivity
     implements OnImageAvailableListener,
@@ -89,9 +95,20 @@ public abstract class CameraActivity extends AppCompatActivity
   private ImageView plusImageView, minusImageView;
   private SwitchCompat apiSwitchCompat;
   private TextView threadsTextView;
+  Context context;
+  Button getHeight;
+  TextView heightshow;
+  Button getWidth;
+  TextView widthshow;
+
+  double finWidth;
+  double finHeight;
+
+  protected MyApplication app;
 
   @Override
   protected void onCreate(final Bundle savedInstanceState) {
+    context = this;
     LOGGER.d("onCreate " + this);
     super.onCreate(null);
     getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
@@ -112,6 +129,47 @@ public abstract class CameraActivity extends AppCompatActivity
     gestureLayout = findViewById(R.id.gesture_layout);
     sheetBehavior = BottomSheetBehavior.from(bottomSheetLayout);
     bottomSheetArrowImageView = findViewById(R.id.bottom_sheet_arrow);
+
+    getHeight = findViewById(R.id.GetHeight);
+    heightshow = findViewById(R.id.showHeight);
+    getHeight.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        double height = ((MyApplication)getApplication()).getHeight();
+        double personHeight = 1.7;
+        double m = -0.115;
+        double c = 20.99;
+        double dist = height*m + c;
+
+        finHeight = dist;
+        heightshow.setText(""+String.format ("%.2f", dist)+"m");
+      }
+    });
+    getWidth = findViewById(R.id.GetWidth);
+    widthshow = findViewById(R.id.showWidth);
+    getWidth.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        double height = ((MyApplication)getApplication()).getHeight();
+        double personHeight = 1.7;
+        double m = -0.115;
+        double c = 20.99;
+        double dist = height*m + c;
+        finWidth = dist;
+        widthshow.setText(""+String.format ("%.2f", dist)+"m");
+      }
+    });
+
+    Button confirmButton = findViewById(R.id.ConfirmButton);
+    confirmButton.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        Intent intent = new Intent(getApplicationContext(), UnityPlayerActivity.class);
+        intent.putExtra("width",finWidth);
+        intent.putExtra("height",finHeight);
+        startActivity(intent);
+      }
+    });
 
     ViewTreeObserver vto = gestureLayout.getViewTreeObserver();
     vto.addOnGlobalLayoutListener(

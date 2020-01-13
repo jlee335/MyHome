@@ -17,6 +17,7 @@
 package com.DefaultCompany.MyHome.detection;
 
 
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.graphics.Canvas;
@@ -59,6 +60,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
   private static final String TF_OD_API_MODEL_FILE = "detect.tflite";
   private static final String TF_OD_API_LABELS_FILE = "file:///android_asset/labelmap.txt";
   private static final DetectorMode MODE;
+  Context context;
 
   static {
     MODE = DetectorMode.TF_OD_API;
@@ -146,7 +148,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
         new OverlayView.DrawCallback() {
           @Override
           public void drawCallback(final Canvas canvas) {
-            tracker.draw(canvas);
+            tracker.draw(canvas,getApplicationContext());
             if (isDebug()) {
               tracker.drawDebug(canvas);
             }
@@ -219,7 +221,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
               }
             }
 
-            tracker.trackResults(mappedRecognitions, currTimestamp);
+            tracker.trackResults(mappedRecognitions, currTimestamp,getApplicationContext());
             trackingOverlay.postInvalidate();
 
             computingDetection = false;

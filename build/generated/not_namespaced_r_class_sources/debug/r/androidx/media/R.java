@@ -85,39 +85,39 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int action0 = 0x7f090028;
-        public static final int action_container = 0x7f090030;
-        public static final int action_divider = 0x7f090032;
-        public static final int action_image = 0x7f090033;
-        public static final int action_text = 0x7f090039;
-        public static final int actions = 0x7f09003a;
-        public static final int async = 0x7f090045;
-        public static final int blocking = 0x7f09004a;
-        public static final int cancel_action = 0x7f090051;
-        public static final int chronometer = 0x7f090059;
-        public static final int end_padder = 0x7f09007d;
-        public static final int forever = 0x7f090089;
-        public static final int icon = 0x7f090096;
-        public static final int icon_group = 0x7f090097;
-        public static final int info = 0x7f09009d;
-        public static final int italic = 0x7f09009f;
-        public static final int line1 = 0x7f0900a8;
-        public static final int line3 = 0x7f0900a9;
-        public static final int media_actions = 0x7f0900af;
-        public static final int normal = 0x7f0900bc;
-        public static final int notification_background = 0x7f0900bd;
-        public static final int notification_main_column = 0x7f0900be;
-        public static final int notification_main_column_container = 0x7f0900bf;
-        public static final int right_icon = 0x7f0900d9;
-        public static final int right_side = 0x7f0900db;
-        public static final int status_bar_latest_event_content = 0x7f09010a;
-        public static final int tag_transition_group = 0x7f090117;
-        public static final int tag_unhandled_key_event_manager = 0x7f090118;
-        public static final int tag_unhandled_key_listeners = 0x7f090119;
-        public static final int text = 0x7f09011a;
-        public static final int text2 = 0x7f09011b;
-        public static final int time = 0x7f090125;
-        public static final int title = 0x7f090126;
+        public static final int action0 = 0x7f09002b;
+        public static final int action_container = 0x7f090033;
+        public static final int action_divider = 0x7f090035;
+        public static final int action_image = 0x7f090036;
+        public static final int action_text = 0x7f09003c;
+        public static final int actions = 0x7f09003d;
+        public static final int async = 0x7f090048;
+        public static final int blocking = 0x7f09004d;
+        public static final int cancel_action = 0x7f090054;
+        public static final int chronometer = 0x7f09005c;
+        public static final int end_padder = 0x7f090080;
+        public static final int forever = 0x7f09008c;
+        public static final int icon = 0x7f090099;
+        public static final int icon_group = 0x7f09009a;
+        public static final int info = 0x7f0900a0;
+        public static final int italic = 0x7f0900a2;
+        public static final int line1 = 0x7f0900ab;
+        public static final int line3 = 0x7f0900ac;
+        public static final int media_actions = 0x7f0900b2;
+        public static final int normal = 0x7f0900bf;
+        public static final int notification_background = 0x7f0900c0;
+        public static final int notification_main_column = 0x7f0900c1;
+        public static final int notification_main_column_container = 0x7f0900c2;
+        public static final int right_icon = 0x7f0900dc;
+        public static final int right_side = 0x7f0900de;
+        public static final int status_bar_latest_event_content = 0x7f09010f;
+        public static final int tag_transition_group = 0x7f09011c;
+        public static final int tag_unhandled_key_event_manager = 0x7f09011d;
+        public static final int tag_unhandled_key_listeners = 0x7f09011e;
+        public static final int text = 0x7f09011f;
+        public static final int text2 = 0x7f090120;
+        public static final int time = 0x7f09012a;
+        public static final int title = 0x7f09012b;
     }
     public static final class integer {
         private integer() {}
