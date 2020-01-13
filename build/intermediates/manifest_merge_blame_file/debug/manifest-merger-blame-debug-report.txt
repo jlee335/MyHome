@@ -7,76 +7,76 @@
 7
 8    <uses-sdk
 9        android:minSdkVersion="24"
-9-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml
+9-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml
 10        android:targetSdkVersion="28" />
-10-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml
+10-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml
 11
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:7:5-67
-12-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:7:22-64
+12-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:7:5-67
+12-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:7:22-64
 13    <uses-permission android:name="android.permission.CAMERA" />
-13-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:8:5-65
-13-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:8:22-62
+13-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:8:5-65
+13-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:8:22-62
 14
 15    <uses-feature
-15-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:10:5-12:36
+15-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:10:5-12:36
 16        android:name="android.hardware.camera"
-16-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:11:9-47
+16-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:11:9-47
 17        android:required="false" />
-17-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:12:9-33
+17-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:12:9-33
 18    <uses-feature
-18-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:13:5-15:36
+18-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:13:5-15:36
 19        android:name="android.hardware.camera.autofocus"
-19-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:14:9-57
+19-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:14:9-57
 20        android:required="false" />
-20-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:15:9-33
+20-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:15:9-33
 21    <uses-feature
-21-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:16:5-18:36
+21-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:16:5-18:36
 22        android:name="android.hardware.camera.front"
-22-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:17:9-53
+22-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:17:9-53
 23        android:required="false" />
-23-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:18:9-33
+23-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:18:9-33
 24    <uses-feature
-24-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:19:5-21:36
+24-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:19:5-21:36
 25        android:name="android.hardware.camera.front.autofocus"
-25-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:20:9-63
+25-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:20:9-63
 26        android:required="false" />
-26-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:21:9-33
+26-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:21:9-33
 27
 28    <supports-screens
-28-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:23:5-28:40
+28-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:23:5-28:40
 29        android:anyDensity="true"
-29-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:24:9-34
+29-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:24:9-34
 30        android:largeScreens="true"
-30-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:25:9-36
+30-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:25:9-36
 31        android:normalScreens="true"
-31-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:26:9-37
+31-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:26:9-37
 32        android:smallScreens="true"
-32-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:27:9-36
+32-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:27:9-36
 33        android:xlargeScreens="true" />
-33-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:28:9-37
+33-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:28:9-37
 34
 35    <uses-feature android:glEsVersion="0x00020000" />
-35-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:30:5-54
-35-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:30:19-51
+35-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:30:5-54
+35-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:30:19-51
 36    <uses-feature
-36-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:31:5-33:36
+36-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:31:5-33:36
 37        android:name="android.hardware.touchscreen"
-37-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:32:9-52
+37-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:32:9-52
 38        android:required="false" />
-38-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:33:9-33
+38-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:33:9-33
 39    <uses-feature
-39-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:34:5-36:36
+39-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:34:5-36:36
 40        android:name="android.hardware.touchscreen.multitouch"
-40-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:35:9-63
+40-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:35:9-63
 41        android:required="false" />
-41-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:36:9-33
+41-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:36:9-33
 42    <uses-feature
-42-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:37:5-39:36
+42-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:37:5-39:36
 43        android:name="android.hardware.touchscreen.multitouch.distinct"
-43-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:38:9-72
+43-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:38:9-72
 44        android:required="false" />
-44-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:39:9-33
+44-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:39:9-33
 45
 46    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 46-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\q\.gradle\caches\transforms-2\files-2.1\559f094854fa85bd072da76bc0e0e01f\play-services-measurement-api-17.2.1\AndroidManifest.xml:23:5-79
@@ -92,114 +92,114 @@
 49-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\q\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:26:22-107
 50
 51    <application
-51-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:41:5-97:19
+51-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:41:5-97:19
 52        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 52-->[androidx.core:core:1.1.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\331630a23dfa1f0594bcf54d5352aa36\core-1.1.0\AndroidManifest.xml:24:18-86
 53        android:debuggable="true"
 54        android:icon="@mipmap/app_icon"
-54-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:42:9-40
+54-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:42:9-40
 55        android:label="@string/app_name"
-55-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:43:9-41
+55-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:43:9-41
 56        android:testOnly="true"
 57        android:theme="@style/UnityThemeSelector" >
-57-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:44:9-50
+57-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:44:9-50
 58        <activity android:name="com.DefaultCompany.MyHome.RoomScanActivity" />
-58-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:45:9-63
-58-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:45:19-51
+58-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:45:9-63
+58-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:45:19-51
 59        <activity
-59-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:46:9-50:54
+59-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:46:9-50:54
 60            android:name="com.DefaultCompany.MyHome.selectPoints"
-60-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:47:13-41
+60-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:47:13-41
 61            android:configChanges="orientation|keyboardHidden|screenSize"
-61-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:48:13-74
+61-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:48:13-74
 62            android:label="@string/title_activity_select_points"
-62-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:49:13-65
+62-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:49:13-65
 63            android:theme="@style/FullscreenTheme" />
-63-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:50:13-51
+63-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:50:13-51
 64        <activity
-64-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:51:9-54:53
+64-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:51:9-54:53
 65            android:name="com.DefaultCompany.MyHome.CamActivity"
-65-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:52:13-40
+65-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:52:13-40
 66            android:configChanges="keyboardHidden|orientation"
-66-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:53:13-63
+66-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:53:13-63
 67            android:screenOrientation="landscape" />
-67-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:54:13-50
+67-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:54:13-50
 68        <activity
-68-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:55:9-74:20
+68-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:55:9-74:20
 69            android:name="com.DefaultCompany.MyHome.UnityPlayerActivity"
-69-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:56:13-48
+69-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:56:13-48
 70            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
-70-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:57:13-194
+70-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:57:13-194
 71            android:hardwareAccelerated="false"
-71-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:58:13-48
+71-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:58:13-48
 72            android:label="@string/app_name"
-72-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:59:13-45
+72-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:59:13-45
 73            android:launchMode="singleTask"
-73-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:60:13-44
+73-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:60:13-44
 74            android:screenOrientation="fullSensor" >
-74-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:61:13-51
+74-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:61:13-51
 75            <intent-filter>
-75-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:62:13-66:29
+75-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:62:13-66:29
 76                <action android:name="android.intent.action.MAIN" />
-76-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:63:17-69
-76-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:63:25-66
+76-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:63:17-69
+76-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:63:25-66
 77
 78                <category android:name="android.intent.category.LAUNCHER" />
-78-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:65:17-77
-78-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:65:27-74
+78-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:65:17-77
+78-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:65:27-74
 79            </intent-filter>
 80
 81            <meta-data
-81-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:68:13-70:40
+81-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:68:13-70:40
 82                android:name="unityplayer.UnityActivity"
-82-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:69:17-57
+82-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:69:17-57
 83                android:value="true" />
-83-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:70:17-37
+83-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:70:17-37
 84            <meta-data
-84-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:71:13-73:40
+84-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:71:13-73:40
 85                android:name="android.notch_support"
-85-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:72:17-53
+85-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:72:17-53
 86                android:value="true" />
-86-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:73:17-37
+86-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:73:17-37
 87        </activity>
 88        <activity
-88-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:75:9-80:16
+88-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:75:9-80:16
 89            android:name="com.DefaultCompany.MyHome.ClassifierActivity"
-89-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:76:9-43
+89-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:76:9-43
 90            android:screenOrientation="portrait" >
-90-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:77:9-45
+90-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:77:9-45
 91        </activity>
 92
 93        <meta-data
-93-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:82:9-84:68
+93-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:82:9-84:68
 94            android:name="unity.build-id"
-94-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:83:13-42
+94-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:83:13-42
 95            android:value="21d1e833-69ac-410c-bc7b-cf2f3f767d49" />
-95-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:84:13-65
+95-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:84:13-65
 96        <meta-data
-96-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:85:9-87:33
+96-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:85:9-87:33
 97            android:name="unity.splash-mode"
-97-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:86:13-45
+97-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:86:13-45
 98            android:value="0" />
-98-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:87:13-30
+98-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:87:13-30
 99        <meta-data
-99-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:88:9-90:36
+99-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:88:9-90:36
 100            android:name="unity.splash-enable"
-100-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:89:13-47
+100-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:89:13-47
 101            android:value="True" />
-101-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:90:13-33
+101-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:90:13-33
 102        <meta-data
-102-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:91:9-93:50
+102-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:91:9-93:50
 103            android:name="notch.config"
-103-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:92:13-40
+103-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:92:13-40
 104            android:value="portrait|landscape" />
-104-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:93:13-47
+104-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:93:13-47
 105        <meta-data
-105-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:94:9-96:37
+105-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:94:9-96:37
 106            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
-106-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:95:13-70
+106-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:95:13-70
 107            android:value="label" />
-107-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\src\main\AndroidManifest.xml:96:13-34
+107-->C:\Users\q\AndroidStudioProjects\MyHome\src\main\AndroidManifest.xml:96:13-34
 108
 109        <service
 109-->[com.google.firebase:firebase-ml-vision:24.0.1] C:\Users\q\.gradle\caches\transforms-2\files-2.1\448952ed9396edcf8b9a7a222c201f16\firebase-ml-vision-24.0.1\AndroidManifest.xml:9:9-15:19
@@ -316,11 +316,11 @@
 169-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\q\.gradle\caches\transforms-2\files-2.1\1d7fa4c15cc347978dce90a6ff08e8ee\play-services-measurement-17.2.1\AndroidManifest.xml:52:13-69
 170
 171        <meta-data
-171-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\6cc5d57d2f5bac890e42668966329cc7\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+171-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\e811ddade1d86dac20194d3a467c0354\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 172            android:name="com.google.android.gms.version"
-172-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\6cc5d57d2f5bac890e42668966329cc7\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+172-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\e811ddade1d86dac20194d3a467c0354\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
 173            android:value="@integer/google_play_services_version" />
-173-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\6cc5d57d2f5bac890e42668966329cc7\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+173-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\e811ddade1d86dac20194d3a467c0354\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
 174    </application>
 175
 176</manifest>
