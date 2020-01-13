@@ -22,15 +22,28 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.android.gms.tasks.Tasks;
+import com.google.firebase.ml.vision.FirebaseVision;
+import com.google.firebase.ml.vision.common.FirebaseVisionImage;
+import com.google.firebase.ml.vision.label.FirebaseVisionImageLabel;
+import com.google.firebase.ml.vision.label.FirebaseVisionImageLabeler;
 import com.unity3d.player.UnityPlayer;
 
 import org.opencv.android.OpenCVLoader;
 
 import java.io.ByteArrayOutputStream;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 public class UnityPlayerActivity extends AppCompatActivity
 {
@@ -40,6 +53,7 @@ public class UnityPlayerActivity extends AppCompatActivity
     private Button t_move;
     private Button b_move;
     private Button fab;
+    private  boolean a = true;
 
     // Override this in your custom UnityPlayerActivity to tweak the command line arguments passed to the Unity Android Player
     // The command line arguments are passed as a string, separated by spaces
@@ -99,6 +113,9 @@ public class UnityPlayerActivity extends AppCompatActivity
         b_move = findViewById(R.id.bottom_move);
         fab = findViewById(R.id.fab);
         Button goCV = findViewById(R.id.button);
+        Button labeling = findViewById(R.id.labeling);
+
+
         goCV.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -106,19 +123,28 @@ public class UnityPlayerActivity extends AppCompatActivity
             }
         });
 
-
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 buttonDo();
             }
         });
+
+        labeling.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                buttonDo3();
+            }
+        });
+
+
     }
 
 
 
     public void buttonDo(){
         final Intent camIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        a = false;
         startActivityForResult(camIntent,1);
         Log.e("TAB_PRESS", "1");
     }
@@ -127,6 +153,12 @@ public class UnityPlayerActivity extends AppCompatActivity
         final Intent camIntent = new Intent(this,CamActivity.class);
         startActivity(camIntent);
         Log.e("TAB_PRESS", "2");
+    }
+
+    public void buttonDo3(){
+        final Intent camIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(camIntent,1);
+        Log.e("TAB_PRESS", "1");
     }
 
 
@@ -139,58 +171,118 @@ public class UnityPlayerActivity extends AppCompatActivity
         Bundle extras = data.getExtras();
         Bitmap imageBitmap = (Bitmap) extras.get("data");
 
+        if(a == true) {
+
+        FirebaseVisionImage image = FirebaseVisionImage.fromBitmap(imageBitmap);
+
+            final String[] text = new String[1];
+            final FirebaseVisionImageLabeler labeler = FirebaseVision.getInstance().getOnDeviceImageLabeler();
+            final String label;
+
+        labeler.processImage(image).addOnSuccessListener(new OnSuccessListener<List<FirebaseVisionImageLabel>>() {
+                    @Override
+                    public void onSuccess(List<FirebaseVisionImageLabel> labels) {
+                        // Task completed successfully
+                        // ...
+                        Log.d("@@@@", labels.get(0).getText());
+//                        for (FirebaseVisionImageLabel label: labels) {
+//                            String text = label.getText();
+//                            String entityId = label.getEntityId();
+//                            float confidence = label.getConfidence();
+//                            Log.d("@@@@", text);
+//                            Log.d("@@@@", entityId);
+//                            Log.d("@@@@", Float.toString(confidence));
+//
+//                        }
+                        mUnityPlayer.UnitySendMessage("Player", "imagelabel", labels.get(0).getText());
+
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        // Task failed with an exception
+                        // ...
+                        text[0] = "Unclassified";
+                    }
+                });
 
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
-        builder.setTitle("바닥인지 벽인지 선택하세요").setMessage("(바닥/벽)");
 
-        builder.setPositiveButton("바닥", new DialogInterface.OnClickListener(){
-            @Override
-            public void onClick(DialogInterface dialog, int id)
-            {
-                Bitmap result = Bitmap.createScaledBitmap(imageBitmap, 36, 36, false);
 
-                ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-                result.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
-                byte[] byteArray = byteArrayOutputStream .toByteArray();
 
-                String encoded = Base64.encodeToString(byteArray, Base64.DEFAULT);
-                mUnityPlayer.UnitySendMessage("Player", "makeFloor", encoded);
-            }
-        });
 
-        builder.setNegativeButton("벽", new DialogInterface.OnClickListener(){
-            @Override
-            public void onClick(DialogInterface dialog, int id)
-            {
-                Bitmap result = Bitmap.createScaledBitmap(imageBitmap, 36, 50, false);
 
-                ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-                result.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
-                byte[] byteArray = byteArrayOutputStream .toByteArray();
+        }
+        else {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
-                String encoded = Base64.encodeToString(byteArray, Base64.DEFAULT);
-                mUnityPlayer.UnitySendMessage("Player", "makeWall", encoded);
-            }
-        });
+            builder.setTitle("바닥인지 벽인지 선택하세요").setMessage("(바닥/벽)");
 
-        builder.setNeutralButton("cancel", new DialogInterface.OnClickListener(){
-            @Override
-            public void onClick(DialogInterface dialog, int id)
-            {
-                Toast.makeText(getApplicationContext(), "cancel Click", Toast.LENGTH_SHORT).show();
-            }
-        });
+            builder.setPositiveButton("바닥", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int id) {
+                    Bitmap result = Bitmap.createScaledBitmap(imageBitmap, 36, 36, false);
 
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
+                    ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+                    result.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
+                    byte[] byteArray = byteArrayOutputStream.toByteArray();
+
+                    String encoded = Base64.encodeToString(byteArray, Base64.DEFAULT);
+                    mUnityPlayer.UnitySendMessage("Player", "makeFloor", encoded);
+                }
+            });
+
+            builder.setNegativeButton("벽", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int id) {
+                    Bitmap result = Bitmap.createScaledBitmap(imageBitmap, 36, 50, false);
+
+                    ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+                    result.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
+                    byte[] byteArray = byteArrayOutputStream.toByteArray();
+
+                    String encoded = Base64.encodeToString(byteArray, Base64.DEFAULT);
+                    mUnityPlayer.UnitySendMessage("Player", "makeWall", encoded);
+                }
+            });
+
+            builder.setNeutralButton("cancel", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int id) {
+                    Toast.makeText(getApplicationContext(), "cancel Click", Toast.LENGTH_SHORT).show();
+                }
+            });
+
+            AlertDialog alertDialog = builder.create();
+            alertDialog.show();
 
 
 //            iocustom.sendImage(imageBitmap,getAppContext());
-        Log.d("IMAGE","SENT IMAGE");
+            Log.d("IMAGE", "SENT IMAGE");
 
+        }
     }
+
+    private static int cmpfloat(float f1, float f2) {
+        if (f1 - f2 > 0) {
+            return 1;
+        } else if (f1 - f2 == 0) {
+            return 0;
+        } else {
+            return -1;
+        }
+    }
+    public static class CustomComparator implements Comparator<FirebaseVisionImageLabel> {
+        @Override
+        public int compare(FirebaseVisionImageLabel o1, FirebaseVisionImageLabel o2) {
+            return cmpfloat(o1.getConfidence(), o2.getConfidence());
+        }
+    }
+
+
+
 
     @Override protected void onNewIntent(Intent intent)
     {
@@ -226,7 +318,6 @@ public class UnityPlayerActivity extends AppCompatActivity
         l_move.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
-               Toast.makeText(getApplicationContext(), "왼쪽으로 이동", Toast.LENGTH_SHORT).show();
                mUnityPlayer.UnitySendMessage("Player", "left", "");
            }
         });
@@ -234,14 +325,12 @@ public class UnityPlayerActivity extends AppCompatActivity
         r_move.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "오른쪽으로 이동", Toast.LENGTH_SHORT).show();
                 mUnityPlayer.UnitySendMessage("Player", "right", "");
             }
         });
         t_move.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "위쪽으로 이동", Toast.LENGTH_SHORT).show();
                 mUnityPlayer.UnitySendMessage("Player", "front", "");
             }
         });
@@ -249,7 +338,6 @@ public class UnityPlayerActivity extends AppCompatActivity
         b_move.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "아래쪽으로 이동", Toast.LENGTH_SHORT).show();
                 mUnityPlayer.UnitySendMessage("Player", "back", "");
             }
         });

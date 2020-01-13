@@ -2,11 +2,11 @@
 {
 	"buildFiles" : 
 	[
-		"C:/Users/q/Desktop/MyHomeAndroid/MyHome/OpenCvLib/libcxx_helper/CMakeLists.txt"
+		"C:/Users/q/AndroidStudioProjects/MyHome22222/OpenCvLib/libcxx_helper/CMakeLists.txt"
 	],
 	"cleanCommands" : 
 	[
-		"\"C:\\Program Files\\Unity\\Hub\\Editor\\2019.2.17f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\cmake\\3.6.4111459\\bin\\cmake.exe\" --build C:\\Users\\q\\Desktop\\MyHomeAndroid\\MyHome\\OpenCvLib\\.cxx\\cmake\\debug\\x86_64 --target clean"
+		"C:\\Users\\q\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\q\\AndroidStudioProjects\\MyHome22222\\OpenCvLib\\.cxx\\cmake\\debug\\x86_64 --target clean"
 	],
 	"cppFileExtensions" : [ "cpp" ],
 	"libraries" : 
@@ -15,27 +15,27 @@
 		{
 			"abi" : "x86_64",
 			"artifactName" : "opencv_jni_shared",
-			"buildCommand" : "\"C:\\Program Files\\Unity\\Hub\\Editor\\2019.2.17f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\cmake\\3.6.4111459\\bin\\cmake.exe\" --build C:\\Users\\q\\Desktop\\MyHomeAndroid\\MyHome\\OpenCvLib\\.cxx\\cmake\\debug\\x86_64 --target opencv_jni_shared",
+			"buildCommand" : "C:\\Users\\q\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\q\\AndroidStudioProjects\\MyHome22222\\OpenCvLib\\.cxx\\cmake\\debug\\x86_64 --target opencv_jni_shared",
 			"buildType" : "debug",
 			"files" : 
 			[
 				
 				{
-					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=\"C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64\" --sysroot=\"C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot\"    -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
-					"src" : "C:/Users/q/Desktop/MyHomeAndroid/MyHome/OpenCvLib/libcxx_helper/dummy.cpp",
-					"workingDirectory" : "C:/Users/q/Desktop/MyHomeAndroid/MyHome/OpenCvLib/.cxx/cmake/debug/x86_64"
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot    -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "C:/Users/q/AndroidStudioProjects/MyHome22222/OpenCvLib/libcxx_helper/dummy.cpp",
+					"workingDirectory" : "C:/Users/q/AndroidStudioProjects/MyHome22222/OpenCvLib/.cxx/cmake/debug/x86_64"
 				}
 			],
-			"output" : "C:/Users/q/Desktop/MyHomeAndroid/MyHome/OpenCvLib/.cxx/cmake/debug/x86_64/libopencv_jni_shared.a",
-			"toolchain" : "917797967"
+			"output" : "C:/Users/q/AndroidStudioProjects/MyHome22222/OpenCvLib/.cxx/cmake/debug/x86_64/libopencv_jni_shared.a",
+			"toolchain" : "1262131769"
 		}
 	},
 	"toolchains" : 
 	{
-		"917797967" : 
+		"1262131769" : 
 		{
-			"cCompilerExecutable" : "C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
-			"cppCompilerExecutable" : "C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+			"cCompilerExecutable" : "C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "C:/Users/q/AppData/Local/Android/Sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
 		}
 	}
 }
