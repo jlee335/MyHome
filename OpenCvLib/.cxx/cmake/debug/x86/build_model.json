@@ -5,7 +5,6 @@
       "sdkFolder": "C:\\Program Files\\Unity\\Hub\\Editor\\2019.2.17f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK",
       "isNativeCompilerSettingsCacheEnabled": false,
       "isBuildOnlyTargetAbiEnabled": true,
-      "ideBuildTargetAbi": "x86",
       "splitsAbiFilterSet": [],
       "intermediatesFolder": "C:\\Users\\q\\Desktop\\MyHomeAndroid\\MyHome\\OpenCvLib\\build\\intermediates",
       "gradleModulePathName": ":OpenCvLib",
@@ -42,7 +41,10 @@
     "gradleBuildOutputFolder": "C:\\Users\\q\\Desktop\\MyHomeAndroid\\MyHome\\OpenCvLib\\.cxx\\cxx\\debug",
     "isDebuggableEnabled": true,
     "validAbiList": [
-      "X86"
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
     ],
     "buildTargetSet": [
       "opencv_jni_shared"
