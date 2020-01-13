@@ -8,7 +8,7 @@ import org.opencv.features2d.Feature2D;
 
 // C++: class FastFeatureDetector
 /**
- * Wrapping class for feature detection using the FAST method. :
+ * Wrapping class for feature com.DefaultCompany.MyHome.detection using the FAST method. :
  */
 public class FastFeatureDetector extends Feature2D {
 

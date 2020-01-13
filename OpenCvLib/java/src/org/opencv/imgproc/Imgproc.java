@@ -2810,7 +2810,7 @@ public class Imgproc {
      * @param param1 First method-specific parameter. In case of #HOUGH_GRADIENT , it is the higher
      * threshold of the two passed to the Canny edge detector (the lower one is twice smaller).
      * @param param2 Second method-specific parameter. In case of #HOUGH_GRADIENT , it is the
-     * accumulator threshold for the circle centers at the detection stage. The smaller it is, the more
+     * accumulator threshold for the circle centers at the com.DefaultCompany.MyHome.detection stage. The smaller it is, the more
      * false circles may be detected. Circles, corresponding to the larger accumulator values, will be
      * returned first.
      * @param minRadius Minimum circle radius.
@@ -2849,7 +2849,7 @@ public class Imgproc {
      * @param param1 First method-specific parameter. In case of #HOUGH_GRADIENT , it is the higher
      * threshold of the two passed to the Canny edge detector (the lower one is twice smaller).
      * @param param2 Second method-specific parameter. In case of #HOUGH_GRADIENT , it is the
-     * accumulator threshold for the circle centers at the detection stage. The smaller it is, the more
+     * accumulator threshold for the circle centers at the com.DefaultCompany.MyHome.detection stage. The smaller it is, the more
      * false circles may be detected. Circles, corresponding to the larger accumulator values, will be
      * returned first.
      * @param minRadius Minimum circle radius.
@@ -2887,7 +2887,7 @@ public class Imgproc {
      * @param param1 First method-specific parameter. In case of #HOUGH_GRADIENT , it is the higher
      * threshold of the two passed to the Canny edge detector (the lower one is twice smaller).
      * @param param2 Second method-specific parameter. In case of #HOUGH_GRADIENT , it is the
-     * accumulator threshold for the circle centers at the detection stage. The smaller it is, the more
+     * accumulator threshold for the circle centers at the com.DefaultCompany.MyHome.detection stage. The smaller it is, the more
      * false circles may be detected. Circles, corresponding to the larger accumulator values, will be
      * returned first.
      * centers without finding the radius.
@@ -2923,7 +2923,7 @@ public class Imgproc {
      * too large, some circles may be missed.
      * @param param1 First method-specific parameter. In case of #HOUGH_GRADIENT , it is the higher
      * threshold of the two passed to the Canny edge detector (the lower one is twice smaller).
-     * accumulator threshold for the circle centers at the detection stage. The smaller it is, the more
+     * accumulator threshold for the circle centers at the com.DefaultCompany.MyHome.detection stage. The smaller it is, the more
      * false circles may be detected. Circles, corresponding to the larger accumulator values, will be
      * returned first.
      * centers without finding the radius.
@@ -2958,7 +2958,7 @@ public class Imgproc {
      * too small, multiple neighbor circles may be falsely detected in addition to a true one. If it is
      * too large, some circles may be missed.
      * threshold of the two passed to the Canny edge detector (the lower one is twice smaller).
-     * accumulator threshold for the circle centers at the detection stage. The smaller it is, the more
+     * accumulator threshold for the circle centers at the com.DefaultCompany.MyHome.detection stage. The smaller it is, the more
      * false circles may be detected. Circles, corresponding to the larger accumulator values, will be
      * returned first.
      * centers without finding the radius.
@@ -2978,7 +2978,7 @@ public class Imgproc {
      * Finds lines in a binary image using the standard Hough transform.
      *
      * The function implements the standard or standard multi-scale Hough transform algorithm for line
-     * detection. See &lt;http://homepages.inf.ed.ac.uk/rbf/HIPR2/hough.htm&gt; for a good explanation of Hough
+     * com.DefaultCompany.MyHome.detection. See &lt;http://homepages.inf.ed.ac.uk/rbf/HIPR2/hough.htm&gt; for a good explanation of Hough
      * transform.
      *
      * @param image 8-bit, single-channel binary source image. The image may be modified by the function.
@@ -3009,7 +3009,7 @@ public class Imgproc {
      * Finds lines in a binary image using the standard Hough transform.
      *
      * The function implements the standard or standard multi-scale Hough transform algorithm for line
-     * detection. See &lt;http://homepages.inf.ed.ac.uk/rbf/HIPR2/hough.htm&gt; for a good explanation of Hough
+     * com.DefaultCompany.MyHome.detection. See &lt;http://homepages.inf.ed.ac.uk/rbf/HIPR2/hough.htm&gt; for a good explanation of Hough
      * transform.
      *
      * @param image 8-bit, single-channel binary source image. The image may be modified by the function.
@@ -3039,7 +3039,7 @@ public class Imgproc {
      * Finds lines in a binary image using the standard Hough transform.
      *
      * The function implements the standard or standard multi-scale Hough transform algorithm for line
-     * detection. See &lt;http://homepages.inf.ed.ac.uk/rbf/HIPR2/hough.htm&gt; for a good explanation of Hough
+     * com.DefaultCompany.MyHome.detection. See &lt;http://homepages.inf.ed.ac.uk/rbf/HIPR2/hough.htm&gt; for a good explanation of Hough
      * transform.
      *
      * @param image 8-bit, single-channel binary source image. The image may be modified by the function.
@@ -3068,7 +3068,7 @@ public class Imgproc {
      * Finds lines in a binary image using the standard Hough transform.
      *
      * The function implements the standard or standard multi-scale Hough transform algorithm for line
-     * detection. See &lt;http://homepages.inf.ed.ac.uk/rbf/HIPR2/hough.htm&gt; for a good explanation of Hough
+     * com.DefaultCompany.MyHome.detection. See &lt;http://homepages.inf.ed.ac.uk/rbf/HIPR2/hough.htm&gt; for a good explanation of Hough
      * transform.
      *
      * @param image 8-bit, single-channel binary source image. The image may be modified by the function.
@@ -3096,7 +3096,7 @@ public class Imgproc {
      * Finds lines in a binary image using the standard Hough transform.
      *
      * The function implements the standard or standard multi-scale Hough transform algorithm for line
-     * detection. See &lt;http://homepages.inf.ed.ac.uk/rbf/HIPR2/hough.htm&gt; for a good explanation of Hough
+     * com.DefaultCompany.MyHome.detection. See &lt;http://homepages.inf.ed.ac.uk/rbf/HIPR2/hough.htm&gt; for a good explanation of Hough
      * transform.
      *
      * @param image 8-bit, single-channel binary source image. The image may be modified by the function.
@@ -3127,10 +3127,10 @@ public class Imgproc {
     /**
      * Finds line segments in a binary image using the probabilistic Hough transform.
      *
-     * The function implements the probabilistic Hough transform algorithm for line detection, described
+     * The function implements the probabilistic Hough transform algorithm for line com.DefaultCompany.MyHome.detection, described
      * in CITE: Matas00
      *
-     * See the line detection example below:
+     * See the line com.DefaultCompany.MyHome.detection example below:
      * INCLUDE: snippets/imgproc_HoughLinesP.cpp
      * This is a sample picture the function parameters have been tuned for:
      *
@@ -3160,10 +3160,10 @@ public class Imgproc {
     /**
      * Finds line segments in a binary image using the probabilistic Hough transform.
      *
-     * The function implements the probabilistic Hough transform algorithm for line detection, described
+     * The function implements the probabilistic Hough transform algorithm for line com.DefaultCompany.MyHome.detection, described
      * in CITE: Matas00
      *
-     * See the line detection example below:
+     * See the line com.DefaultCompany.MyHome.detection example below:
      * INCLUDE: snippets/imgproc_HoughLinesP.cpp
      * This is a sample picture the function parameters have been tuned for:
      *
@@ -3192,10 +3192,10 @@ public class Imgproc {
     /**
      * Finds line segments in a binary image using the probabilistic Hough transform.
      *
-     * The function implements the probabilistic Hough transform algorithm for line detection, described
+     * The function implements the probabilistic Hough transform algorithm for line com.DefaultCompany.MyHome.detection, described
      * in CITE: Matas00
      *
-     * See the line detection example below:
+     * See the line com.DefaultCompany.MyHome.detection example below:
      * INCLUDE: snippets/imgproc_HoughLinesP.cpp
      * This is a sample picture the function parameters have been tuned for:
      *
@@ -4680,7 +4680,7 @@ public class Imgproc {
     //
 
     /**
-     * Calculates eigenvalues and eigenvectors of image blocks for corner detection.
+     * Calculates eigenvalues and eigenvectors of image blocks for corner com.DefaultCompany.MyHome.detection.
      *
      * For every pixel \(p\) , the function cornerEigenValsAndVecs considers a blockSize \(\times\) blockSize
      * neighborhood \(S(p)\) . It calculates the covariation matrix of derivatives over the neighborhood as:
@@ -4704,7 +4704,7 @@ public class Imgproc {
      *   </li>
      * </ul>
      *
-     * The output of the function can be used for robust edge or corner detection.
+     * The output of the function can be used for robust edge or corner com.DefaultCompany.MyHome.detection.
      *
      * @param src Input single-channel 8-bit or floating-point image.
      * @param dst Image to store the results. It has the same size as src and the type CV_32FC(6) .
@@ -4719,7 +4719,7 @@ public class Imgproc {
     }
 
     /**
-     * Calculates eigenvalues and eigenvectors of image blocks for corner detection.
+     * Calculates eigenvalues and eigenvectors of image blocks for corner com.DefaultCompany.MyHome.detection.
      *
      * For every pixel \(p\) , the function cornerEigenValsAndVecs considers a blockSize \(\times\) blockSize
      * neighborhood \(S(p)\) . It calculates the covariation matrix of derivatives over the neighborhood as:
@@ -4743,7 +4743,7 @@ public class Imgproc {
      *   </li>
      * </ul>
      *
-     * The output of the function can be used for robust edge or corner detection.
+     * The output of the function can be used for robust edge or corner com.DefaultCompany.MyHome.detection.
      *
      * @param src Input single-channel 8-bit or floating-point image.
      * @param dst Image to store the results. It has the same size as src and the type CV_32FC(6) .
@@ -4814,7 +4814,7 @@ public class Imgproc {
     //
 
     /**
-     * Calculates the minimal eigenvalue of gradient matrices for corner detection.
+     * Calculates the minimal eigenvalue of gradient matrices for corner com.DefaultCompany.MyHome.detection.
      *
      * The function is similar to cornerEigenValsAndVecs but it calculates and stores only the minimal
      * eigenvalue of the covariance matrix of derivatives, that is, \(\min(\lambda_1, \lambda_2)\) in terms
@@ -4832,7 +4832,7 @@ public class Imgproc {
     }
 
     /**
-     * Calculates the minimal eigenvalue of gradient matrices for corner detection.
+     * Calculates the minimal eigenvalue of gradient matrices for corner com.DefaultCompany.MyHome.detection.
      *
      * The function is similar to cornerEigenValsAndVecs but it calculates and stores only the minimal
      * eigenvalue of the covariance matrix of derivatives, that is, \(\min(\lambda_1, \lambda_2)\) in terms
@@ -4849,7 +4849,7 @@ public class Imgproc {
     }
 
     /**
-     * Calculates the minimal eigenvalue of gradient matrices for corner detection.
+     * Calculates the minimal eigenvalue of gradient matrices for corner com.DefaultCompany.MyHome.detection.
      *
      * The function is similar to cornerEigenValsAndVecs but it calculates and stores only the minimal
      * eigenvalue of the covariance matrix of derivatives, that is, \(\min(\lambda_1, \lambda_2)\) in terms
@@ -6434,7 +6434,7 @@ public class Imgproc {
      * Finds contours in a binary image.
      *
      * The function retrieves contours from the binary image using the algorithm CITE: Suzuki85 . The contours
-     * are a useful tool for shape analysis and object detection and recognition. See squares.cpp in the
+     * are a useful tool for shape analysis and object com.DefaultCompany.MyHome.detection and recognition. See squares.cpp in the
      * OpenCV sample directory.
      * <b>Note:</b> Since opencv 3.2 source image is not modified by this function.
      *
@@ -6467,7 +6467,7 @@ public class Imgproc {
      * Finds contours in a binary image.
      *
      * The function retrieves contours from the binary image using the algorithm CITE: Suzuki85 . The contours
-     * are a useful tool for shape analysis and object detection and recognition. See squares.cpp in the
+     * are a useful tool for shape analysis and object com.DefaultCompany.MyHome.detection and recognition. See squares.cpp in the
      * OpenCV sample directory.
      * <b>Note:</b> Since opencv 3.2 source image is not modified by this function.
      *
@@ -7738,7 +7738,7 @@ public class Imgproc {
     //
 
     /**
-     * Calculates a feature map for corner detection.
+     * Calculates a feature map for corner com.DefaultCompany.MyHome.detection.
      *
      * The function calculates the complex spatial derivative-based function of the source image
      *
@@ -7766,7 +7766,7 @@ public class Imgproc {
     }
 
     /**
-     * Calculates a feature map for corner detection.
+     * Calculates a feature map for corner com.DefaultCompany.MyHome.detection.
      *
      * The function calculates the complex spatial derivative-based function of the source image
      *

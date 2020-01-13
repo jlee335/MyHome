@@ -25,7 +25,7 @@ public class BackgroundSubtractorMOG2 extends BackgroundSubtractor {
     //
 
     /**
-     * Returns the shadow detection flag
+     * Returns the shadow com.DefaultCompany.MyHome.detection flag
      *
      *     If true, the algorithm detects shadows and marks them. See createBackgroundSubtractorMOG2 for
      *     details.
@@ -259,7 +259,7 @@ public class BackgroundSubtractorMOG2 extends BackgroundSubtractor {
     //
 
     /**
-     * Enables or disables shadow detection
+     * Enables or disables shadow com.DefaultCompany.MyHome.detection
      * @param detectShadows automatically generated
      */
     public void setDetectShadows(boolean detectShadows) {

@@ -3,24 +3,24 @@
 3    package="org.opencv.test" >
 4
 5    <uses-sdk
-5-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger779483895611375841.xml:5:5-74
+5-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6935665413910862891.xml:5:5-74
 6        android:minSdkVersion="21"
-6-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger779483895611375841.xml:5:15-41
+6-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6935665413910862891.xml:5:15-41
 7        android:targetSdkVersion="26" />
-7-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger779483895611375841.xml:5:42-71
+7-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6935665413910862891.xml:5:42-71
 8
 9    <instrumentation
-9-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger779483895611375841.xml:11:5-15:65
+9-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6935665413910862891.xml:11:5-15:65
 10        android:name="android.test.InstrumentationTestRunner"
-10-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger779483895611375841.xml:11:22-75
+10-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6935665413910862891.xml:11:22-75
 11        android:functionalTest="false"
-11-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger779483895611375841.xml:14:22-52
+11-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6935665413910862891.xml:14:22-52
 12        android:handleProfiling="false"
-12-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger779483895611375841.xml:13:22-53
+12-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6935665413910862891.xml:13:22-53
 13        android:label="Tests for org.opencv.test"
-13-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger779483895611375841.xml:15:22-63
+13-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6935665413910862891.xml:15:22-63
 14        android:targetPackage="org.opencv.test" />
-14-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger779483895611375841.xml:12:22-61
+14-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6935665413910862891.xml:12:22-61
 15
 16    <uses-permission android:name="android.permission.CAMERA" />
 16-->[__tested_artifact__::OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-65
@@ -52,14 +52,14 @@
 29-->[__tested_artifact__::OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:9-33
 30
 31    <application
-31-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger779483895611375841.xml:7:5-9:19
+31-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6935665413910862891.xml:7:5-9:19
 32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-32-->[androidx.core:core:1.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\10ae0346493e57bd5c834c5376242eb1\core-1.0.0\AndroidManifest.xml:22:18-86
+32-->[androidx.core:core:1.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\e2b958bcb59baf11ade69f5f361f2fab\core-1.0.0\AndroidManifest.xml:22:18-86
 33        android:debuggable="true" >
-33-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger779483895611375841.xml:7:18-43
+33-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6935665413910862891.xml:7:18-43
 34        <uses-library android:name="android.test.runner" />
-34-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger779483895611375841.xml:8:9-60
-34-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger779483895611375841.xml:8:23-57
+34-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6935665413910862891.xml:8:9-60
+34-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6935665413910862891.xml:8:23-57
 35    </application>
 36
 37</manifest>

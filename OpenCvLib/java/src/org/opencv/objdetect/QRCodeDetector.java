@@ -120,7 +120,7 @@ public class QRCodeDetector {
     //
 
     /**
-     * sets the epsilon used during the horizontal scan of QR code stop marker detection.
+     * sets the epsilon used during the horizontal scan of QR code stop marker com.DefaultCompany.MyHome.detection.
      *      @param epsX Epsilon neighborhood, which allows you to determine the horizontal pattern
      *      of the scheme 1:1:3:1:1 according to QR code standard.
      */
@@ -134,7 +134,7 @@ public class QRCodeDetector {
     //
 
     /**
-     * sets the epsilon used during the vertical scan of QR code stop marker detection.
+     * sets the epsilon used during the vertical scan of QR code stop marker com.DefaultCompany.MyHome.detection.
      *      @param epsY Epsilon neighborhood, which allows you to determine the vertical pattern
      *      of the scheme 1:1:3:1:1 according to QR code standard.
      */
