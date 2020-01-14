@@ -154,10 +154,10 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
                   choose.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                      Log.d("아", "버튼");
-                      Intent intent = new Intent(getApplicationContext(), UnityPlayerActivity.class);
-                      intent.putExtra("ID",results.get(0).getTitle()); /*송신*/
-                      startActivity(intent);
+//                      Log.d("아", "버튼");
+//                      Intent intent = new Intent(getApplicationContext(), UnityPlayerActivity.class);
+//                      intent.putExtra("ID",results.get(0).getTitle()); /*송신*/
+//                      startActivity(intent);
                     }
                   });
 

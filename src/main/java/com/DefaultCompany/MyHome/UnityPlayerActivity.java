@@ -83,15 +83,16 @@ public class UnityPlayerActivity extends AppCompatActivity
 
 
         // 만약, 다른 곳에서 변수를 가져왔으면, 여기다 붙히자.
-        Bundle extras = this.getIntent().getExtras();
-        if(extras != null){
-            // 여기서 다른 곳에서부터 가져오자.
-            double width = extras.getDouble("width");
-            double height =extras.getDouble("height");
+//        Bundle extras = this.getIntent().getExtras();
+//        if(extras != null){
+//            // 여기서 다른 곳에서부터 가져오자.
+//            double width = extras.getDouble("width");
+//            double height =extras.getDouble("height");
+//            String title = extras.getString("title");
+//            //width Height 를 2m 단위로 잘라서 방을 만들자.
+//            Log.d("title", title);
+//        }
 
-            //width Height 를 2m 단위로 잘라서 방을 만들자.
-
-        }
 
 
 
@@ -148,8 +149,8 @@ public class UnityPlayerActivity extends AppCompatActivity
         labeling.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),ClassifierActivity.class);
-                startActivityForResult(intent,sub);
+                Intent intent = new Intent(getApplicationContext(), com.DefaultCompany.MyHome.detection.DetectorActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -357,6 +358,61 @@ public class UnityPlayerActivity extends AppCompatActivity
                 mUnityPlayer.UnitySendMessage("Player", "back", "");
             }
         });
+
+
+        Intent intent = getIntent();
+        String title = intent.getExtras().getString("title");
+        if(title != null){
+
+
+
+
+            if(title.equals("laptop") || title.equals("desktop")) {
+                title = "computer";
+            }
+            else if(title.equals("tv")) {
+                title = "chalkboard";
+            }
+            else if(title.equals("suitcase")) {
+                title = "stand";
+            }
+            else if(title.equals("keyboard")) {
+                title = "keyboard";
+            }
+            else if(title.equals("mouse")) {
+                title = "mouse";
+            }
+            else if(title.equals("chair") || title.equals("bench")) {
+                title = "chair";
+            }
+            else if(title.equals("cup")) {
+                title = "cup";
+            }
+            else if(title.equals("table")) {
+                title = "table";
+            }
+            else if(title.equals("bed")) {
+                title = "bed";
+            }
+            else if(title.equals("book")) {
+                title = "book";
+            }
+            else if(title.equals("refrigerator")) {
+                title = "refrigerator";
+            }
+            else {
+                title = "again";
+            }
+
+
+            Log.d("우", title);
+            mUnityPlayer.UnitySendMessage("Player", "placeFurniture", title);
+        }
+
+
+
+
+
     }
 
     @Override protected void onStart()

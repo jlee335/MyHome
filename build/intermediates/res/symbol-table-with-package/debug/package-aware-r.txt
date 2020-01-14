@@ -1201,6 +1201,7 @@ id bottom
 id bottom_move
 id bottom_sheet_arrow
 id bottom_sheet_layout
+id btn_furn
 id button
 id buttonPanel
 id cancel_action
