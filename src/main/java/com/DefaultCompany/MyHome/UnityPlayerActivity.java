@@ -40,6 +40,7 @@ import com.unity3d.player.UnityPlayer;
 import org.opencv.android.OpenCVLoader;
 
 import java.io.ByteArrayOutputStream;
+import java.lang.reflect.Array;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -110,24 +111,20 @@ public class UnityPlayerActivity extends AppCompatActivity
 
         setContentView(R.layout.activity_main);
 
-        Button rsv = findViewById(R.id.roomScanButton);
-        rsv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),RoomScanActivity.class);
-                startActivity(intent);
-            }
-        });
+//        Button rsv = findViewById(R.id.roomScanButton);
+//        rsv.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(getApplicationContext(),RoomScanActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
         FrameLayout layout = (FrameLayout) findViewById(R.id.framelayout);
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.FILL_PARENT, LinearLayout.LayoutParams.FILL_PARENT);
         layout.addView(mUnityPlayer.getView(), 0, lp);
-
-        l_move = findViewById(R.id.left_move);
-        r_move = findViewById(R.id.right_move);
-        t_move = findViewById(R.id.top_move);
-        b_move = findViewById(R.id.bottom_move);
-        fab = findViewById(R.id.fab);
+//
+//        fab = findViewById(R.id.fab);
         Button goCV = findViewById(R.id.button);
         Button labeling = findViewById(R.id.labeling);
 
@@ -139,12 +136,13 @@ public class UnityPlayerActivity extends AppCompatActivity
             }
         });
 
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                buttonDo();
-            }
-        });
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(getApplicationContext(), com.DefaultCompany.MyHome.detection.DetectorActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
         labeling.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -223,14 +221,6 @@ public class UnityPlayerActivity extends AppCompatActivity
                         text[0] = "Unclassified";
                     }
                 });
-
-
-
-
-
-
-
-
         }
         else {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -332,40 +322,9 @@ public class UnityPlayerActivity extends AppCompatActivity
         super.onResume();
         mUnityPlayer.resume();
 
-        l_move.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               mUnityPlayer.UnitySendMessage("Player", "left", "");
-           }
-        });
-
-        r_move.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mUnityPlayer.UnitySendMessage("Player", "right", "");
-            }
-        });
-        t_move.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mUnityPlayer.UnitySendMessage("Player", "front", "");
-            }
-        });
-
-        b_move.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mUnityPlayer.UnitySendMessage("Player", "back", "");
-            }
-        });
-
-
         Intent intent = getIntent();
         String title = intent.getExtras().getString("title");
         if(title != null){
-
-
-
 
             if(title.equals("laptop") || title.equals("desktop")) {
                 title = "computer";
@@ -411,9 +370,30 @@ public class UnityPlayerActivity extends AppCompatActivity
 
 
 
+        String room = intent.getExtras().getString("room");
+        String iswall = intent.getStringExtra("iswall");
+        if(room != null) {
+            if(iswall != null){
+                if(iswall.equals("true")) {
+                    mUnityPlayer.UnitySendMessage("Player", "makeWall", room);
+                }
+                if(iswall.equals("false")) {
+                    mUnityPlayer.UnitySendMessage("Player", "makeFloor", room);
+                }
+            }
+        }
 
 
-    }
+        double width = intent.getExtras().getDouble("width");
+        double height = intent.getExtras().getDouble("height");
+        if(width != 0 && height != 0) {
+            String length = width + ":" + height;
+            mUnityPlayer.UnitySendMessage("Player", "startBuildRoom", length);
+        }
+
+
+
+        }
 
     @Override protected void onStart()
     {

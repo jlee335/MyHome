@@ -3,10 +3,13 @@ package com.DefaultCompany.MyHome;
 import android.annotation.SuppressLint;
 
 import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ClipData;
 import android.content.ClipDescription;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -16,6 +19,7 @@ import android.graphics.drawable.Drawable;
 import android.media.Image;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Base64;
 import android.util.Log;
 import android.view.DragEvent;
 import android.view.MotionEvent;
@@ -32,6 +36,7 @@ import org.opencv.core.MatOfPoint2f;
 import org.opencv.core.Point;
 import org.opencv.imgproc.Imgproc;
 
+import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
@@ -58,6 +63,8 @@ public class selectPoints extends AppCompatActivity {
     float[] point2pos;
     float[] point3pos;
     float[] point4pos;
+
+    String iswall = "true";
 
 
 
@@ -87,6 +94,7 @@ public class selectPoints extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_points);
 
@@ -243,18 +251,75 @@ public class selectPoints extends AppCompatActivity {
                     imageView.setImageBitmap(res);
 
 
+                    AlertDialog.Builder builder = new AlertDialog.Builder(selectPoints.this);
+
+                    builder.setTitle("바닥인지 벽인지 선택하세요").setMessage("(바닥/벽)");
+
+                    builder.setPositiveButton("바닥", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int id) {
+                            Bitmap result = Bitmap.createScaledBitmap(res, 36, 36, false);
+
+                            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+                            result.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
+                            byte[] byteArray = byteArrayOutputStream.toByteArray();
+
+                            String encoded = Base64.encodeToString(byteArray, Base64.DEFAULT);
+                            //intent
+                            iswall = "false";
+                            Intent intent = new Intent(getApplicationContext(), com.DefaultCompany.MyHome.UnityPlayerActivity.class);
+                            intent.putExtra("room",encoded);
+                            intent.putExtra("iswall", iswall);
+
+                            if(intent == null) {
+                                Log.d("intent", "null");
+                            }
+                            startActivity(intent);
+
+                        }
+                    });
+
+                    builder.setNegativeButton("벽", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int id) {
+                            Bitmap result = Bitmap.createScaledBitmap(res, 36, 25, false);
+
+                            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+                            result.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
+                            byte[] byteArray = byteArrayOutputStream.toByteArray();
+
+                            String encoded = Base64.encodeToString(byteArray, Base64.DEFAULT);
+                            //intent
+                            Intent intent = new Intent(getApplicationContext(), com.DefaultCompany.MyHome.UnityPlayerActivity.class);
+                            intent.putExtra("room",encoded);
+                            intent.putExtra("iswall", iswall);
+                            if(intent == null) {
+                                Log.d("intent", "null");
+                            }
+                            startActivity(intent);
+
+
+                        }
+                    });
+
+                    builder.setNeutralButton("cancel", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int id) {
+                            Toast.makeText(getApplicationContext(), "cancel Click", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+
+                    AlertDialog alertDialog = builder.create();
+                    alertDialog.show();
 
                 }
             });
         } catch (FileNotFoundException e) {
 
         }
-
-
-
-
-
     }
+
+
     private static Bitmap convertMatToBitMap(Mat input){
         Bitmap bmp = null;
         Mat rgb = new Mat();

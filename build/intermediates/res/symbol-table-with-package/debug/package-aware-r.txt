@@ -1198,7 +1198,6 @@ id barrier
 id beginning
 id blocking
 id bottom
-id bottom_move
 id bottom_sheet_arrow
 id bottom_sheet_layout
 id btn_furn
@@ -1254,7 +1253,6 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
-id fab
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1289,7 +1287,6 @@ id labeled
 id labeling
 id largeLabel
 id left
-id left_move
 id light
 id line1
 id line3
@@ -1341,9 +1338,7 @@ id resultIV
 id results
 id right
 id right_icon
-id right_move
 id right_side
-id roomScanButton
 id rotation
 id rotation_info
 id save_image_matrix
@@ -1425,7 +1420,6 @@ id title_template
 id toolbar
 id top
 id topPanel
-id top_move
 id touch_outside
 id tracking_overlay
 id transition_current_scene

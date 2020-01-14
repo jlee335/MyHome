@@ -35,6 +35,19 @@
             android:layout_height="match_parent"
             tools:context="org.tensorflow.demo.CameraActivity">
 
+            <Button
+                android:id="@+id/btn_furn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:text="가구수집" />
+
+            <Button
+                android:id="@+id/ConfirmButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:text="방만들기" />
         </FrameLayout>
 
     </RelativeLayout>
@@ -44,11 +57,18 @@
         android:id="@+id/bottom_sheet_layout"
         layout="@layout/layout_bottom_sheet2" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="233dp"
         android:layout_height="123dp"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp">
+        android:layout_marginTop="550dp">
 
         <Button
             android:id="@+id/GetHeight"
@@ -69,21 +89,11 @@
             app:layout_constraintStart_toStartOf="@+id/GetHeight"
             app:layout_constraintTop_toBottomOf="@+id/GetHeight" />
 
-        <Button
-            android:id="@+id/btn_furn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="230dp"
-            android:text="가구수집하기"
-            app:layout_constraintStart_toStartOf="@+id/showHeight"
-            app:layout_constraintTop_toTopOf="@+id/showHeight" />
-
         <TextView
             android:id="@+id/showHeight"
             android:layout_width="241dp"
             android:layout_height="50dp"
             android:background="@color/design_default_color_primary"
-            android:text="TextView"
             android:textColor="@color/common_google_signin_btn_text_dark_default"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="@+id/showWidth"
@@ -95,19 +105,10 @@
             android:layout_width="241dp"
             android:layout_height="50dp"
             android:background="@color/design_default_color_primary"
-            android:text="TextView"
             android:textColor="@color/common_google_signin_btn_text_dark_default"
             android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/showHeight" />
-
-        <Button
-            android:id="@+id/ConfirmButton"
-            android:layout_width="108dp"
-            android:layout_height="99dp"
-            android:text="Confirm"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

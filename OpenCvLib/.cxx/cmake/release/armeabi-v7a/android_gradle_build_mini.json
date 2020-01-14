@@ -1,16 +1,16 @@
 {
   "buildFiles": [
-    "C:\\Users\\q\\Desktop\\MyHomeAndroid\\MyHome\\OpenCvLib\\libcxx_helper\\CMakeLists.txt"
+    "C:\\Users\\q\\AndroidStudioProjects\\MyHome4444\\OpenCvLib\\libcxx_helper\\CMakeLists.txt"
   ],
   "cleanCommands": [
-    "\"C:\\Program Files\\Unity\\Hub\\Editor\\2019.2.17f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\cmake\\3.6.4111459\\bin\\cmake.exe\" --build C:\\Users\\q\\Desktop\\MyHomeAndroid\\MyHome\\OpenCvLib\\.cxx\\cmake\\release\\armeabi-v7a --target clean"
+    "C:\\Users\\q\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\q\\AndroidStudioProjects\\MyHome4444\\OpenCvLib\\.cxx\\cmake\\release\\armeabi-v7a --target clean"
   ],
   "libraries": {
     "opencv_jni_shared-Release-armeabi-v7a": {
       "artifactName": "opencv_jni_shared",
-      "buildCommand": "\"C:\\Program Files\\Unity\\Hub\\Editor\\2019.2.17f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\cmake\\3.6.4111459\\bin\\cmake.exe\" --build C:\\Users\\q\\Desktop\\MyHomeAndroid\\MyHome\\OpenCvLib\\.cxx\\cmake\\release\\armeabi-v7a --target opencv_jni_shared",
+      "buildCommand": "C:\\Users\\q\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\q\\AndroidStudioProjects\\MyHome4444\\OpenCvLib\\.cxx\\cmake\\release\\armeabi-v7a --target opencv_jni_shared",
       "abi": "armeabi-v7a",
-      "output": "C:\\Users\\q\\Desktop\\MyHomeAndroid\\MyHome\\OpenCvLib\\.cxx\\cmake\\release\\armeabi-v7a\\libopencv_jni_shared.a"
+      "output": "C:\\Users\\q\\AndroidStudioProjects\\MyHome4444\\OpenCvLib\\.cxx\\cmake\\release\\armeabi-v7a\\libopencv_jni_shared.a"
     }
   }
 }
