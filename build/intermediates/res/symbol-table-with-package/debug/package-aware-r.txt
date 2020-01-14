@@ -1121,7 +1121,10 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
 id CTRL
+id ConfirmButton
 id FUNCTION
+id GetHeight
+id GetWidth
 id META
 id SHIFT
 id SYM
@@ -1366,8 +1369,10 @@ id select_dialog_listview
 id selected
 id shortcut
 id showCustom
+id showHeight
 id showHome
 id showTitle
+id showWidth
 id smallLabel
 id snackbar_action
 id snackbar_text

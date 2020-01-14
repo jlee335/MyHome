@@ -82,6 +82,20 @@ public class UnityPlayerActivity extends AppCompatActivity
         }
 
 
+        // 만약, 다른 곳에서 변수를 가져왔으면, 여기다 붙히자.
+        Bundle extras = this.getIntent().getExtras();
+        if(extras != null){
+            // 여기서 다른 곳에서부터 가져오자.
+            double width = extras.getDouble("width");
+            double height =extras.getDouble("height");
+
+            //width Height 를 2m 단위로 잘라서 방을 만들자.
+
+        }
+
+
+
+
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);

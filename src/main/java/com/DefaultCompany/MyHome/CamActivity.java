@@ -110,6 +110,8 @@ public class CamActivity extends CameraActivity implements CvCameraViewListener2
 
         setContentView(R.layout.activity_cam);
 
+
+
         getTexture = (Button) findViewById(R.id.snapTexutre);
         getTexture.setOnClickListener(new View.OnClickListener(){
             @Override
