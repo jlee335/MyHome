@@ -179,5 +179,7 @@
     <orderEntry type="library" name="Gradle: org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly@aar" level="project" />
     <orderEntry type="library" name="Gradle: org.tensorflow:tensorflow-lite-support:0.0.0-nightly@aar" level="project" />
     <orderEntry type="module" module-name="OpenCvLib" />
+    <orderEntry type="module" module-name="OpenCvLib" />
+    <orderEntry type="module" module-name="OpenCvLib" />
   </component>
 </module>
