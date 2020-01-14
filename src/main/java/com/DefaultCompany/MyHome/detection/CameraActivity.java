@@ -47,6 +47,8 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SwitchCompat;
 import androidx.appcompat.widget.Toolbar;
+
+import android.util.Log;
 import android.util.Size;
 import android.view.Surface;
 import android.view.View;
@@ -167,6 +169,20 @@ public abstract class CameraActivity extends AppCompatActivity
         Intent intent = new Intent(getApplicationContext(), UnityPlayerActivity.class);
         intent.putExtra("width",finWidth);
         intent.putExtra("height",finHeight);
+        startActivity(intent);
+      }
+    });
+    Button btn_furn = findViewById(R.id.btn_furn);
+    btn_furn.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        String title = ((MyApplication)context.getApplicationContext()).getTitle();
+        Log.d("안녕", title);
+        Intent intent = new Intent(getApplicationContext(), com.DefaultCompany.MyHome.UnityPlayerActivity.class);
+        intent.putExtra("title",title);
+        if(intent == null) {
+          Log.d("intent", "null");
+        }
         startActivity(intent);
       }
     });

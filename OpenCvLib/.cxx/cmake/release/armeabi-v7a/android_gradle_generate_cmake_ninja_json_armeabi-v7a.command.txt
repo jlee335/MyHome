@@ -1,10 +1,10 @@
 Executable : C:\Users\q\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\cmake.exe
 arguments : 
--HC:\Users\q\AndroidStudioProjects\MyHome\OpenCvLib\libcxx_helper
--BC:\Users\q\AndroidStudioProjects\MyHome\OpenCvLib\.cxx\cmake\release\armeabi-v7a
+-HC:\Users\q\AndroidStudioProjects\MyHome2222\OpenCvLib\libcxx_helper
+-BC:\Users\q\AndroidStudioProjects\MyHome2222\OpenCvLib\.cxx\cmake\release\armeabi-v7a
 -DANDROID_ABI=armeabi-v7a
 -DANDROID_PLATFORM=android-21
--DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\Users\q\AndroidStudioProjects\MyHome\OpenCvLib\build\intermediates\cmake\release\obj\armeabi-v7a
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\Users\q\AndroidStudioProjects\MyHome2222\OpenCvLib\build\intermediates\cmake\release\obj\armeabi-v7a
 -DCMAKE_BUILD_TYPE=Release
 -DANDROID_NDK=C:\Users\q\AppData\Local\Android\Sdk\ndk\20.1.5948944
 -DCMAKE_TOOLCHAIN_FILE=C:\Users\q\AppData\Local\Android\Sdk\ndk\20.1.5948944\build\cmake\android.toolchain.cmake

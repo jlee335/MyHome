@@ -29,8 +29,11 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.util.Pair;
 import android.util.TypedValue;
+import android.view.View;
+import android.widget.Button;
 
 import com.DefaultCompany.MyHome.MyApplication;
+import com.DefaultCompany.MyHome.R;
 import com.DefaultCompany.MyHome.detection.env.BorderedText;
 import com.DefaultCompany.MyHome.detection.env.ImageUtils;
 import com.DefaultCompany.MyHome.detection.env.Logger;
@@ -79,7 +82,9 @@ public class MultiBoxTracker {
   private int sensorOrientation;
   boolean person = false;
   float height = 0;
+  float area = 0;
   MyApplication app;
+  private Button btn_confirm;
 
   public MultiBoxTracker(final Context context) {
     for (final int color : COLORS) {
@@ -176,6 +181,8 @@ public class MultiBoxTracker {
 
   private void processResults(final List<Classifier.Recognition> results,Context context) {
     height = 0;
+    area = 0;
+
     final List<Pair<Float, Classifier.Recognition>> rectsToTrack = new LinkedList<Pair<Float, Classifier.Recognition>>();
 
     screenRects.clear();
@@ -195,6 +202,7 @@ public class MultiBoxTracker {
 
       screenRects.add(new Pair<Float, RectF>(result.getConfidence(), detectionScreenRect));
 
+      Log.d("오오", String.valueOf(detectionFrameRect.width()));
       if(person){
         if(height < detectionFrameRect.width()){
           height=detectionFrameRect.width();
@@ -207,6 +215,12 @@ public class MultiBoxTracker {
         Log.d("저 사람의 키는::",""+detectionFrameRect.width());
 
         person = false;
+      }
+
+        if(area < detectionFrameRect.width()*detectionFrameRect.height()) {    //사각형이 가장 길면
+          Log.d("하하하", result.getTitle());       //해당 물체의 label을 기록
+          ((MyApplication)context.getApplicationContext()).setTitle(result.getTitle());
+               //해당 물체의 label을 myapplication 에
       }
 
       if (detectionFrameRect.width() < MIN_SIZE || detectionFrameRect.height() < MIN_SIZE) {
