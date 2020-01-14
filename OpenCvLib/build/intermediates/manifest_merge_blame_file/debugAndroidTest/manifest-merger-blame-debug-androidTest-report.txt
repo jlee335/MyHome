@@ -1,0 +1,65 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.opencv.test" >
+4
+5    <uses-sdk
+5-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2638759072322825447.xml:5:5-74
+6        android:minSdkVersion="21"
+6-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2638759072322825447.xml:5:15-41
+7        android:targetSdkVersion="26" />
+7-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2638759072322825447.xml:5:42-71
+8
+9    <instrumentation
+9-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2638759072322825447.xml:11:5-15:65
+10        android:name="android.test.InstrumentationTestRunner"
+10-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2638759072322825447.xml:11:22-75
+11        android:functionalTest="false"
+11-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2638759072322825447.xml:14:22-52
+12        android:handleProfiling="false"
+12-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2638759072322825447.xml:13:22-53
+13        android:label="Tests for org.opencv.test"
+13-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2638759072322825447.xml:15:22-63
+14        android:targetPackage="org.opencv.test" />
+14-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2638759072322825447.xml:12:22-61
+15
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->[__tested_artifact__::OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-65
+16-->[__tested_artifact__::OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-62
+17
+18    <uses-feature
+18-->[__tested_artifact__::OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-15:36
+19        android:name="android.hardware.camera"
+19-->[__tested_artifact__::OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-47
+20        android:required="false" />
+20-->[__tested_artifact__::OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:9-33
+21    <uses-feature
+21-->[__tested_artifact__::OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-18:36
+22        android:name="android.hardware.camera.autofocus"
+22-->[__tested_artifact__::OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-57
+23        android:required="false" />
+23-->[__tested_artifact__::OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-33
+24    <uses-feature
+24-->[__tested_artifact__::OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:5-21:36
+25        android:name="android.hardware.camera.front"
+25-->[__tested_artifact__::OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:9-53
+26        android:required="false" />
+26-->[__tested_artifact__::OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:9-33
+27    <uses-feature
+27-->[__tested_artifact__::OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:5-24:36
+28        android:name="android.hardware.camera.front.autofocus"
+28-->[__tested_artifact__::OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:9-63
+29        android:required="false" />
+29-->[__tested_artifact__::OpenCvLib] C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:9-33
+30
+31    <application
+31-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2638759072322825447.xml:7:5-9:19
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.0.0] C:\Users\q\.gradle\caches\transforms-2\files-2.1\e2b958bcb59baf11ade69f5f361f2fab\core-1.0.0\AndroidManifest.xml:22:18-86
+33        android:debuggable="true" >
+33-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2638759072322825447.xml:7:18-43
+34        <uses-library android:name="android.test.runner" />
+34-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2638759072322825447.xml:8:9-60
+34-->C:\Users\q\Desktop\MyHomeAndroid\MyHome\OpenCvLib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2638759072322825447.xml:8:23-57
+35    </application>
+36
+37</manifest>
