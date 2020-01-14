@@ -7,6 +7,17 @@ public class MyApplication extends Application {
     public static float maxHeight;
     private static Context context;
     public static String title;
+    public static double[] avgColour;
+
+
+    public double[] getAvgColour(){
+        return avgColour;
+    }
+    public void setAvgColour(double[] midX){
+        this.avgColour = midX;
+    }
+
+
     public void onCreate() {
         super.onCreate();
         MyApplication.context = getApplicationContext();

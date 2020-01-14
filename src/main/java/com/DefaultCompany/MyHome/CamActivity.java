@@ -125,8 +125,9 @@ public class CamActivity extends CameraActivity implements CvCameraViewListener2
 
                 i.putExtra("BMP",path);
                 if(loaded){
-                    i.putExtra("Width",width);
-                    i.putExtra("Height",height);
+                    i.putExtra("width",width);
+                    i.putExtra("height",height);
+                    Log.e("SIZEFROM :: CamActivity --> selectPoints",width + "---"+height);
                     i.putExtra("fromTensor",true);
                 }else{
                     i.putExtra("fromTensor",false);

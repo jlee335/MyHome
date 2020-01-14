@@ -15,12 +15,15 @@ limitations under the License.
 
 package com.DefaultCompany.MyHome.detection.tflite;
 
+import android.content.Intent;
 import android.content.res.AssetFileDescriptor;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.graphics.RectF;
 import android.os.Trace;
 
+import com.DefaultCompany.MyHome.MyApplication;
 import com.DefaultCompany.MyHome.detection.env.Logger;
 
 import java.io.BufferedReader;
@@ -60,6 +63,7 @@ public class TFLiteObjectDetectionAPIModel implements Classifier {
   // Pre-allocated buffers.
   private Vector<String> labels = new Vector<String>();
   private int[] intValues;
+  private int[] getColor;
   // outputLocations: array of shape [Batchsize, NUM_DETECTIONS,4]
   // contains the location of detected boxes
   private float[][][] outputLocations;
@@ -76,7 +80,7 @@ public class TFLiteObjectDetectionAPIModel implements Classifier {
   private ByteBuffer imgData;
 
   private Interpreter tfLite;
-
+  double[]avgColour;
   private TFLiteObjectDetectionAPIModel() {}
 
   /** Memory-map the model file in Assets. */
@@ -139,6 +143,7 @@ public class TFLiteObjectDetectionAPIModel implements Classifier {
     d.imgData = ByteBuffer.allocateDirect(1 * d.inputSize * d.inputSize * 3 * numBytesPerChannel);
     d.imgData.order(ByteOrder.nativeOrder());
     d.intValues = new int[d.inputSize * d.inputSize];
+    d.getColor = new int[d.inputSize * d.inputSize];
 
     d.tfLite.setNumThreads(NUM_THREADS);
     d.outputLocations = new float[1][NUM_DETECTIONS][4];
@@ -157,6 +162,22 @@ public class TFLiteObjectDetectionAPIModel implements Classifier {
     // Preprocess the image data from 0-255 int to normalized float based
     // on the provided parameters.
     bitmap.getPixels(intValues, 0, bitmap.getWidth(), 0, 0, bitmap.getWidth(), bitmap.getHeight());
+
+    bitmap.getPixels(getColor, 0, bitmap.getWidth(), bitmap.getWidth()/4, bitmap.getHeight()/4, bitmap.getWidth()*3/4, bitmap.getHeight()*3/4);
+    double red = 0;
+    double green= 0;
+    double blue = 0;
+    for(int i = 0; i <getColor.length;i++){
+      red += Color.red(getColor[i]);
+      green += Color.green(getColor[i]);
+      blue += Color.blue(getColor[i]);
+    }
+    red = red/getColor.length;
+    green = green/getColor.length;
+    blue = blue/getColor.length;
+
+    avgColour = new double[]{red,green,blue};
+
 
     imgData.rewind();
     for (int i = 0; i < inputSize; ++i) {
@@ -215,7 +236,8 @@ public class TFLiteObjectDetectionAPIModel implements Classifier {
               "" + i,
               labels.get((int) outputClasses[0][i] + labelOffset),
               outputScores[0][i],
-              detection));
+              detection,
+                avgColour));
     }
     Trace.endSection(); // "recognizeImage"
     return recognitions;

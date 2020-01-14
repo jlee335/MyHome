@@ -83,6 +83,8 @@ public class MultiBoxTracker {
   boolean person = false;
   float height = 0;
   float area = 0;
+  float midX;
+  float midY;
   MyApplication app;
   private Button btn_confirm;
 
@@ -201,7 +203,7 @@ public class MultiBoxTracker {
           "Result! Frame: " + result.getLocation() + " mapped to screen:" + detectionScreenRect);
 
       screenRects.add(new Pair<Float, RectF>(result.getConfidence(), detectionScreenRect));
-
+      double[] avgColor = result.getAvgColour();
       Log.d("오오", String.valueOf(detectionFrameRect.width()));
       if(person){
         if(height < detectionFrameRect.width()){
@@ -219,7 +221,13 @@ public class MultiBoxTracker {
 
         if(area < detectionFrameRect.width()*detectionFrameRect.height()) {    //사각형이 가장 길면
           Log.d("하하하", result.getTitle());       //해당 물체의 label을 기록
+
+
           ((MyApplication)context.getApplicationContext()).setTitle(result.getTitle());
+          ((MyApplication)context.getApplicationContext()).setAvgColour(result.getAvgColour());
+          //Title 하고 평균 색상을 가져다줌!
+
+
                //해당 물체의 label을 myapplication 에
       }
 

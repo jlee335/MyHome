@@ -51,15 +51,19 @@ public interface Classifier {
 
     /** Optional location within the source image for the location of the recognized object. */
     private RectF location;
+    private double[] avgColour;
 
     public Recognition(
-        final String id, final String title, final Float confidence, final RectF location) {
+        final String id, final String title, final Float confidence, final RectF location,final double[] avgColour) {
       this.id = id;
       this.title = title;
       this.confidence = confidence;
       this.location = location;
+      this.avgColour = avgColour;
     }
-
+    public double[] getAvgColour(){
+      return avgColour;
+    }
     public String getId() {
       return id;
     }

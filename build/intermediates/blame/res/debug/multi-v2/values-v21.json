@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\q\\AndroidStudioProjects\\MyHome4444\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "C:\\Users\\q\\Desktop\\final\\MyHome\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\q\\.gradle\\caches\\transforms-2\\files-2.1\\1198f9787e20f187ad270ac7b3a33fba\\appcompat-1.1.0\\res\\values-v21\\values-v21.xml",
@@ -42,6 +42,25 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\q\\Desktop\\final\\MyHome\\src\\main\\res\\values-v21\\styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "0",
+                        "startOffsets": "53",
+                        "endLines": "3",
+                        "endColumns": "8",
+                        "endOffsets": "130"
+                    },
+                    "to": {
+                        "startLines": "226",
+                        "startColumns": "4",
+                        "startOffsets": "16921",
+                        "endLines": "227",
+                        "endColumns": "8",
+                        "endOffsets": "16997"
+                    }
+                },
+                {
                     "source": "C:\\Users\\q\\.gradle\\caches\\transforms-2\\files-2.1\\2f635cd53a5ecc843e0d3b980c6fa7ce\\media-1.0.0\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,5,8,11",
@@ -77,25 +96,6 @@
                         "endLines": "289,297,305,313",
                         "endColumns": "10,10,10,10",
                         "endOffsets": "20937,21363,21786,22221"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\q\\AndroidStudioProjects\\MyHome4444\\src\\main\\res\\values-v21\\styles.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "0",
-                        "startOffsets": "53",
-                        "endLines": "3",
-                        "endColumns": "8",
-                        "endOffsets": "130"
-                    },
-                    "to": {
-                        "startLines": "226",
-                        "startColumns": "4",
-                        "startOffsets": "16921",
-                        "endLines": "227",
-                        "endColumns": "8",
-                        "endOffsets": "16997"
                     }
                 }
             ]

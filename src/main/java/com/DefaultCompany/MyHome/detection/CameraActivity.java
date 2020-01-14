@@ -169,6 +169,7 @@ public abstract class CameraActivity extends AppCompatActivity
       @Override
       public void onClick(View v) {
         Intent intent = new Intent(getApplicationContext(), CamActivity.class);
+        Log.e("SIZEFROM :: CameraActivity",finWidth + "---"+finHeight);
         intent.putExtra("width",finWidth);
         intent.putExtra("height",finHeight);
         intent.putExtra("fromTensor",true);
@@ -180,9 +181,11 @@ public abstract class CameraActivity extends AppCompatActivity
       @Override
       public void onClick(View v) {
         String title = ((MyApplication)context.getApplicationContext()).getTitle();
+        double[] avgColour = ((MyApplication)context.getApplicationContext()).getAvgColour();
         Log.d("안녕", title);
         Intent intent = new Intent(getApplicationContext(), com.DefaultCompany.MyHome.UnityPlayerActivity.class);
         intent.putExtra("title",title);
+        intent.putExtra("avgColour",avgColour);
         if(intent == null) {
           Log.d("intent", "null");
         }
@@ -603,6 +606,9 @@ public abstract class CameraActivity extends AppCompatActivity
 
   protected void showFrameInfo(String frameInfo) {
     frameValueTextView.setText(frameInfo);
+  }
+  protected void showMeanColour(int colour){
+
   }
 
   protected void showCropInfo(String cropInfo) {

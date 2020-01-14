@@ -8,6 +8,77 @@
     android:background="#0099cc"
     tools:context=".selectPoints">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/point1"
+            style="@android:style/Widget.Material.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="7dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:text="point1"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/point3"
+            style="@android:style/Widget.Material.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:text="point3"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/point2"
+            app:layout_constraintTop_toBottomOf="@+id/point2" />
+
+        <Button
+            android:id="@+id/point4"
+            style="@android:style/Widget.Material.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:text="point4"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/point3"
+            app:layout_constraintTop_toBottomOf="@+id/point3" />
+
+        <Button
+            android:id="@+id/point2"
+            style="@android:style/Widget.Material.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:text="point2"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/point1"
+            app:layout_constraintTop_toBottomOf="@+id/point1" />
+
+        <Button
+            android:id="@+id/confirmButton"
+            style="@android:style/Widget.Material.Button"
+            android:layout_width="106dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Confirm"
+            android:textColor="#454545"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <ImageView
         android:id="@+id/selectIV"
         android:layout_width="wrap_content"
@@ -17,56 +88,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="?android:attr/colorAccent" />
-
-    <Button
-        android:id="@+id/point1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="point1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textColor="#454545"
-        android:background="@drawable/buttonshape"/>
-
-    <Button
-        android:id="@+id/point2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="point2"
-        app:layout_constraintEnd_toEndOf="@+id/point1"
-        app:layout_constraintTop_toBottomOf="@+id/point1"
-        android:textColor="#454545"
-        android:background="@drawable/buttonshape"/>
-
-    <Button
-        android:id="@+id/point3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="point3"
-        app:layout_constraintEnd_toEndOf="@+id/point1"
-        app:layout_constraintTop_toBottomOf="@+id/point2"
-        android:textColor="#454545"
-        android:background="@drawable/buttonshape"/>
-
-    <Button
-        android:id="@+id/point4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="point4"
-        app:layout_constraintEnd_toEndOf="@+id/point3"
-        app:layout_constraintTop_toBottomOf="@+id/point3"
-        android:textColor="#454545"
-        android:background="@drawable/buttonshape"/>
-
-    <Button
-        android:id="@+id/confirmButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Confirm"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textColor="#454545"
-        android:background="@drawable/buttonshape"/>
 
     <RelativeLayout
         android:id="@+id/myrelout"

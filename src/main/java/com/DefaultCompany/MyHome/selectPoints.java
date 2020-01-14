@@ -68,6 +68,8 @@ public class selectPoints extends AppCompatActivity {
 
     String iswall = "true";
 
+    double width;
+    double height;
 
 
     ImageView imageView;
@@ -101,6 +103,10 @@ public class selectPoints extends AppCompatActivity {
 
         Intent intent = getIntent();
         fromTensor = intent.getExtras().getBoolean("fromTensor");
+        if(fromTensor){
+            width = intent.getExtras().getDouble("width");
+            height = intent.getExtras().getDouble("height");
+        }
 
 
         point1 = findViewById(R.id.point1);
@@ -299,8 +305,9 @@ public class selectPoints extends AppCompatActivity {
                         AlertDialog alertDialog = builder.create();
                         alertDialog.show();
                     }else{
-                        double width = getIntent().getDoubleExtra("width",0);
-                        double height= getIntent().getDoubleExtra("height",0);
+                        width = getIntent().getExtras().getDouble("width");
+                        height= getIntent().getExtras().getDouble("height");
+
                         Bitmap result = Bitmap.createScaledBitmap(res, 36, 36, false);
 
                         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
@@ -314,15 +321,9 @@ public class selectPoints extends AppCompatActivity {
                         intent.putExtra("fromTensor",true);
                         intent.putExtra("width",width);
                         intent.putExtra("height",height);
+                        Log.e("SIZEFROM :: Selectpoints -> main",width + "---"+height + ":: "+fromTensor);
                         startActivity(intent);
-
-
-
-
-
                     }
-
-
                 }
             });
         } catch (FileNotFoundException e) {
@@ -365,22 +366,9 @@ public class selectPoints extends AppCompatActivity {
     public void onResume(){
     super.onResume();
         fromTensor = getIntent().getExtras().getBoolean("fromTensor");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        if(fromTensor){
+            width = getIntent().getExtras().getDouble("width");
+            height= getIntent().getExtras().getDouble("height");
+        }
     }
 }

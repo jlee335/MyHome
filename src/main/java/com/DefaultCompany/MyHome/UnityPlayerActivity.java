@@ -338,7 +338,16 @@ public class UnityPlayerActivity extends AppCompatActivity
 
 
         String title = intent.getExtras().getString("title");
-        if(title != null){
+        double[] avgColour = intent.getExtras().getDoubleArray("avgColour");
+        if(title != null && avgColour!=null){
+            //CENTER 찾기
+            String colour = ((float)avgColour[0]*2) + ":" + ((float)avgColour[1]*2) + ":" + ((float)avgColour[2]*2);
+            Log.e("again",colour);
+            mUnityPlayer.UnitySendMessage("Player", "setMyColour", colour);
+
+
+            Log.e("SIZEFROM",title);
+
 
             if(title.equals("laptop") || title.equals("desktop")) {
                 title = "computer";
@@ -358,7 +367,7 @@ public class UnityPlayerActivity extends AppCompatActivity
             else if(title.equals("chair") || title.equals("bench")) {
                 title = "chair";
             }
-            else if(title.equals("cup")) {
+            else if(title.equals("cup")||title.equals("bottle")) {
                 title = "cup";
             }
             else if(title.equals("table")) {
@@ -383,30 +392,34 @@ public class UnityPlayerActivity extends AppCompatActivity
         }
 
         if(getIntent().getExtras().getBoolean("fromTensor")){
+
             String floor = intent.getExtras().getString("floor");
             mUnityPlayer.UnitySendMessage("Player", "setFloorTile", floor);
             double width = intent.getExtras().getDouble("width");
             double height = intent.getExtras().getDouble("height");
+            Log.e("SIZEFROM :: UnityPlayerActivity",width + "---"+height);
             if(width != 0 && height != 0) {
                 String length = width + ":" + height;
                 mUnityPlayer.UnitySendMessage("Player", "startBuildRoom", length);
             }
-        }
-
-
-
-        String room = intent.getExtras().getString("room");
-        String iswall = intent.getStringExtra("iswall");
-        if(room != null) {
-            if(iswall != null){
-                if(iswall.equals("true")) {
-                    mUnityPlayer.UnitySendMessage("Player", "makeWall", room);
-                }
-                if(iswall.equals("false")) {
-                    mUnityPlayer.UnitySendMessage("Player", "makeFloor", room);
+        }else{
+            String room = intent.getExtras().getString("room");
+            String iswall = intent.getStringExtra("iswall");
+            if(room != null) {
+                if(iswall != null){
+                    if(iswall.equals("true")) {
+                        mUnityPlayer.UnitySendMessage("Player", "makeWall", room);
+                    }
+                    if(iswall.equals("false")) {
+                        mUnityPlayer.UnitySendMessage("Player", "makeFloor", room);
+                    }
                 }
             }
         }
+
+
+
+
 
 
 
