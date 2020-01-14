@@ -64,6 +64,8 @@ public class selectPoints extends AppCompatActivity {
     float[] point3pos;
     float[] point4pos;
 
+    boolean fromTensor;
+
     String iswall = "true";
 
 
@@ -94,9 +96,12 @@ public class selectPoints extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_points);
+
+        Intent intent = getIntent();
+        fromTensor = intent.getExtras().getBoolean("fromTensor");
+
 
         point1 = findViewById(R.id.point1);
         point2 = findViewById(R.id.point2);
@@ -117,27 +122,6 @@ public class selectPoints extends AppCompatActivity {
         confirm = findViewById(R.id.confirmButton);
 
         rl = (RelativeLayout) findViewById(R.id.myrelout);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         point1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -250,67 +234,94 @@ public class selectPoints extends AppCompatActivity {
                     Bitmap res = convertMatToBitMap(dest);
                     imageView.setImageBitmap(res);
 
+                    if(!fromTensor){
+                        AlertDialog.Builder builder = new AlertDialog.Builder(selectPoints.this);
 
-                    AlertDialog.Builder builder = new AlertDialog.Builder(selectPoints.this);
+                        builder.setTitle("바닥인지 벽인지 선택하세요").setMessage("(바닥/벽)");
 
-                    builder.setTitle("바닥인지 벽인지 선택하세요").setMessage("(바닥/벽)");
+                        builder.setPositiveButton("바닥", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int id) {
+                                Bitmap result = Bitmap.createScaledBitmap(res, 36, 36, false);
 
-                    builder.setPositiveButton("바닥", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int id) {
-                            Bitmap result = Bitmap.createScaledBitmap(res, 36, 36, false);
+                                ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+                                result.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
+                                byte[] byteArray = byteArrayOutputStream.toByteArray();
 
-                            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-                            result.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
-                            byte[] byteArray = byteArrayOutputStream.toByteArray();
+                                String encoded = Base64.encodeToString(byteArray, Base64.DEFAULT);
+                                //intent
+                                iswall = "false";
+                                Intent intent = new Intent(getApplicationContext(), com.DefaultCompany.MyHome.UnityPlayerActivity.class);
+                                intent.putExtra("room",encoded);
+                                intent.putExtra("iswall", iswall);
+                                intent.putExtra("fromTensor",false);
 
-                            String encoded = Base64.encodeToString(byteArray, Base64.DEFAULT);
-                            //intent
-                            iswall = "false";
-                            Intent intent = new Intent(getApplicationContext(), com.DefaultCompany.MyHome.UnityPlayerActivity.class);
-                            intent.putExtra("room",encoded);
-                            intent.putExtra("iswall", iswall);
 
-                            if(intent == null) {
-                                Log.d("intent", "null");
+                                if(intent == null) {
+                                    Log.d("intent", "null");
+                                }
+                                startActivity(intent);
+
                             }
-                            startActivity(intent);
+                        });
 
-                        }
-                    });
+                        builder.setNegativeButton("벽", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int id) {
+                                Bitmap result = Bitmap.createScaledBitmap(res, 36, 25, false);
 
-                    builder.setNegativeButton("벽", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int id) {
-                            Bitmap result = Bitmap.createScaledBitmap(res, 36, 25, false);
+                                ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+                                result.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
+                                byte[] byteArray = byteArrayOutputStream.toByteArray();
 
-                            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-                            result.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
-                            byte[] byteArray = byteArrayOutputStream.toByteArray();
+                                String encoded = Base64.encodeToString(byteArray, Base64.DEFAULT);
+                                //intent
+                                Intent intent = new Intent(getApplicationContext(), com.DefaultCompany.MyHome.UnityPlayerActivity.class);
+                                intent.putExtra("room",encoded);
+                                intent.putExtra("iswall", iswall);
+                                intent.putExtra("fromTensor",false);
+                                if(intent == null) {
+                                    Log.d("intent", "null");
+                                }
+                                startActivity(intent);
 
-                            String encoded = Base64.encodeToString(byteArray, Base64.DEFAULT);
-                            //intent
-                            Intent intent = new Intent(getApplicationContext(), com.DefaultCompany.MyHome.UnityPlayerActivity.class);
-                            intent.putExtra("room",encoded);
-                            intent.putExtra("iswall", iswall);
-                            if(intent == null) {
-                                Log.d("intent", "null");
+
                             }
-                            startActivity(intent);
+                        });
+
+                        builder.setNeutralButton("cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int id) {
+                                Toast.makeText(getApplicationContext(), "cancel Click", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+
+                        AlertDialog alertDialog = builder.create();
+                        alertDialog.show();
+                    }else{
+                        double width = getIntent().getDoubleExtra("width",0);
+                        double height= getIntent().getDoubleExtra("height",0);
+                        Bitmap result = Bitmap.createScaledBitmap(res, 36, 36, false);
+
+                        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+                        result.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
+                        byte[] byteArray = byteArrayOutputStream.toByteArray();
+
+                        String encoded = Base64.encodeToString(byteArray, Base64.DEFAULT);
+
+                        Intent intent = new Intent(getApplicationContext(), com.DefaultCompany.MyHome.UnityPlayerActivity.class);
+                        intent.putExtra("floor",encoded);
+                        intent.putExtra("fromTensor",true);
+                        intent.putExtra("width",width);
+                        intent.putExtra("height",height);
+                        startActivity(intent);
 
 
-                        }
-                    });
 
-                    builder.setNeutralButton("cancel", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int id) {
-                            Toast.makeText(getApplicationContext(), "cancel Click", Toast.LENGTH_SHORT).show();
-                        }
-                    });
 
-                    AlertDialog alertDialog = builder.create();
-                    alertDialog.show();
+
+                    }
+
 
                 }
             });
@@ -349,5 +360,27 @@ public class selectPoints extends AppCompatActivity {
             Toast.makeText(this, text, Toast.LENGTH_LONG).show();
         }
         return super.onTouchEvent(event);
+    }
+    @Override
+    public void onResume(){
+    super.onResume();
+        fromTensor = getIntent().getExtras().getBoolean("fromTensor");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

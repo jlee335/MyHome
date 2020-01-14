@@ -54,8 +54,10 @@ public class UnityPlayerActivity extends AppCompatActivity
     private Button t_move;
     private Button b_move;
     private Button fab;
+    private Button btn_stop;
     private  boolean a = true;
     public static  final int sub = 1001;
+    boolean fromTensor;
 
     // Override this in your custom UnityPlayerActivity to tweak the command line arguments passed to the Unity Android Player
     // The command line arguments are passed as a string, separated by spaces
@@ -153,6 +155,15 @@ public class UnityPlayerActivity extends AppCompatActivity
         });
 
 
+        btn_stop = findViewById(R.id.btn_stop);
+
+        btn_stop.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                mUnityPlayer.UnitySendMessage("Player", "finalizeBuildRoom", "");
+            }
+        });
+
     }
 
 
@@ -166,6 +177,7 @@ public class UnityPlayerActivity extends AppCompatActivity
 
     public void buttonDo2(){
         final Intent camIntent = new Intent(this,CamActivity.class);
+        camIntent.putExtra("fromTensor",false);
         startActivity(camIntent);
         Log.e("TAB_PRESS", "2");
     }
@@ -323,6 +335,8 @@ public class UnityPlayerActivity extends AppCompatActivity
         mUnityPlayer.resume();
 
         Intent intent = getIntent();
+
+
         String title = intent.getExtras().getString("title");
         if(title != null){
 
@@ -368,6 +382,17 @@ public class UnityPlayerActivity extends AppCompatActivity
             mUnityPlayer.UnitySendMessage("Player", "placeFurniture", title);
         }
 
+        if(getIntent().getExtras().getBoolean("fromTensor")){
+            String floor = intent.getExtras().getString("floor");
+            mUnityPlayer.UnitySendMessage("Player", "setFloorTile", floor);
+            double width = intent.getExtras().getDouble("width");
+            double height = intent.getExtras().getDouble("height");
+            if(width != 0 && height != 0) {
+                String length = width + ":" + height;
+                mUnityPlayer.UnitySendMessage("Player", "startBuildRoom", length);
+            }
+        }
+
 
 
         String room = intent.getExtras().getString("room");
@@ -384,12 +409,7 @@ public class UnityPlayerActivity extends AppCompatActivity
         }
 
 
-        double width = intent.getExtras().getDouble("width");
-        double height = intent.getExtras().getDouble("height");
-        if(width != 0 && height != 0) {
-            String length = width + ":" + height;
-            mUnityPlayer.UnitySendMessage("Player", "startBuildRoom", length);
-        }
+
 
 
 

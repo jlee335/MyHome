@@ -64,6 +64,9 @@ public class CamActivity extends CameraActivity implements CvCameraViewListener2
     MatOfPoint2f prevMat;
     Mat prevImg;
     MatOfKeyPoint prevKeyPoint;
+    double width;
+    double height;
+    boolean loaded;
 
 
     private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
@@ -110,8 +113,6 @@ public class CamActivity extends CameraActivity implements CvCameraViewListener2
 
         setContentView(R.layout.activity_cam);
 
-
-
         getTexture = (Button) findViewById(R.id.snapTexutre);
         getTexture.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -123,16 +124,23 @@ public class CamActivity extends CameraActivity implements CvCameraViewListener2
                 String path = createImageFromBitmap(res);
 
                 i.putExtra("BMP",path);
+                if(loaded){
+                    i.putExtra("Width",width);
+                    i.putExtra("Height",height);
+                    i.putExtra("fromTensor",true);
+                }else{
+                    i.putExtra("fromTensor",false);
+                }
+
+
                 startActivity(i);
             }
         });
-
         mOpenCvCameraView = (CameraBridgeViewBase) findViewById(R.id.java_cam_view);
         //mOpenCvCameraView.setMaxFrameSize(720,1280);
-
         mOpenCvCameraView.setVisibility(SurfaceView.VISIBLE);
-
         mOpenCvCameraView.setCvCameraViewListener(this);
+        process();
     }
 
     @Override
@@ -143,6 +151,20 @@ public class CamActivity extends CameraActivity implements CvCameraViewListener2
             mOpenCvCameraView.disableView();
     }
 
+    public void process(){
+        Intent intent = getIntent();
+        boolean fromTensor = intent.getExtras().getBoolean("fromTensor");
+        if(fromTensor){
+            loaded = true;
+            width = intent.getExtras().getDouble("width");
+            height = intent.getExtras().getDouble("height");
+
+            Log.d("이이", String.valueOf(width));
+            Log.d("이이", String.valueOf(height));
+        }else{
+            loaded = false;
+        }
+    }
     @Override
     public void onResume()
     {
@@ -154,6 +176,9 @@ public class CamActivity extends CameraActivity implements CvCameraViewListener2
             Log.d(TAG, "OpenCV library found inside package. Using it!");
             mLoaderCallback.onManagerConnected(LoaderCallbackInterface.SUCCESS);
         }
+
+        process();
+
     }
 
     @Override

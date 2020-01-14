@@ -38,6 +38,7 @@ import android.os.HandlerThread;
 import android.os.Trace;
 import androidx.annotation.NonNull;
 
+import com.DefaultCompany.MyHome.CamActivity;
 import com.DefaultCompany.MyHome.CameraConnectionFragment;
 import com.DefaultCompany.MyHome.LegacyCameraConnectionFragment;
 import com.DefaultCompany.MyHome.MyApplication;
@@ -149,6 +150,7 @@ public abstract class CameraActivity extends AppCompatActivity
     });
     getWidth = findViewById(R.id.GetWidth);
     widthshow = findViewById(R.id.showWidth);
+
     getWidth.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
@@ -166,9 +168,10 @@ public abstract class CameraActivity extends AppCompatActivity
     confirmButton.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        Intent intent = new Intent(getApplicationContext(), UnityPlayerActivity.class);
+        Intent intent = new Intent(getApplicationContext(), CamActivity.class);
         intent.putExtra("width",finWidth);
         intent.putExtra("height",finHeight);
+        intent.putExtra("fromTensor",true);
         startActivity(intent);
       }
     });
