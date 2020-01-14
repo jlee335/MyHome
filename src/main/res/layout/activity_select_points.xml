@@ -24,7 +24,9 @@
         android:layout_height="wrap_content"
         android:text="point1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#454545"
+        android:background="@drawable/buttonshape"/>
 
     <Button
         android:id="@+id/point2"
@@ -32,7 +34,9 @@
         android:layout_height="wrap_content"
         android:text="point2"
         app:layout_constraintEnd_toEndOf="@+id/point1"
-        app:layout_constraintTop_toBottomOf="@+id/point1" />
+        app:layout_constraintTop_toBottomOf="@+id/point1"
+        android:textColor="#454545"
+        android:background="@drawable/buttonshape"/>
 
     <Button
         android:id="@+id/point3"
@@ -40,7 +44,9 @@
         android:layout_height="wrap_content"
         android:text="point3"
         app:layout_constraintEnd_toEndOf="@+id/point1"
-        app:layout_constraintTop_toBottomOf="@+id/point2" />
+        app:layout_constraintTop_toBottomOf="@+id/point2"
+        android:textColor="#454545"
+        android:background="@drawable/buttonshape"/>
 
     <Button
         android:id="@+id/point4"
@@ -48,7 +54,9 @@
         android:layout_height="wrap_content"
         android:text="point4"
         app:layout_constraintEnd_toEndOf="@+id/point3"
-        app:layout_constraintTop_toBottomOf="@+id/point3" />
+        app:layout_constraintTop_toBottomOf="@+id/point3"
+        android:textColor="#454545"
+        android:background="@drawable/buttonshape"/>
 
     <Button
         android:id="@+id/confirmButton"
@@ -56,7 +64,9 @@
         android:layout_height="wrap_content"
         android:text="Confirm"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#454545"
+        android:background="@drawable/buttonshape"/>
 
     <RelativeLayout
         android:id="@+id/myrelout"

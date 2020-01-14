@@ -17,13 +17,17 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="벽/바닥 만들기" />
+            android:text="벽/바닥 만들기"
+            android:textColor="#454545"
+            android:background="@drawable/buttonshape"/>
 
         <Button
             android:id="@+id/labeling"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="가구/방 만들기" />
+            android:text="가구/방 만들기"
+            android:textColor="#454545"
+            android:background="@drawable/buttonshape"/>
 
     </LinearLayout>
 

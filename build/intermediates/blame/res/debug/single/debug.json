@@ -436,6 +436,10 @@
         "source": "C:\\Users\\q\\.gradle\\caches\\transforms-2\\files-2.1\\1198f9787e20f187ad270ac7b3a33fba\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
+        "merged": "C:\\Users\\q\\AndroidStudioProjects\\MyHome4444\\build\\intermediates\\res\\merged\\debug\\drawable_buttonshape.xml.flat",
+        "source": "C:\\Users\\q\\AndroidStudioProjects\\MyHome4444\\src\\main\\res\\drawable\\buttonshape.xml"
+    },
+    {
         "merged": "C:\\Users\\q\\AndroidStudioProjects\\MyHome4444\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\q\\.gradle\\caches\\transforms-2\\files-2.1\\1198f9787e20f187ad270ac7b3a33fba\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },

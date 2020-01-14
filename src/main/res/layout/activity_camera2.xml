@@ -40,6 +40,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="250dp"
+                android:textColor="#454545"
+                android:background="@drawable/buttonshape"
                 android:text="가구수집" />
 
             <Button
@@ -47,6 +49,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="90dp"
+                android:textColor="#454545"
+                android:background="@drawable/buttonshape"
                 android:text="방만들기" />
         </FrameLayout>
 
